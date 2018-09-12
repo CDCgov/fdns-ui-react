@@ -1,0 +1,36 @@
+div.filter {
+  margin: $default-margin 0;
+
+  label {
+    font-weight: normal;
+    color: $davy-grey;
+    font-size: 0.9em;
+  }
+
+  span.input-group {
+    margin: 0;
+    width: 100%;
+
+    .input-group-addon {
+      background-color: $white;
+      border-radius: 0;
+      border-right: 0;
+      border-color: $rain;
+      padding-right: 0;
+
+      i {
+        color: $winter;
+      }
+    }
+  }
+
+  input {
+    border-radius: 0;
+    font-size: 0.9em;
+    color: $davy-grey;
+
+    &.with-icon {
+      border-left: 0;
+    }
+  }
+}

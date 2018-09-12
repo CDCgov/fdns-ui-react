@@ -1,0 +1,39 @@
+div.option-action {
+  text-align: center;
+
+  button.btn.btn-default {
+    border: 0;
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+
+    &.border-right {
+      border-right: 1px solid $winter;
+    }
+
+    i {
+      font-size: 1.4em;
+      color: $winter;
+
+      &:hover, &:focus, &:active {
+        color: $turquoise;
+        -webkit-transition: color .075s ease-in-out;
+        -moz-transition: color .075s ease-in-out;
+        -ms-transition: color .075s ease-in-out;
+        -o-transition: color .075s ease-in-out;
+        transition: color .075s ease-in-out;
+      }
+    }
+  }
+}
+
+table.table.list {
+  button.btn.btn-default {
+    i {
+      font-size: 1.3em;
+    }
+  }
+}

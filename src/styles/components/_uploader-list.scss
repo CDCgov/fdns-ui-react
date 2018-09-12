@@ -1,0 +1,41 @@
+$list-height: 250px;
+
+div.uploader-list-box {
+  background-color: $white;
+  border: 1px solid $true-blue;
+  padding: $default-padding;
+
+  hr {
+    border-top: 1px solid $true-blue;
+  }
+}
+
+div.uploader-list {
+  ul {
+    max-height: $list-height;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 7px 0;
+
+      i {
+        font-size: 1.2em;
+        color: $jade;
+        position: relative;
+        top: -4px;
+      }
+
+      span {
+        margin: 0 10px;
+        font-size: 1em;
+        color: $dark-grey;
+        display: inline-block;
+        max-width: 88%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+} 

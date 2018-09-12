@@ -1,0 +1,24 @@
+div.uploader-paste {
+  background-color: $white;
+  border: 1px solid $true-blue;
+  padding: $default-padding;
+
+  textarea {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 85%;
+
+    &:active, &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $true-blue;
+  }
+}

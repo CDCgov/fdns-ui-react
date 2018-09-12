@@ -1,0 +1,98 @@
+$btn-size: 35px;
+
+.pane {
+  background: $white;
+  margin: $default-margin;
+  -webkit-transition: background-color 0.2s; /* Safari */
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 1px $winter;
+
+  .pane-header {
+    cursor: pointer;
+    
+    .pane-title, .pane-subtitle {
+      padding: $default-padding;
+      white-space: nowrap;
+      color: $davy-grey;
+    }
+
+    .pane-title {
+      text-align: left;
+    }
+
+    .pane-subtitle {
+      text-align: right;
+      border-right: 1px solid $rain;
+    }
+
+    .col-buttons {
+      padding-top: 7px;
+      text-align: right;
+      height: 100%;
+    }
+
+    button.btn.btn-default {
+      background: none;
+      outline: none;
+    }
+
+    .btn, .btn-default {
+      min-width: $btn-size;
+      width: $btn-size;
+      max-width: $btn-size;
+      min-height: $btn-size;
+      height: $btn-size;
+      max-height: $btn-size;
+      display: inline-block;
+      float: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+
+      &:hover, &:focus, &:active {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+
+      i {
+        color: $jade;
+        font-size: 1.3em;
+
+        &.fa-times {
+          color: $winter;
+          font-weight: lighter;
+          font-size: 1.1em;
+          transition: all 0.2s ease 0s;
+
+          &:hover {
+            color: $vermilion;
+          }
+        }
+      }
+    }
+  }
+
+  .pane-body {
+    border-top: 1px solid $rain;
+    padding: $default-padding;
+  }
+  &.collapsed {
+    background: $smoke;
+
+    &:hover {
+      background-color: $white;
+
+      button.btn.btn-default {
+        i:before {
+          content: "";
+        }
+      }
+    }
+
+    .pane-body {
+      padding: 0;
+      height: auto;
+    }
+  }
+}

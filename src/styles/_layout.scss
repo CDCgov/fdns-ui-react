@@ -1,0 +1,19 @@
+$default-margin: 15px;
+$default-padding: 15px;
+$data-header-height: 45px;
+$header-height: 60px;
+$header-top: 14px;
+$table-row-height: 38px;
+
+// bootstrap widths
+$bs-xs-width: 575px;
+$bs-sm-width: 767px;
+$bs-md-width: 991px;
+$bs-lg-width: 1199px;
+
+.fx-grd {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+}

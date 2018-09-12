@@ -1,0 +1,20 @@
+.pane-history {
+  overflow-y: auto;
+
+  h3 {
+    color: $davy-grey;
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: $default-margin;
+  }
+
+  button.btn.btn-default.reset-history {
+    background: none;
+    border: 0;
+    padding: 0 10px;
+    margin: 0 10px;
+    float: right;
+    text-align: center;
+    color: $davy-grey;
+  }
+}
