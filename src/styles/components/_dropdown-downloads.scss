@@ -1,0 +1,114 @@
+$dropdown-size: 50px;
+$dropdown-width: 330px;
+$bar-height: 10px;
+
+.dropdown-downloads {
+  margin: 0;
+  padding: 0;
+
+  .dropdown.btn-group {
+    margin: 0;
+    padding: 0;
+
+    button.dropdown-toggle {
+      width: $dropdown-size;
+      height: $dropdown-size;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: transparent;
+
+      &:hover, &:active, &:focus {
+        background-color: transparent;
+      }
+    }
+    span.caret {
+      display: none;
+    }
+
+    ul.dropdown-menu {
+      border: 0;
+      border-radius: 0;
+      background: $winter-storm;
+    }
+
+    &.open {
+      button.dropdown-toggle {
+        background-color: $light-grey-blue;
+      }
+    }
+
+    div.empty {
+      text-align: center;
+      color: $storm;
+      padding: $default-padding;
+      font-weight: normal;
+      font-size: 0.9em;
+    }
+
+    ul.dropdown-menu {
+      background-color: $light-grey-blue;
+      border-radius: 0;
+      margin: 0;
+      padding: $default-padding;
+      border: 0;
+      width: $dropdown-width;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        color: $davy-grey;
+      }
+
+      div.download-row {
+        margin: 0;
+        padding: 7px 0;
+
+        div.progress {
+          height: $bar-height;
+          border-radius: 0;
+          margin: 0 0 5px 0;
+
+          div.progress-bar {
+            border-radius: 0;
+            background-color: $jade;
+
+            &.active {
+              background-color: $amber-gold;
+            }
+
+            &.progress-bar-danger {
+              background-color: $vermilion;
+            }
+          }
+        }
+
+        div.col {
+          text-align: left;
+          font-size: 0.8em;
+          color: $winter;
+
+          &.col-file-download {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  div.reset-downloads {
+    border-top: 1px solid $winter-storm;
+
+    button.btn.btn-default {
+      background: none;
+      border: 0;
+      padding: 5px;
+      margin: 0;
+      float: right;
+      text-align: center;
+      color: $storm;
+      font-size: 0.85em;
+    }
+  }
+}

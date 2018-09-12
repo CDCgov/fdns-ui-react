@@ -1,0 +1,18 @@
+div.data-endpoint {
+  .input-group {
+    cursor: pointer;
+
+    span.copy {
+      &:hover {
+        i {
+          color: $storm;
+        }
+      }
+      &:active {
+        i {
+          color: $jade;
+        }
+      }
+    }
+  }
+}

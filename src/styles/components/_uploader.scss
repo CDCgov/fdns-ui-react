@@ -1,0 +1,100 @@
+$uploader-height: 640px;
+
+div.uploader {
+  height: $uploader-height;
+
+  div.row,
+  div.col,
+  div.uploader-paste,
+  div.uploader-list-box,
+  div.uploader-drop,
+  div.uploader-drop-box {
+    height: 100%;
+  }
+
+  div.uploader-paste {
+    div.icon-buttons {
+      position: absolute;
+      bottom: 25px;
+      right: 27px;
+    }
+  }
+
+  div.uploader-list-box {
+    div.uploader-list {
+      height: 85%;
+
+      ul {
+        max-height: 530px;
+      }
+    }
+
+    div.icon-buttons {
+      position: absolute;
+      bottom: 25px;
+      right: 27px;
+    }
+  }
+
+  div.uploader-drop {
+    div.uploader-drop-box {
+      div.instructions {
+        button.btn-success {
+          margin: 0 0 0 -60px;
+          position: absolute;
+          bottom: 25px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bs-md-width) {
+  div.uploader {
+    height: auto;
+
+    div.row {
+      div.col {
+        margin: $default-margin 0;
+      }
+    }
+
+    div.uploader-paste {
+      div.icon-buttons {
+        position: inherit;
+        bottom: inherit;
+        right: inherit;
+      }
+    }
+
+    div.uploader-list-box {
+      div.uploader-list {
+        height: auto;
+
+        ul {
+          max-height: 200px;
+        }
+      }
+
+      div.icon-buttons {
+        position: inherit;
+        bottom: inherit;
+        right: inherit;
+      }
+    }
+
+    div.uploader-drop {
+      div.uploader-drop-box {
+        div.instructions {
+          button.btn-success {
+            margin: $default-margin 0;
+            position: inherit;
+            bottom: inherit;
+            right: inherit;
+          }
+        }
+      }
+    }
+  }
+}

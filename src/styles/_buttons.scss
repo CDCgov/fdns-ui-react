@@ -1,0 +1,35 @@
+.btn-submit {
+  background-color: $un-blue-light;
+  color: $white;
+}
+
+.btn.btn-default {
+  background-color: $white;
+  outline: none;
+}
+
+input.form-control, button.btn.btn-default {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: $rain;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: $rain;
+  }
+}
+
+button.btn.btn-default {
+  &:hover, &:focus, &:active {
+    background-color: inherit;
+  }
+}
+
+a {
+  color: $true-blue;
+}

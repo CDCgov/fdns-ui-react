@@ -1,0 +1,41 @@
+.filter-action {
+  border: 0;
+  border-radius: 2px;
+  margin-top: $default-margin;
+
+  button.filter-apply.btn.btn-default {
+    width: 100%;
+    background-color: $true-blue;
+    color: $white;
+    display: block;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+    background-color: $jade;
+    }
+
+    i {
+      margin: 2px 5px;
+      font-size: 1.1em;
+    }
+  }
+
+  button.filter-clear.btn.btn-default {
+    width: 100%;
+    margin-top: 15px;
+    background-color: transparent;
+    display: block;
+    border-color: $winter;
+    color: $davy-grey;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+    background-color: $white;
+    }
+
+    i {
+    margin: 2px 5px;
+    font-size: 1.1em;
+    }
+  }
+}

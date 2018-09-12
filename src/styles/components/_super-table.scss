@@ -1,0 +1,33 @@
+$options-width: 70px;
+$thead-height: $table-row-height;
+$row-height: $table-row-height;
+
+div.super-table {
+  div.public_fixedDataTable_main {
+    outline: none;
+  }
+  div.public_fixedDataTable_header {
+    background-color: $rain;
+    background-image: none;
+
+    div.public_fixedDataTableCell_main {
+      background-color: $rain;
+      background-image: none;
+      color: $davy-grey;
+    }
+  }
+  div.fixedDataTableCellGroupLayout_cellGroup {
+    > div.public_fixedDataTableCell_main {
+      white-space: nowrap;
+    }
+  }
+
+  div.header-cell {
+    i {
+      color: $storm;
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+}

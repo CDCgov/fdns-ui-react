@@ -1,0 +1,30 @@
+div.filter-select {
+  .Select {
+    .Select-control {
+      border-radius: 0;
+      border-color: $rain;
+
+      .Select-placeholder {
+        color: $davy-grey;
+      }
+    }
+
+    &.with-icon {
+      .Select-control {
+        border-left: 0;
+      }
+    }
+
+    &.is-focused, &.is-pseudo-focused {
+      .Select-control {
+        outline: none;
+        box-shadow: none;
+        border-color: $rain;
+      }
+    }
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}
