@@ -1,0 +1,6 @@
+*~
+*.iml
+.*.haste_cache.*
+.idea
+*.sublime-project
+*.sublime-workspace
