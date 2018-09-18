@@ -51,7 +51,7 @@ $dropdown-min-width: 120px;
       position: relative;
       top: $avatar-size / 6;
     }
-    
+
     button.dropdown-toggle {
       border: 0;
       box-shadow: none;
@@ -101,9 +101,9 @@ $dropdown-min-width: 120px;
           text-decoration: none;
         }
 
-        i {
+        svg {
           color: $white;
-          padding-right: 7px;
+          margin-right: 7px;
         }
       }
     }

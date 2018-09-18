@@ -24,13 +24,13 @@ class UploaderDrop extends Component {
   // init
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       files: [],
     };
     this.handleDrop = this.handleDrop.bind(this);
   }
 
-  // handle drop 
+  // handle drop
   handleDrop(acceptedFiles, rejectedFiles) {
     this.props.onDrop(acceptedFiles, rejectedFiles);
     this.setState({
@@ -41,7 +41,7 @@ class UploaderDrop extends Component {
   // render layout
   renderLayout() {
     const btnPrimary = (
-      <IconButton icon="plus-square-o" bsStyle="primary">{'Add Files'}</IconButton>
+      <IconButton icon={['far', 'plus-square']} bsStyle="primary">{'Add Files'}</IconButton>
     );
 
     // only return the button for small
@@ -65,7 +65,7 @@ class UploaderDrop extends Component {
 
     return (
       <div className={className}>
-        <Dropzone 
+        <Dropzone
           onDrop={this.handleDrop.bind(this)}
           accept={this.props.accept}
           className="uploader-drop-box"

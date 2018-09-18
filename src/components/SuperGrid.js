@@ -7,6 +7,7 @@ import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import OptionAction from './OptionAction';
 import OptionErrorsWarnings from './OptionErrorsWarnings';
 import { _headers } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -45,7 +46,7 @@ class SuperGrid extends Component {
   }
 
   // render a row inside of a cell
-  renderRow(item, header, count, headerIndex) { 
+  renderRow(item, header, count, headerIndex) {
     const data = jsonpath.query(item, header.path);
 
     // set the class to first if we are the first row
@@ -59,7 +60,7 @@ class SuperGrid extends Component {
     };
     const icon = (
       <span aria-label={header.label}>
-        <i className={`fa fa-${header.icon}`} style={iconStyle} />
+        <FontAwesomeIcon icon={header.icon} style={iconStyle} />
       </span>
     );
 
@@ -117,10 +118,10 @@ class SuperGrid extends Component {
     let errorsAndWarnings;
     if (showErrorsAndWarnings) {
       errorsAndWarnings = (
-        <OptionErrorsWarnings 
+        <OptionErrorsWarnings
           onDetail={this.handleDetail.bind(null, item)}
           updateErrorsAndWarnings={this.props.updateErrorsAndWarnings}
-          analysis={analysis} 
+          analysis={analysis}
         />
       );
     }
@@ -146,7 +147,7 @@ class SuperGrid extends Component {
       </div>
     );
 
-    // set a footer if we have something to show 
+    // set a footer if we have something to show
     let footer;
     if (showErrorsAndWarnings || showActions || this.props.footer) {
       footer = (

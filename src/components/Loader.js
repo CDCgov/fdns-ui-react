@@ -24,6 +24,7 @@ class Loader extends Component {
         <div className="loader-active">
           <div className="loading-mask"></div>
           <div className="loading-message">
+            {/*TODO: Switch this over to FA */}
             <i className="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
             <div className="message-wrapper">
               {message}

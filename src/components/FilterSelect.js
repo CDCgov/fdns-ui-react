@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 import { InputGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import { _option } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   selected: PropTypes.string,
   label: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   placeholder: PropTypes.string,
   options: PropTypes.arrayOf(_option)
 };
@@ -22,7 +26,7 @@ const defaultProps = {
 
 // define the class
 class FilterSelect extends Select {
-  
+
   // init
   constructor(props) {
     super(props);
@@ -67,10 +71,10 @@ class FilterSelect extends Select {
   render() {
     var icon, controlClassName;
     if (this.props.icon !== undefined) {
-      const iconName = 'fa fa-' + this.props.icon;
+      const iconName = this.props.icon;
       icon = (
         <InputGroup.Addon>
-          <i className={iconName}></i>
+          <FontAwesomeIcon icon={iconName} />
         </InputGroup.Addon>
       );
       controlClassName = 'with-icon';
@@ -81,12 +85,12 @@ class FilterSelect extends Select {
         <ControlLabel>{this.props.label}</ControlLabel>
         <InputGroup>
           {icon}
-          <Select 
+          <Select
             aria-label={this.props.label}
-            name="filter-select" 
+            name="filter-select"
             value={this.state.selected}
             placeholder={this.props.placeholder}
-            options={this.props.options} 
+            options={this.props.options}
             onChange={this.handleChange}
             className={controlClassName} />
         </InputGroup>

@@ -87,7 +87,7 @@ class Uploader extends Component {
           <UploaderList files={this.state.files} />
           <hr />
           <div className="icon-buttons pull-right">
-            <IconButton icon="refresh" bsStyle="clear" onClick={this.handleReset}>{'Reset'}</IconButton>
+            <IconButton icon="sync-alt" bsStyle="clear" onClick={this.handleReset}>{'Reset'}</IconButton>
             <UploaderDrop layout="button" onDrop={this.handleDropUpload} />
           </div>
           <div className="clearfix"></div>

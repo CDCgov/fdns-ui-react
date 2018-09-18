@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import classNames from 'classnames';
 import DragSortableList from 'react-drag-sortable';
 import { _headers } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -95,15 +96,14 @@ class DataLayers extends Component {
     });
   }
 
-  // 
   renderVisibilityIcon = (visible) => {
-    var icon = 'fa fa-eye';
+    let icon = <FontAwesomeIcon icon="eye" />
     if (!visible) {
-      icon = 'fa fa-eye-slash';
+      icon = <FontAwesomeIcon icon="eye-slash" />
     }
 
     return (
-      <i className={icon}></i>
+      icon
     );
   }
 
@@ -122,15 +122,14 @@ class DataLayers extends Component {
         color: `#${header.iconColor}`,
       };
       const icon = (
-        <i className={`fa fa-${header.icon}`} style={iconStyle} />
+        <FontAwesomeIcon icon={header.icon} style={iconStyle} />
       );
 
       list.push({
         content: (
           <div className={className} key={index}>
             <span className="drag-icon">
-              <i className="fa fa-ellipsis-v"></i> 
-              <i className="fa fa-ellipsis-v"></i>
+              <FontAwesomeIcon icon="ellipsis-v" />
             </span>
             <div className="col col-3 col-label">
               {icon}

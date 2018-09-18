@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown, MenuItem } from 'react-bootstrap';
 import { _user } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -56,7 +57,7 @@ class DropdownUser extends Component {
                 <hr/>
                 <MenuItem eventKey="1">
                   <button className="btn btn-danger btn-block" onClick={this.handleSignOut}>
-                    <i className="fa fa-sign-out"></i>
+                    <FontAwesomeIcon icon="sign-out-alt" />
                     <span>Log Off</span>
                   </button>
                 </MenuItem>

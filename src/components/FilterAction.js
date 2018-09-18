@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -36,11 +37,11 @@ class FilterAction extends Component {
     return (
       <div className="filter-action">
         <Button className="filter-apply" onClick={this.handleApplyClick}>
-          <i className="fa fa-check"></i>
+          <FontAwesomeIcon icon="check" />
           Apply
         </Button>
         <Button className="filter-clear" onClick={this.handleResetClick}>
-          <i className="fa fa-refresh"></i>
+          <FontAwesomeIcon icon="sync-alt" />
           Reset
         </Button>
       </div>
