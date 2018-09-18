@@ -7,6 +7,7 @@ import { Table, Column, Cell } from 'fixed-data-table-2';
 import OptionAction from './OptionAction';
 import OptionErrorsWarnings from './OptionErrorsWarnings';
 import { _headers } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -128,7 +129,7 @@ class SuperTable extends Component {
       color: `#${header.iconColor}`,
     };
     const icon = (
-      <i className={`fa fa-${header.icon}`} style={iconStyle} />
+      <FontAwesomeIcon icon={header.icon} style={iconStyle} />
     );
     const headerCell = (
       <Cell className="header-cell">
@@ -139,15 +140,15 @@ class SuperTable extends Component {
 
     // return the column
     return (
-      <Column 
-        key={i} 
+      <Column
+        key={i}
         columnKey={i}
-        header={headerCell} 
-        cell={this.renderCell} 
-        isResizable={true} 
+        header={headerCell}
+        cell={this.renderCell}
+        isResizable={true}
         width={width}
-        minWidth={defaultMmts.minWidth} 
-        maxWidth={defaultMmts.maxWidth} 
+        minWidth={defaultMmts.minWidth}
+        maxWidth={defaultMmts.maxWidth}
       />
     );
   }
@@ -164,10 +165,10 @@ class SuperTable extends Component {
 
       return (
         <Cell className="cell-errors-warnings">
-          <OptionErrorsWarnings 
+          <OptionErrorsWarnings
             onDetail={this.handleDetail.bind(null, item)}
             updateErrorsAndWarnings={this.props.updateErrorsAndWarnings}
-            analysis={analysis} 
+            analysis={analysis}
           />
         </Cell>
       );
@@ -197,7 +198,7 @@ class SuperTable extends Component {
     const header = (
       <Cell>Actions</Cell>
     );
-    
+
     // return with a custom action column
     if (this.props.actionsColumn) {
       // render the custom cell
@@ -229,7 +230,7 @@ class SuperTable extends Component {
       const item = this.props.data[rowIndex];
       return (
         <Cell className="cell-action">
-          <OptionAction 
+          <OptionAction
             onDetail={this.handleDetail.bind(null, item)}
           />
         </Cell>
@@ -257,11 +258,11 @@ class SuperTable extends Component {
     const errorsAndWarningsColumn = this.renderErrorsAndWarningsColumn();
     return (
       <div className="super-table">
-        <Table 
-          rowHeight={defaultMmts.rowHeight} 
-          headerHeight={defaultMmts.rowHeight} 
-          rowsCount={this.props.data.length} 
-          width={this.state.width} 
+        <Table
+          rowHeight={defaultMmts.rowHeight}
+          headerHeight={defaultMmts.rowHeight}
+          rowsCount={this.props.data.length}
+          width={this.state.width}
           height={this.state.height}
           isColumnResizing={false}
           onColumnResizeEndCallback={this.handleColumnResize}>

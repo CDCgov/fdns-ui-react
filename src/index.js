@@ -1,5 +1,21 @@
 import './styles/fdns-ui-react.css';
 
+// Import third party libs' css
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css/animate.css';
+import 'flexbox/css/grid.min.css';
+import 'flexbox/css/media-object.min.css';
+import 'fixed-data-table-2/dist/fixed-data-table.css';
+import 'react-select/dist/react-select.css';
+import 'react-day-picker/lib/style.css';
+
+
+// Importing all fas icons from FA
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+library.add(fas, far);
+
 export * as fixtures from './fixtures/fixtures';
 export * as shapes from './fixtures/shapes';
 

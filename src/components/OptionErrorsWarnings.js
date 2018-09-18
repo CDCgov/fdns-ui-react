@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import dig from 'object-dig';
 import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { _analysis } from '../fixtures/shapes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -45,7 +46,7 @@ class OptionErrorsWarnings extends Component {
     // search through the explanation and put all errors in an array
     this.props.analysis.explanation.forEach((explanation, index) => {
       if (explanation.type !== 'ERROR') return;
-      
+
       errors.push({
         category: explanation.category,
         key: explanation.ID,
@@ -56,7 +57,7 @@ class OptionErrorsWarnings extends Component {
     // search through the explanation and put all warnings in an array
     this.props.analysis.explanation.map((explanation, index) => {
       if (explanation.type !== 'WARNING') return;
-      
+
       warnings.push({
         category: explanation.category,
         key: explanation.ID,
@@ -95,7 +96,7 @@ class OptionErrorsWarnings extends Component {
             className="option-error"
             onClick={this.handleDetailClick}
           >
-            <i className="fa fa-ban" />
+            <FontAwesomeIcon icon="ban" />
           </Button>
         </OverlayTrigger>
       )
@@ -123,7 +124,7 @@ class OptionErrorsWarnings extends Component {
             className="option-warning"
             onClick={this.handleDetailClick}
           >
-            <i className="fa fa-exclamation-triangle" />
+            <FontAwesomeIcon icon="exclamation-triangle" />
           </Button>
         </OverlayTrigger>
       )

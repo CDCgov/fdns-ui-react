@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { InputGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // default value for the filter
 const defaultValue = '';
@@ -10,7 +11,10 @@ const propTypes = {
   value: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   control: PropTypes.object
 };
 
@@ -67,10 +71,10 @@ class Filter extends Component {
   render() {
     var icon, controlClassName;
     if (this.props.icon !== undefined) {
-      const iconName = 'fa fa-' + this.props.icon;
+      const iconName = this.props.icon;
       icon = (
         <InputGroup.Addon>
-          <i className={iconName}></i>
+          <FontAwesomeIcon icon={iconName} />
         </InputGroup.Addon>
       );
       controlClassName = 'with-icon';
@@ -80,10 +84,10 @@ class Filter extends Component {
     const defaultControl = (
       <FormControl
         aria-label={this.props.label}
-        className={controlClassName} 
-        type="text" 
-        placeholder={placeholder} 
-        value={this.state.value} 
+        className={controlClassName}
+        type="text"
+        placeholder={placeholder}
+        value={this.state.value}
         onChange={this.handleChange} />
     );
     const control = this.props.control || defaultControl;

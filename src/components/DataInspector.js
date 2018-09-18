@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import Inspector from 'react-json-inspector';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -45,7 +46,7 @@ SearchBar.defaultProps = {
 
 // define the class
 class DataInspector extends Component {
-  
+
   // init
   constructor(props) {
     super(props);
@@ -83,7 +84,7 @@ class DataInspector extends Component {
           onClick={this.handlePrintClick}
           className="print"
         >
-          <i className="fa fa-print"></i>
+          <FontAwesomeIcon icon="print" />
         </Button>
       </OverlayTrigger>
     );
@@ -99,7 +100,7 @@ class DataInspector extends Component {
         onClick={this.handleCloseClick}
         className="close"
       >
-        <i className="fa fa-times"></i>
+        <FontAwesomeIcon icon="times" />
       </Button>
     );
 
@@ -109,7 +110,7 @@ class DataInspector extends Component {
         {closeButton}
         <Inspector
           search={SearchBar}
-          data={this.props.data} 
+          data={this.props.data}
         />
       </div>
     )

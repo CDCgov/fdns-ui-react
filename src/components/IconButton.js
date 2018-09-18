@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   image: PropTypes.string,
   imageAlt: PropTypes.string,
   theme: PropTypes.string,
@@ -43,7 +47,7 @@ class IconButton extends Component {
 
     if (image === '') {
       return (
-        <i className={`fa fa-${this.props.icon}`}></i>
+        <FontAwesomeIcon icon={this.props.icon} />
       );
     }
 

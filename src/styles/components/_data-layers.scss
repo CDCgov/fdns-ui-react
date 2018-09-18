@@ -76,13 +76,13 @@ div.data-layers {
         padding: 0;
         margin: 0;
 
-        i {
+        svg {
           font-size: 1.2em;
           color: $winter-storm;
         }
 
         &.visible {
-          i {
+          svg {
             font-size: 1.2em;
             color: $davy-grey;
           }
@@ -94,7 +94,7 @@ div.data-layers {
         position: absolute;
         margin: 10px 0 0 10px;
 
-        i {
+        svg {
           margin: 0 2px 0 0;
           font-size: 1em;
           color: $un-blue;
@@ -112,7 +112,7 @@ div.data-layers {
         &.col-label {
           padding-left: 30px;
 
-          i {
+          svg {
             position: absolute;
             margin: 3px 0 0 0;
           }
@@ -141,13 +141,13 @@ div.data-layers {
           color: $davy-grey;
 
           span.drag-icon {
-            i {
+            svg {
               color: $davy-grey;
             }
           }
 
           button.btn.btn-default {
-            i {
+            svg {
               color: $davy-grey;
             }
           }

@@ -4,12 +4,12 @@ div.data-endpoint {
 
     span.copy {
       &:hover {
-        i {
+        svg {
           color: $storm;
         }
       }
       &:active {
-        i {
+        svg {
           color: $jade;
         }
       }

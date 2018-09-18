@@ -6,7 +6,10 @@ const propTypes = {
   label: PropTypes.string,
   btnStyle: PropTypes.oneOf(['grey', 'blue']),
   className: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   iconAlt: PropTypes.string,
   onClick: PropTypes.func,
 };

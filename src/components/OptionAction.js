@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -45,7 +46,7 @@ class OptionAction extends Component {
     if (this.props.showDetail) {
       return (
         <Button onClick={this.handleDetailClick} aria-label="Show Detail">
-          <i className="fa fa-file-code-o"></i>
+          <FontAwesomeIcon icon={['far' ,'file-code']} />
         </Button>
       );
     }
@@ -56,7 +57,7 @@ class OptionAction extends Component {
     if (this.props.showOption) {
       return (
         <Button onClick={this.handleOptionClick} aria-label="Show Option">
-          <i className="fa fa-cog"></i>
+          <FontAwesomeIcon icon="cog" />
         </Button>
       );
     }

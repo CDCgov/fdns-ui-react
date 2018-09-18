@@ -9,7 +9,7 @@ $btn-size: 35px;
 
   .pane-header {
     cursor: pointer;
-    
+
     .pane-title, .pane-subtitle {
       padding: $default-padding;
       white-space: nowrap;
@@ -55,7 +55,7 @@ $btn-size: 35px;
         -webkit-box-shadow: none;
       }
 
-      i {
+      svg {
         color: $jade;
         font-size: 1.3em;
 
@@ -84,7 +84,7 @@ $btn-size: 35px;
       background-color: $white;
 
       button.btn.btn-default {
-        i:before {
+        svg:before {
           content: "";
         }
       }

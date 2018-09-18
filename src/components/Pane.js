@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -60,7 +61,7 @@ class Pane extends Component {
   // click the collapse button
   handleCollapseClick(event) {
     if (this.props.onCollapse) return this.props.onCollapse(event, this.props);
-    
+
     // continue with the standard functionality
     if (this.state.collapsed) return this.uncollapse();
     return this.collapse()
@@ -78,14 +79,14 @@ class Pane extends Component {
     var iconClassName;
 
     if (this.state.collapsed) {
-      iconClassName = 'fa fa-folder-o';
+      iconClassName = ['far','folder'];
     } else {
-      iconClassName = 'fa fa-times';
+      iconClassName = 'times';
     }
 
     return (
       <Button className="collapse" aria-label="Collapse Pane">
-        <i className={iconClassName}></i>
+        <FontAwesomeIcon icon={iconClassName} />
       </Button>
     );
   }

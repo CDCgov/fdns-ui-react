@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { InputGroup, FormControl } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -22,7 +23,7 @@ class DataEndpoint extends Component {
       input.select();
       document.execCommand('copy');
       input.blur();
-    }    
+    }
   }
 
   // main render method
@@ -39,7 +40,7 @@ class DataEndpoint extends Component {
             readOnly={true}
           />
           <InputGroup.Addon className="copy">
-            <i className="fa fa-clipboard" onClick={this.handleCopy} />
+            <FontAwesomeIcon icon="clipboard" onClick ={this.handleCopy} />
           </InputGroup.Addon>
         </InputGroup>
       </div>

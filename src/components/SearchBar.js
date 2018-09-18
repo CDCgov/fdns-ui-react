@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -53,13 +54,15 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-        <span><i className="fa fa-search" aria-hidden="true"></i></span>
+        <span>
+          <FontAwesomeIcon icon="search" aria-hidden="true"/>
+        </span>
         <form className="search-form" onSubmit={this.handleSearch}>
-          <input 
+          <input
             aria-label="Search"
-            type="text" 
-            placeholder={defaultPlaceholderText} 
-            onChange={this.handleChange} 
+            type="text"
+            placeholder={defaultPlaceholderText}
+            onChange={this.handleChange}
             value={this.state.query} />
         </form>
       </div>

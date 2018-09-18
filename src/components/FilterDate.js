@@ -13,7 +13,10 @@ const propTypes = {
   startLabel: PropTypes.string,
   end: PropTypes.string,
   endLabel: PropTypes.string,
-  icon: PropTypes.string
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
 };
 
 // set the defaults
@@ -85,7 +88,7 @@ class FilterDate extends Component {
   apply() {
     const start = (this.state.start !== null) ? moment(this.state.start).format(defaultDateFormat) : null;
     const end = (this.state.end !== null) ? moment(this.state.end).format(defaultDateFormat) : null;
-    
+
     return {
       start,
       end

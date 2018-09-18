@@ -73,8 +73,8 @@ class UploaderDrop extends Component {
         />
         <hr />
         <div className="icon-buttons pull-right">
-          <IconButton icon="refresh" bsStyle="clear" onClick={this.handleReset}>{'Reset'}</IconButton>
-          <IconButton icon="send" bsStyle="primary" onClick={this.handleUpload}>{'Upload'}</IconButton>
+          <IconButton icon="sync-alt" bsStyle="clear" onClick={this.handleReset}>{'Reset'}</IconButton>
+          <IconButton icon="paper-plane" bsStyle="primary" onClick={this.handleUpload}>{'Upload'}</IconButton>
         </div>
         <div className="clearfix"></div>
       </div>
