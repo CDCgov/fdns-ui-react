@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/CDCgov/fdns-ui-react.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ui-react)
+
 # FDNS User Interface Library for React
 This repository contains a front-end library built in React. The library is designed to help developers efficiently build user interfaces on top of the Foundation Services. The library is **pre-release software** and being made public to gain feedback from the open source community.
 
