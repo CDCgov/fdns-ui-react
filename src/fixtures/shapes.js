@@ -4,7 +4,10 @@ export const _header = PropTypes.shape({
   path: PropTypes.string,
   label: PropTypes.string,
   visible: PropTypes.bool,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   iconColor: PropTypes.string,
 });
 
