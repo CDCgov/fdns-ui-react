@@ -11,13 +11,14 @@ const icoDownloads = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNv
 const propTypes = {
   downloads: _downloads,
   onClear: PropTypes.func,
-  renderURL: PropTypes.func,
+  onDownload: PropTypes.func,
 };
 
 // set the defaults
 const defaultProps = {
   downloads: [],
   onClear() {},
+  onDownload() {},
 };
 
 // define the class
@@ -26,6 +27,11 @@ class DropdownDownloads extends Component {
   // handle clear event
   handleClear = (e) => {
     this.props.onClear();
+  }
+
+  // handle download event
+  handleDownload = (file) => {
+    this.props.onDownload(file);
   }
 
   // render the row
@@ -60,17 +66,13 @@ class DropdownDownloads extends Component {
     if (status === 'COMPLETED') {
       const modified = moment(file.modified);
 
-      // set url
-      let url = '';
-      if (this.props.renderURL) url = this.props.renderURL(file);
-
       description = (
         <div className="fx-grd">
           <div className="col col-4 col-file-date">
             Completed {modified.format('MM/DD/YYYY h:mm A')}
           </div>
           <div className="col col-3 col-file-download">
-            <a href={url}>Download</a>
+            <Button onClick={this.handleDownload.bind(this, file)}>Download</Button>
           </div>
         </div>
       );
