@@ -72,7 +72,7 @@ class DropdownDownloads extends Component {
             Completed {modified.format('MM/DD/YYYY h:mm A')}
           </div>
           <div className="col col-3 col-file-download">
-            <Button onClick={this.handleDownload.bind(this, file)}>Download</Button>
+            <Button className="btn-download" onClick={this.handleDownload.bind(this, file)}>Download</Button>
           </div>
         </div>
       );
@@ -119,7 +119,7 @@ class DropdownDownloads extends Component {
     if (this.props.downloads.length > 0) {
       return (
         <div className="reset-downloads">
-          <Button onClick={this.handleClear}>Clear</Button>
+          <Button className="btn-clear" onClick={this.handleClear}>Clear</Button>
         </div>
       );
     }
