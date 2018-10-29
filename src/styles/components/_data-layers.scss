@@ -29,6 +29,7 @@ div.data-layers {
     height: $row-height;
     color: $davy-grey;
     font-weight: bold;
+    padding: 0;
 
     .col {
       padding: 10px;
@@ -40,22 +41,36 @@ div.data-layers {
 
       &.col-display {
         border-radius: 0px;
-        border-color: $jade;
         color: $compliant-grey;
         padding-left: 14px;
         font-weight: normal;
         letter-spacing: 0.05em;
         text-align: center;
-        background-color: $jade;
+        display: flex;
+        flex-direction: row;
       }
 
       button.btn.btn-default.save {
+        border: 1px solid $jade;
+        color: $jade;
+        background: none;
+        padding: .1em;
+        margin: 0;
+        font-weight: bold;
+        border-radius: 0;
+        width: 125px;
+        text-transform: uppercase;
+        display: block;
+        font-size: 1em;
+      }
+
+      button.btn.btn-default.hideall {
+        flex: 1;
         background: none;
         border: 0;
         padding: 0;
         margin: 0;
-        color: $compliant-grey;
-        background-color: $jade;
+        color: $davy-grey;
         border-radius: 0;
       }
     }

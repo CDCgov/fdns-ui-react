@@ -75,6 +75,22 @@ class DataLayers extends Component {
     this.props.onSave(this.state.headers);
   }
 
+  // show/hide all event
+  handleHideAll = (event) => this.toggleAllVisibility(false)
+  handleShowAll = (event) => this.toggleAllVisibility(true)
+
+  // show all event
+  toggleAllVisibility = (visible) => {
+    const nextHeaders = this.state.headers.map((header) => {
+      header.visible = visible;
+      return header;
+    });
+
+    this.setState({
+      headers: nextHeaders,
+    });
+  }
+
   // visibility click
   handleVisibilityClick = (index) => {
     const nextHeaders = this.state.headers;
@@ -180,9 +196,18 @@ class DataLayers extends Component {
     return (
       <div className={className} style={style}>
         <div className="layers-headers fx-grd">
-          <div className="col col-2 col-label">Label</div>
+          <div className="col col-2 col-label">
+            <Button onClick={this.handleSaveClick} className="save">Apply Changes</Button>
+          </div>
           <div className="col col-4 col-key-name">Key Name</div>
-          <Button onClick={this.handleSaveClick} className="col col-1 col-display save">Apply</Button>
+          <div className="col col-1 col-display">
+            <Button onClick={this.handleHideAll} className="hideall">
+              <FontAwesomeIcon icon="eye-slash" aria-label="Hide All" />
+            </Button>
+            <Button onClick={this.handleShowAll} className="hideall">
+              <FontAwesomeIcon icon="eye" aria-label="Show All" />
+            </Button>
+          </div>
         </div>
         <div className="layers-rows">
           <DragSortableList items={list} placeholder={placeholder} onSort={this.handleSort} type="vertical" />
