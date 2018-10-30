@@ -9,6 +9,7 @@ export const _header = PropTypes.shape({
     PropTypes.array
   ]),
   iconColor: PropTypes.string,
+  width: PropTypes.number,
 });
 
 export const _headers = PropTypes.arrayOf(_header);

@@ -99,16 +99,25 @@ $bar-height: 10px;
 
   div.reset-downloads {
     border-top: 1px solid $winter-storm;
+  }
 
-    button.btn.btn-default {
-      background: none;
-      border: 0;
-      padding: 5px;
-      margin: 0;
-      float: right;
-      text-align: center;
-      color: $storm;
-      font-size: 0.85em;
-    }
+  button.btn.btn-default.btn-clear {
+    background: none;
+    border: 0;
+    padding: 5px;
+    margin: 0;
+    float: right;
+    text-align: right;
+    color: $storm;
+    font-size: 0.85em;
+  }
+  button.btn.btn-default.btn-download {
+    background: none;
+    border: 0;
+    padding: 5px;
+    margin: 0;
+    text-align: right;
+    color: $true-blue;
+    font-size: 1em;
   }
 }
