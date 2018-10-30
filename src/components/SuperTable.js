@@ -21,6 +21,7 @@ const propTypes = {
   height: PropTypes.number,
   getHeight: PropTypes.func,
   actionsColumn: PropTypes.func,
+  onColumnResize: PropTypes.func,
 };
 
 // set the defaults
@@ -49,7 +50,6 @@ class SuperTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      columnWidths: [],
       width: this.getWidth(),
       height: this.getHeight()
     };
@@ -101,12 +101,7 @@ class SuperTable extends Component {
 
   // column resizing event for the table column
   handleColumnResize(newColumnWidth, columnKey) {
-    var columnWidths = this.state.columnWidths;
-    columnWidths[columnKey] = newColumnWidth;
-
-    this.setState({
-      columnWidths
-    });
+    if (this.props.onColumnResize) return this.props.onColumnResize(newColumnWidth, columnKey);
   }
 
   // render a cell within a column with the data
@@ -124,17 +119,20 @@ class SuperTable extends Component {
   // render a column based on a header and index
   renderColumn(header, i) {
     if (!header.visible) return; // exit if it is invisible
-    const width = this.state.columnWidths[i] || defaultMmts.width;
+    
+    // get values from the header
+    const { width, icon:iconName, iconColor, label } = header;
+
     const iconStyle = {
-      color: `#${header.iconColor}`,
+      color: `#${iconColor}`,
     };
     const icon = (
-      <FontAwesomeIcon icon={header.icon} style={iconStyle} />
+      <FontAwesomeIcon icon={iconName} style={iconStyle} />
     );
     const headerCell = (
       <Cell className="header-cell">
         {icon}
-        <span>{header.label}</span>
+        <span>{label}</span>
       </Cell>
     );
 
