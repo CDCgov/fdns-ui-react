@@ -61,7 +61,6 @@
     "mini-css-extract-plugin": "^0.4.3",
     "mocha": "^5.2.0",
     "node-sass": "^4.9.3",
-    "nodemon": "^1.18.4",
     "popper.js": "^1.14.4",
     "prop-types": "^15.6.2",
     "react": "^16.2.0",
