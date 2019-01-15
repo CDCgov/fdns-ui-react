@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import Dropzone from 'react-dropzone'
 import IconButton from './IconButton';
@@ -41,7 +41,7 @@ class UploaderDrop extends Component {
   // render layout
   renderLayout() {
     const btnPrimary = (
-      <IconButton icon={['far', 'plus-square']} bsStyle="primary">{'Add Files'}</IconButton>
+      <IconButton icon={['far', 'plus-square']} color="primary" variant="contained">{'Add Files'}</IconButton>
     );
 
     // only return the button for small
@@ -52,8 +52,8 @@ class UploaderDrop extends Component {
     return (
       <div className="instructions">
         <figure className="files"></figure>
-        <h3>Drag and Drop or <a href="javascript:;">Browse</a> your files</h3>
-        <p>{'Select one or more file at a time or simply drag and drop files anywhere on this page to start uploading.'}</p>
+        <Typography variant="h3" color="inherit" gutterBottom>Drag and Drop or <a href="javascript:;">Browse</a> your files</Typography>
+        <Typography color="inherit" gutterBottom>Select one or more file at a time or simply drag and drop files anywhere on this page to start uploading.</Typography>
         {btnPrimary}
       </div>
     );

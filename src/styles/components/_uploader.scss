@@ -2,9 +2,10 @@ $uploader-height: 640px;
 
 div.uploader {
   height: $uploader-height;
+  padding: 10px;
 
   div.row,
-  div.col,
+  div.uploader-column,
   div.uploader-paste,
   div.uploader-list-box,
   div.uploader-drop,
@@ -14,7 +15,6 @@ div.uploader {
 
   div.uploader-paste {
     div.icon-buttons {
-      position: absolute;
       bottom: 25px;
       right: 27px;
     }
@@ -27,12 +27,6 @@ div.uploader {
       ul {
         max-height: 530px;
       }
-    }
-
-    div.icon-buttons {
-      position: absolute;
-      bottom: 25px;
-      right: 27px;
     }
   }
 

@@ -25,51 +25,22 @@ $btn-size: 35px;
       border-right: 1px solid $rain;
     }
 
+    .fx-grd {
+      padding-right: 0;
+      padding-left: 0;
+      .col-3, .col-4, .col-7 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
     .col-buttons {
       padding-top: 7px;
-      text-align: right;
-      height: 100%;
     }
 
-    button.btn.btn-default {
-      background: none;
-      outline: none;
-    }
-
-    .btn, .btn-default {
-      min-width: $btn-size;
-      width: $btn-size;
-      max-width: $btn-size;
-      min-height: $btn-size;
-      height: $btn-size;
-      max-height: $btn-size;
+    button {
       display: inline-block;
-      float: none;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      border-radius: 0;
-
-      &:hover, &:focus, &:active {
-        box-shadow: none;
-        -webkit-box-shadow: none;
-      }
-
-      svg {
-        color: $jade;
-        font-size: 1.3em;
-
-        &.fa-times {
-          color: $winter;
-          font-weight: lighter;
-          font-size: 1.1em;
-          transition: all 0.2s ease 0s;
-
-          &:hover {
-            color: $vermilion;
-          }
-        }
-      }
+      font-size: 1.2em;
     }
   }
 
@@ -79,16 +50,6 @@ $btn-size: 35px;
   }
   &.collapsed {
     background: $smoke;
-
-    &:hover {
-      background-color: $white;
-
-      button.btn.btn-default {
-        svg:before {
-          content: "";
-        }
-      }
-    }
 
     .pane-body {
       padding: 0;

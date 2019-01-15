@@ -1,18 +1,5 @@
 div.filter-date {
-  div.filter {
-    .DayPickerInput {
-      width: 100%;
-
-      input {
-        width: 100%;
-        padding: 5px 5px 5px 10px;
-        color: $davy-grey;
-        border-top: 1px solid $rain;
-        border-right: 1px solid $rain;
-        border-bottom: 1px solid $rain;
-        border-left: 0;
-        outline: none;
-      }
-    }
+  .dayPickerInput {
+    margin: 20px;
   }
 }

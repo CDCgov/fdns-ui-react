@@ -2,16 +2,13 @@ div.data-inspector {
   margin: $default-margin;
   background-color: $white;
 
-  button.btn.btn-default.close, button.btn.btn-default.print {
-    position: absolute;
-    z-index: 200;
-    right: 58px;
-    margin: 0;
-    background: none;
-    border: 0;
-    opacity: 1.0;
-    text-shadow: none;
-    padding: 12px 14px 17px 14px;
+  .data-inspector-buttons {
+    position: relative;
+    float: right;
+    top: 15px;
+  }
+
+  button.close, button.print {
     border-left: 1px solid $rain;
     border-bottom: 1px solid $rain;
     border-radius: 0;
@@ -27,11 +24,11 @@ div.data-inspector {
       }
     }
   }
+  button.close {
+    font-size: 1.25em;
+  }
 
-  button.btn.btn-default.print {
-    right: 98px;
-    padding: 15px 14px 15px 14px;
-
+  button.print {
     svg {
       font-size: 1em;
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
+import { Button } from '@material-ui/core';
 import classNames from 'classnames';
 import DragSortableList from 'react-drag-sortable';
 import { _headers } from '../fixtures/shapes';
@@ -73,22 +73,6 @@ class DataLayers extends Component {
   // save click
   handleSaveClick = (event) => {
     this.props.onSave(this.state.headers);
-  }
-
-  // show/hide all event
-  handleHideAll = (event) => this.toggleAllVisibility(false)
-  handleShowAll = (event) => this.toggleAllVisibility(true)
-
-  // show all event
-  toggleAllVisibility = (visible) => {
-    const nextHeaders = this.state.headers.map((header) => {
-      header.visible = visible;
-      return header;
-    });
-
-    this.setState({
-      headers: nextHeaders,
-    });
   }
 
   // visibility click
@@ -196,18 +180,9 @@ class DataLayers extends Component {
     return (
       <div className={className} style={style}>
         <div className="layers-headers fx-grd">
-          <div className="col col-2 col-label">
-            <Button onClick={this.handleSaveClick} className="save">Apply Changes</Button>
-          </div>
+          <div className="col col-2 col-label">Label</div>
           <div className="col col-4 col-key-name">Key Name</div>
-          <div className="col col-1 col-display">
-            <Button onClick={this.handleHideAll} className="hideall">
-              <FontAwesomeIcon icon="eye-slash" aria-label="Hide All" />
-            </Button>
-            <Button onClick={this.handleShowAll} className="hideall">
-              <FontAwesomeIcon icon="eye" aria-label="Show All" />
-            </Button>
-          </div>
+          <Button onClick={this.handleSaveClick} className="col col-1 col-display save">Apply</Button>
         </div>
         <div className="layers-rows">
           <DragSortableList items={list} placeholder={placeholder} onSort={this.handleSort} type="vertical" />

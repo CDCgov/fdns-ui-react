@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { InputGroup, FormControl } from 'react-bootstrap';
+import { IconButton, InputAdornment, OutlinedInput } from '@material-ui/core';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
@@ -18,31 +19,48 @@ class DataEndpoint extends Component {
 
   // copy event passed
   handleCopy = (e) => {
-    const input = e.target.parentElement.parentElement.children[0];
-    if (input) {
-      input.select();
+    if (this.input) {
+      // TODO: This does nothing on old or new versions...
+      // Might need it to be not in an input
+      this.input.select();
       document.execCommand('copy');
-      input.blur();
+      this.input.blur();
     }
   }
 
   // main render method
   render() {
     const { endpoint } = this.props;
+    const adornment = (
+      // Hide this if the browser doesn't support this functionality
+      document.queryCommandSupported('copy') &&
+      <InputAdornment position="start">
+        <IconButton
+          aria-label="Copy link"
+            onClick={this.handleCopy}
+          >
+        <FontAwesomeIcon icon="clipboard" />
+        </IconButton>
+      </InputAdornment>
+    );
+
 
     return (
       <div className="data-endpoint">
-        <InputGroup>
-          <FormControl
-            aria-label="Data Endpoint"
-            type="text"
-            value={endpoint}
-            readOnly={true}
-          />
-          <InputGroup.Addon className="copy">
-            <FontAwesomeIcon icon="clipboard" onClick ={this.handleCopy} />
-          </InputGroup.Addon>
-        </InputGroup>
+        <OutlinedInput
+          id="data-endpoint-input"
+          inputRef={(input) => {
+              this.input = input
+          }}
+          label="Label"
+          labelWidth={120}
+          disabled={true}
+          style={{ margin: 8 }}
+          value={endpoint}
+          fullWidth
+          readOnly={true}
+          endAdornment={adornment}
+        />
       </div>
     )
   }

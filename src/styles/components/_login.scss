@@ -2,17 +2,6 @@
   background-color: #ffffff;
   padding: 50px;
 
-  h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: normal;
-  }
-
-  .super-input {
-    margin: 10px 0;
-  }
-
   .super-button.btn-login {
     button {
       margin: 15px 0 10px 0;
@@ -21,12 +10,21 @@
 
   .super-button.btn-piv {
     button {
-      margin: 10px 0 0 0;
+      margin: 40px 0 0 0;
     }
   }
 
-  a {
-    color: #6E6E6E;
+  .forgot-password {
+    a {
+      color: #6E6E6E;
+      opacity: 0.75;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+    float: right;
   }
 
   .hr {

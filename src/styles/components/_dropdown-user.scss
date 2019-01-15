@@ -5,12 +5,11 @@ $dropdown-width: 320px;
 $dropdown-min-width: 120px;
 
 .dropdown-user {
-  margin: 0;
-  padding: 0;
 
-  div.dropdown {
-    margin: 0;
-    padding: 0;
+  button {
+    .img-circle {
+      border-radius: 50%;
+    }
 
     figure.avatar {
       width: $avatar-size;
@@ -26,86 +25,104 @@ $dropdown-min-width: 120px;
       }
     }
 
-    figure.lg-avatar {
-      float: left;
-      width: $lg-avatar-size;
-      height: $lg-avatar-size;
-      border-radius: $lg-avatar-size / 2;
-      margin-right: $default-margin;
-      background-color: $white;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    span.user-name {
-      position: relative;
-      top: $avatar-size / 6;
-      font-size: 0.9em;
-      margin: 0 5px;
-    }
-
     span.caret {
-      position: relative;
-      top: $avatar-size / 6;
-    }
-
-    button.dropdown-toggle {
-      border: 0;
-      box-shadow: none;
-      color: $davy-grey;
-      background-color: transparent;
-
-      &:hover, &:active, &:focus {
-        background-color: transparent;
-      }
+      margin-left: 3px;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
     }
 
     &.open {
       background-color: $light-grey-blue;
     }
+  }
 
-    ul.dropdown-menu {
-      background-color: $light-grey-blue;
-      border-radius: 0;
-      margin: 0;
-      padding: $default-padding;
-      border: 0;
-      width: $dropdown-width;
+  .user-dropdown-menu {
+    text-align: left;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
+    background-color: $light-grey-blue;
+    margin-top: 7px;
+    padding: 0px;
 
-      hr {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border-top: 1px solid $heavy-rain;
+    .grid-item {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .lg-avatar {
+      width: $lg-avatar-size;
+      height: $lg-avatar-size;
+      border-radius: 50%;
+      margin-right: $default-margin;
+      background-color: $white;
+    }
+
+    .lg-avatar, .user-info {
+      display: inline-block;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 5px 0 5px 0;
+    }
+
+    p.user-email {
+      color: $true-blue;
+    }
+
+    p.user-organization {
+      color: $storm;
+    }
+
+    button {
+      svg {
+        margin-left: 7px;
       }
+    }
 
-      p {
-        font-size: 1em;
-        margin: 5px 0 5px 0;
+    *:focus {
+      outline: none;
+    }
+
+    .source-arrow, .source-arrow-shadow {
+      &.bottom-start {
+        left: 11.5px;
       }
-
-      p.user-email {
-        color: $true-blue;
+      &.bottom-end {
+        right: 11.5px;
       }
+    }
 
-      p.user-organization {
-        color: $storm;
-      }
+    .source-arrow-shadow {
+      border-color: transparent;
+      border-style: dashed dashed solid;
+      border-width: 0 8.5px 8.5px;
+      position: absolute;
+      z-index: 1;
+      height: 0;
+      width: 0;
+      -webkit-animation: gb__a .2s;
+      animation: gb__a .2s;
+      border-bottom-color: #ccc;
+      border-bottom-color: rgba(0,0,0,.3);
 
-      button {
-        margin: 10px 0 10px 0;
+      top: -10px;
+    }
 
-        span {
-          text-decoration: none;
-        }
+    .source-arrow {
+      border-color: transparent;
+      border-bottom-color: #fff;
+      border-style: dashed dashed solid;
+      border-width: 0 8.5px 8.5px;
+      position: absolute;
 
-        svg {
-          color: $white;
-          margin-right: 7px;
-        }
-      }
+      top: -9px;
+      z-index: 1;
+      height: 0;
+      width: 0;
     }
   }
 }
+

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import { FormControl } from 'react-bootstrap';
+import { FormControl } from '@material-ui/core';
 import IconButton from './IconButton';
 
 // set the prop types from predefined shapes or standard types
@@ -67,14 +67,14 @@ class UploaderDrop extends Component {
       <div className="uploader-paste">
         <FormControl
           aria-label="Paste Text to Upload"
-          componentClass="textarea"
+          component="textarea"
           placeholder={this.props.placeholder}
           ref="textarea"
         />
         <hr />
         <div className="icon-buttons pull-right">
-          <IconButton icon="sync-alt" bsStyle="clear" onClick={this.handleReset}>{'Reset'}</IconButton>
-          <IconButton icon="paper-plane" bsStyle="primary" onClick={this.handleUpload}>{'Upload'}</IconButton>
+          <IconButton icon="sync-alt" onClick={this.handleReset}>{'Reset'}</IconButton>
+          <IconButton icon="paper-plane" color="primary" variant="contained" onClick={this.handleUpload}>{'Upload'}</IconButton>
         </div>
         <div className="clearfix"></div>
       </div>

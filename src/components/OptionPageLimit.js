@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Form, FormGroup, ControlLabel } from 'react-bootstrap';
+import { FormControl, InputLabel, MenuItem, OutlinedInput, Select } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -18,7 +18,7 @@ const defaultProps = {
 
 // define the class
 class OptionPageLimit extends Component {
-  
+
   // init
   constructor(props) {
     super(props);
@@ -47,26 +47,37 @@ class OptionPageLimit extends Component {
 
     const options = limits.map(i => {
       return (
-        <option key={i} value={i}>{i}</option>
+        <MenuItem key={i} value={i}>
+          {i}
+        </MenuItem>
       );
     });
 
     return (
       <div className="option-page-limit">
-        <Form inline>
-          <FormGroup>
-            <ControlLabel>Show</ControlLabel>
-            <select
-              aria-label="Show Entries"
-              value={selected}
-              className="form-control"
-              onChange={this.handleChange}
-            >
-              {options}
-            </select>
-            <ControlLabel>entries</ControlLabel>
-          </FormGroup>
-        </Form>
+        <FormControl
+          variant="outlined"
+        >
+          <InputLabel
+            htmlFor={`outlined-select-page-limit`}
+          >
+            Show
+          </InputLabel>
+          <Select
+            value={selected}
+            autoWidth={false}
+            onChange={this.handleChange}
+            input={
+              <OutlinedInput
+                name="page-limit"
+                labelWidth={40}
+                id={`outlined-select-page-limit`}
+              />
+            }
+          >
+            {options}
+          </Select>
+        </FormControl>
       </div>
     );
   }

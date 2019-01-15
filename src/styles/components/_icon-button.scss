@@ -1,11 +1,14 @@
 div.icon-buttons {
   div.icon-button {
     margin: 0 5px;
-  }  
+  }
 }
 
 div.icon-button {
   display: inline;
+  svg {
+    margin-right: 5px;
+  }
 
   button.btn {
     img.icon {
@@ -14,123 +17,6 @@ div.icon-button {
     }
     span {
       margin: 0 0 0 5px;
-    }
-  }
-
-  button.btn.btn-primary {
-    background: $true-blue;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $white;
-
-    &:hover, &:active {
-      background: $true-blue;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-success {
-    background: $jade;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $compliant-grey;
-
-    &:hover, &:active {
-      background: $jade;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-info {
-    background: $turquoise;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $compliant-grey;
-
-    &:hover, &:active {
-      background: $turquoise;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-danger {
-    background: $vermilion;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $compliant-grey;
-
-    &:hover, &:active {
-      background: $vermilion;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-transparent {
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $compliant-grey;
-
-    &:hover, &:active {
-      background: none;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-alternate {
-    background: $lavender;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: $white;
-
-    &:hover, &:active {
-      background: $lavender;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-clear {
-    background: none;
-    border: none;
-    outline: none;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
-
-    &:hover, &:active {
-      background: none;
-      border: none;
-      opacity: 0.8;
-    }
-  }
-
-  button.btn.btn-white {
-    background: $white;
-    border: 1px solid $winter-storm;
-    outline: none;
-
-    &:hover, &:active {
-      background: $white;
-      border: 1px solid $winter-storm;
-      opacity: 0.8;
-    }
-  }
-
-  &.light {
-    button.btn {
-      color: $white;
     }
   }
 }

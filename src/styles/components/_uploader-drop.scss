@@ -23,13 +23,13 @@ div.uploader-drop {
         font-size: 1.2em;
         color: $dark-grey;
         margin: 0;
+      }
+      a {
+        color: $true-blue;
+        text-decoration: none;
 
-        a {
-          color: $true-blue;
-
-          &:hover {
-            text-decoration: underline;
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
 

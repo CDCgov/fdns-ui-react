@@ -1,6 +1,6 @@
 $grid-width: 330px;
 
-div.grid {
+.super-grid {
   margin: 0;
   padding: 0 5px;
   display: flex;
@@ -9,17 +9,18 @@ div.grid {
   justify-content: space-between;
   align-items: center;
 
-  div.grid-item {
+  .grid-item {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     flex: 1 1 auto;
     max-width: $grid-width;
     width: $grid-width;
 
-    div.panel {
+    .panel {
       width: 100%;
 
-      div.panel-body {
+      .panel-body {
         padding: 0;
         overflow: hidden;
 
@@ -37,7 +38,7 @@ div.grid {
 
                 span.data-element {
                   display: block;
-                  max-width: 20em;
+                  max-width: 15em;
                   overflow-x: auto;
                 }
 
@@ -57,17 +58,20 @@ div.grid {
         }
       }
 
-      div.panel-footer {
+      .panel-footer {
         background-color: $rain;
         color: $davy-grey;
         text-align: right;
         padding: 5px;
         margin: 0;
 
-        div.option-action {
+        .option-action {
           text-align: right;
+          button {
+            font-size: 1.25rem;
+          }
         }
-        div.option-errors-warnings {
+        .option-errors-warnings {
           text-align: left;
         }
       }

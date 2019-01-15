@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
+import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import IconButton from './IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -36,14 +37,8 @@ class FilterAction extends Component {
   render() {
     return (
       <div className="filter-action">
-        <Button className="filter-apply" onClick={this.handleApplyClick}>
-          <FontAwesomeIcon icon="check" />
-          Apply
-        </Button>
-        <Button className="filter-clear" onClick={this.handleResetClick}>
-          <FontAwesomeIcon icon="sync-alt" />
-          Reset
-        </Button>
+        <IconButton className="filter-apply" color="primary" variant="contained" icon="check" onClick={this.handleApplyClick}>{'Apply'}</IconButton>
+        <IconButton className="filter-clear" variant="outlined" icon="sync-alt" onClick={this.handleResetClick}>{'Reset'}</IconButton>
       </div>
     )
   }

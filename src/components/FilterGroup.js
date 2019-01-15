@@ -31,7 +31,7 @@ class FilterGroup extends Component {
       const filter = this.refs[key];
       var value = {};
       if (typeof(filter.apply) === 'function') value = filter.apply();
-      
+
       data[key] = value;
     });
 
