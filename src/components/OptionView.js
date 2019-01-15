@@ -51,18 +51,21 @@ class OptionView extends Component {
         <Button
           aria-label="Grid View"
           onClick={this.handleSelection.bind(this, 'super-grid')}
+          disableRipple={true}
         >
           <span className={gridClassName}></span>
         </Button>
         <Button
           aria-label="Table View"
           onClick={this.handleSelection.bind(this, 'super-table')}
+          disableRipple={true}
         >
           <span className={tableClassName}></span>
         </Button>
         <Button
           aria-label="Graph View"
           disabled={true}
+          disableRipple={true}
         >
           <span className="icon-super-chart"></span>
         </Button>

@@ -32,8 +32,7 @@ class FilterSelect extends Component {
     super(props);
     this.state = {
       selected: this.props.selected || '',
-      // TODO: Fix this
-      labelWidth: 120,
+      labelWidth: 100,
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -102,12 +101,12 @@ class FilterSelect extends Component {
               />
             }
           >
-            <MenuItem value="">
+            <MenuItem value="" className="select-menu-item">
               <em>Select...</em>
             </MenuItem>
             {this.props.options.map(option => {
               return (
-                <MenuItem key={option.value} value={option.value}>
+                <MenuItem key={option.value} value={option.value} className="select-menu-item">
                   {option.label}
                 </MenuItem>
               )

@@ -1,4 +1,8 @@
 div.filter-select {
+  .MuiSelect-select-326:focus {
+    background: none;
+  }
+
   .Select {
     .Select-control {
       border-radius: 0;

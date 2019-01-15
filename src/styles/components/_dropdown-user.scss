@@ -41,9 +41,11 @@ $dropdown-min-width: 120px;
     text-align: left;
     border: 1px solid #ccc;
     border-color: rgba(0,0,0,.2);
-    background-color: $light-grey-blue;
+    background-color: #FFF;
     margin-top: 7px;
     padding: 0px;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
 
     .grid-item {
       padding: 20px;

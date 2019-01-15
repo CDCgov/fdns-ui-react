@@ -1,14 +1,6 @@
 div.option-errors-warnings {
   text-align: center;
 
-  button.option-error, button.option-warning {
-    padding: 0;
-    margin: 0 2px;
-    background: none;
-    border: 0;
-    display: inline;
-    outline: none;
-  }
   button.option-error:hover, button.option-warning:hover, button.option-error:active, button.option-warning:active {
     outline: none;
     background: none;
