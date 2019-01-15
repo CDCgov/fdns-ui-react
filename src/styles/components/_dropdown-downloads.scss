@@ -6,9 +6,49 @@ $bar-height: 10px;
   margin: 0;
   padding: 0;
 
-  .dropdown.btn-group {
-    margin: 0;
-    padding: 0;
+  *:focus {
+    outline: none;
+  }
+
+  .dropdown-downloads-menu {
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: left;
+    width: $dropdown-width;
+    color: $winter;
+
+    .download-row {
+      margin: 0;
+      padding: 7px 0;
+
+      a {
+        text-decoration: none;
+      }
+
+      .download-progress {
+        height: $bar-height;
+        margin: 0 0 5px 0;
+      }
+
+      div.col {
+        text-align: left;
+        font-size: 0.8em;
+
+        &.col-file-download {
+          text-align: right;
+        }
+      }
+    }
+
+    .dropdown-downloads-description {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 0.7rem;
+      color: $winter;
+    }
 
     button.dropdown-toggle {
       width: $dropdown-size;
@@ -52,7 +92,6 @@ $bar-height: 10px;
       margin: 0;
       padding: $default-padding;
       border: 0;
-      width: $dropdown-width;
 
       h3 {
         margin: 0;
@@ -60,45 +99,12 @@ $bar-height: 10px;
         font-weight: normal;
         color: $davy-grey;
       }
-
-      div.download-row {
-        margin: 0;
-        padding: 7px 0;
-
-        div.progress {
-          height: $bar-height;
-          border-radius: 0;
-          margin: 0 0 5px 0;
-
-          div.progress-bar {
-            border-radius: 0;
-            background-color: $jade;
-
-            &.active {
-              background-color: $amber-gold;
-            }
-
-            &.progress-bar-danger {
-              background-color: $vermilion;
-            }
-          }
-        }
-
-        div.col {
-          text-align: left;
-          font-size: 0.8em;
-          color: $winter;
-
-          &.col-file-download {
-            text-align: right;
-          }
-        }
-      }
     }
   }
 
   div.reset-downloads {
     border-top: 1px solid $winter-storm;
+    text-align: right;
   }
 
   button.btn.btn-default.btn-clear {

@@ -1,6 +1,10 @@
 div.option-action {
   text-align: center;
 
+  button {
+    padding: 0;
+  }
+
   button.btn.btn-default {
     border: 0;
     background-color: transparent;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
+import { IconButton } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
@@ -9,6 +9,7 @@ const propTypes = {
   onOption: PropTypes.func,
   showOption: PropTypes.bool,
   showDetail: PropTypes.bool,
+  size: PropTypes.string,
 };
 
 // set the defaults
@@ -17,6 +18,7 @@ const defaultProps = {
   onOption() {},
   showOption: false,
   showDetail: true,
+  size: 'medium'
 };
 
 // define the class
@@ -45,9 +47,9 @@ class OptionAction extends Component {
   renderDetail() {
     if (this.props.showDetail) {
       return (
-        <Button onClick={this.handleDetailClick} aria-label="Show Detail">
+        <IconButton onClick={this.handleDetailClick} size={this.props.size} aria-label="Show Detail">
           <FontAwesomeIcon icon={['far' ,'file-code']} />
-        </Button>
+        </IconButton>
       );
     }
   }
@@ -56,9 +58,9 @@ class OptionAction extends Component {
   renderOption() {
     if (this.props.showOption) {
       return (
-        <Button onClick={this.handleOptionClick} aria-label="Show Option">
+        <IconButton onClick={this.handleOptionClick} size={this.props.size} aria-label="Show Option">
           <FontAwesomeIcon icon="cog" />
-        </Button>
+        </IconButton>
       );
     }
   }

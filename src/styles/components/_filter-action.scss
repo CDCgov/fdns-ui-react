@@ -2,8 +2,10 @@
   border: 0;
   border-radius: 2px;
   margin-top: $default-margin;
-
-  button.filter-apply.btn.btn-default {
+  button {
+    margin-right: 10px;
+  }
+  button.filter-apply {
     width: 100%;
     background-color: $true-blue;
     color: $white;

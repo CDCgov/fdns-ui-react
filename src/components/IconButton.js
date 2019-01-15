@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from 'react-bootstrap';
+import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
@@ -14,7 +14,8 @@ const propTypes = {
   imageAlt: PropTypes.string,
   theme: PropTypes.string,
   className: PropTypes.string,
-  bsStyle: PropTypes.string,
+  color: PropTypes.string,
+  variant: PropTypes.string,
   onClick: PropTypes.func,
 };
 
@@ -25,12 +26,10 @@ const defaultProps = {
   imageAlt: '',
   theme: 'default',
   className: '',
-  bsStyle: 'default',
+  color: 'default',
+  variant: 'text',
   onClick() {},
 };
-
-// Update custom bsStyles
-Button.propTypes.bsStyle = PropTypes.oneOf(['default', 'primary', 'success', 'danger', 'info', 'alternate', 'transparent', 'clear', 'white']);
 
 // define the class
 class IconButton extends Component {
@@ -68,7 +67,7 @@ class IconButton extends Component {
 
     return (
       <div className={className}>
-        <Button bsStyle={this.props.bsStyle} onClick={this.handleClick}>
+        <Button color={this.props.color} variant={this.props.variant} onClick={this.handleClick}>
           {this.renderIcon()}
           <span>{this.props.children}</span>
         </Button>

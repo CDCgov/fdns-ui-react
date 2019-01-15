@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ControlLabel, FormControl } from 'react-bootstrap';
+import TextField from '@material-ui/core/TextField';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -27,13 +27,14 @@ class SuperInput extends Component {
 
     return (
       <div className="super-input">
-        <ControlLabel>{label}</ControlLabel>
-        <FormControl
+        <TextField
           aria-label={label}
-          type={type}
+          label={label}
           value={value}
           placeholder={placeholder}
           onChange={onChange}
+          fullWidth={true}
+          margin="normal"
         />
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { Button, Tooltip } from '@material-ui/core';
 import Inspector from 'react-json-inspector';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -71,14 +71,8 @@ class DataInspector extends Component {
   renderPrintButton() {
     if (!this.props.showPrint) return;
 
-    const tooltip = (
-      <Tooltip id="print-tooltip">
-        {'Click here to print'}
-      </Tooltip>
-    );
-
     const printButton = (
-      <OverlayTrigger placement="top" overlay={tooltip}>
+      <Tooltip id="print-tooltip" title={'Click here to print'} placement="top">
         <Button
           aria-label="Print"
           onClick={this.handlePrintClick}
@@ -86,7 +80,7 @@ class DataInspector extends Component {
         >
           <FontAwesomeIcon icon="print" />
         </Button>
-      </OverlayTrigger>
+      </Tooltip>
     );
 
     return printButton;
@@ -106,8 +100,10 @@ class DataInspector extends Component {
 
     return (
       <div className="data-inspector">
-        {this.renderPrintButton()}
-        {closeButton}
+        <div className="data-inspector-buttons">
+          {this.renderPrintButton()}
+          {closeButton}
+        </div>
         <Inspector
           search={SearchBar}
           data={this.props.data}

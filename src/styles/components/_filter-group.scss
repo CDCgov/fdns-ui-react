@@ -1,1 +1,5 @@
-div.filter-group {}
+div.filter-group {
+	.hidden {
+		display: none;
+	}
+}

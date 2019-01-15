@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -24,10 +25,8 @@ class Loader extends Component {
         <div className="loader-active">
           <div className="loading-mask"></div>
           <div className="loading-message">
-            {/*TODO: Switch this over to FA */}
-            <i className="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
             <div className="message-wrapper">
-              {message}
+              <CircularProgress />
             </div>
           </div>
         </div>

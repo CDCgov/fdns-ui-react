@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from 'react-bootstrap';
+import { Button, Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
@@ -103,12 +103,12 @@ class Pane extends Component {
         <div className="pane-header" onClick={this.handleCollapseClick}>
           <div className="fx-grd">
             <div className="col-4">
-              <div className="pane-title">{this.props.title}</div>
+              <Typography color="inherit" className="pane-title">{this.props.title}</Typography>
             </div>
             <div className="col-3">
               <div className="fx-grd flex-end">
                 <div className="col-7">
-                  <div className="pane-subtitle">{this.props.subtitle}</div>
+                  <Typography color="inherit" className="pane-subtitle">{this.props.subtitle}</Typography>
                 </div>
                 <div className="col-buttons">
                   {this.renderCollapseButton()}
