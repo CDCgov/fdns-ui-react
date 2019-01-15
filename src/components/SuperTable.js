@@ -45,11 +45,11 @@ const defaultMmts = {
 };
 
 function dynamicSort(property, order) {
-    let sortOrder = (order === 'asc') ? 1 : -1;
-    return function (a,b) {
-        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-        return result * sortOrder;
-    }
+  let sortOrder = (order === 'asc') ? 1 : -1;
+  return function (a,b) {
+    var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+    return result * sortOrder;
+  }
 }
 
 function stableSort(array, order, orderBy) {

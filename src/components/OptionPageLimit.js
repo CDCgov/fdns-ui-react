@@ -59,7 +59,7 @@ class OptionPageLimit extends Component {
           variant="outlined"
         >
           <InputLabel
-            htmlFor={`outlined-select-page-limit`}
+            htmlFor={'outlined-select-page-limit'}
           >
             Show
           </InputLabel>
@@ -71,7 +71,7 @@ class OptionPageLimit extends Component {
               <OutlinedInput
                 name="page-limit"
                 labelWidth={40}
-                id={`outlined-select-page-limit`}
+                id={'outlined-select-page-limit'}
               />
             }
           >

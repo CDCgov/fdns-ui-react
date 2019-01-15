@@ -81,7 +81,7 @@ class DropdownUser extends Component {
                 <MenuList className="user-dropdown-menu">
                   <div className={`source-arrow-shadow ${placement}`}></div>
                   <div className={`source-arrow ${placement}`}></div>
-                  <Grid container direction={"column"}>
+                  <Grid container direction={'column'}>
                     <Grid item className="grid-item">
                       <img alt="avatar icon" className="lg-avatar avatar img-circle" src={avatar} />
                       <div className="user-info">

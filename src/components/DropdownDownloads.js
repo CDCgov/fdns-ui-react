@@ -40,11 +40,11 @@ class DropdownDownloads extends Component {
     if (tooltipText === 'Query: ""') tooltipText = 'Query: "All Results"';
 
     let description = (
-        <Grid container alignContent={'space-between'}>
-          <Grid item>
-            <Typography gutterBottom>File Type: {format}</Typography>
-          </Grid>
+      <Grid container alignContent={'space-between'}>
+        <Grid item>
+          <Typography gutterBottom>File Type: {format}</Typography>
         </Grid>
+      </Grid>
     );
 
     let progressBar = (

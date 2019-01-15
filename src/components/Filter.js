@@ -74,7 +74,9 @@ class Filter extends Component {
     if (this.props.icon !== undefined) {
       const iconName = this.props.icon;
       icon = (
-        <FontAwesomeIcon icon={iconName} />
+        <InputAdornment position="start">
+          <FontAwesomeIcon icon={iconName} />
+        </InputAdornment>
       );
       controlClassName = 'with-icon';
     }
@@ -93,11 +95,7 @@ class Filter extends Component {
             placeholder={placeholder}
             value={this.state.value}
             onChange={this.handleChange}
-            startAdornment={
-              <InputAdornment position="start">
-                {icon}
-              </InputAdornment>
-            }
+            startAdornment={icon}
           />
         </FormControl>
 

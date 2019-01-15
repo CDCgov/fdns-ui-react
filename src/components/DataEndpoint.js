@@ -33,13 +33,13 @@ class DataEndpoint extends Component {
     const { endpoint } = this.props;
     const adornment = (
       // Hide this if the browser doesn't support this functionality
-      document.queryCommandSupported('copy') &&
+      (document && document.queryCommandSupported && document.queryCommandSupported('copy')) &&
       <InputAdornment position="start">
         <IconButton
           aria-label="Copy link"
-            onClick={this.handleCopy}
-          >
-        <FontAwesomeIcon icon="clipboard" />
+          onClick={this.handleCopy}
+        >
+          <FontAwesomeIcon icon="clipboard" />
         </IconButton>
       </InputAdornment>
     );
@@ -50,7 +50,7 @@ class DataEndpoint extends Component {
         <OutlinedInput
           id="data-endpoint-input"
           inputRef={(input) => {
-              this.input = input
+            this.input = input
           }}
           label="Label"
           labelWidth={120}

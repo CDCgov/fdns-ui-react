@@ -70,14 +70,12 @@ class FilterSelect extends Component {
     if (this.props.icon !== undefined) {
       const iconName = this.props.icon;
       icon = (
-        <FontAwesomeIcon icon={iconName} />
+        <InputAdornment position="start">
+          <FontAwesomeIcon icon={iconName} />
+        </InputAdornment>
       );
       controlClassName = 'with-icon';
     }
-
-    const adornment = (
-      <InputAdornment position="start">{icon}</InputAdornment>
-    );
 
     return (
       <div className="filter filter-select">
@@ -100,7 +98,7 @@ class FilterSelect extends Component {
                 name={this.props.label}
                 id={`outlined-select-input-${this.props.label}`}
                 labelWidth={this.state.labelWidth}
-                startAdornment= {adornment}
+                startAdornment= {icon}
               />
             }
           >
@@ -109,10 +107,11 @@ class FilterSelect extends Component {
             </MenuItem>
             {this.props.options.map(option => {
               return (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            )})}
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              )
+            })}
           </Select>
         </FormControl>
       </div>

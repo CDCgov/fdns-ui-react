@@ -117,7 +117,7 @@ class SuperGrid extends Component {
           onDetail={this.handleDetail.bind(null, item)}
           updateErrorsAndWarnings={this.props.updateErrorsAndWarnings}
           analysis={analysis}
-          size={"small"}
+          size={'small'}
         />
       );
     }
@@ -126,7 +126,7 @@ class SuperGrid extends Component {
     let actions;
     if (showActions) {
       actions = (
-        <OptionAction onDetail={this.handleDetail.bind(null, item)} size={"small"} />
+        <OptionAction onDetail={this.handleDetail.bind(null, item)} size={'small'} />
       );
     }
 
