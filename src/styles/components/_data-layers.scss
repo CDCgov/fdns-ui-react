@@ -32,25 +32,29 @@ div.data-layers {
     padding: 0;
 
     .col {
-      padding: 10px;
       white-space: nowrap;
+      padding: 10px;
 
       &.col-label {
-        margin-left: 20px;
+        margin-left: 30px;
       }
 
       &.col-display {
         border-radius: 0px;
         color: $compliant-grey;
         padding-left: 14px;
-        font-weight: normal;
+        font-weight: bold;
         letter-spacing: 0.05em;
         text-align: center;
         display: flex;
         flex-direction: row;
       }
 
-      button.btn.btn-default.save {
+      button {
+        font-size: 1.0rem;
+      }
+
+      button.save {
         border: 1px solid $jade;
         color: $jade;
         background: none;
@@ -64,7 +68,7 @@ div.data-layers {
         font-size: 1em;
       }
 
-      button.btn.btn-default.hideall {
+      button.hideall {
         flex: 1;
         background: none;
         border: 0;
@@ -84,12 +88,15 @@ div.data-layers {
       min-width: $width;
       background-color: $smoke;
       border-bottom: 1px solid $rain;
+      display: flex;
+      align-items: center;
 
-      button.btn.btn-default {
+      button {
         background-color: inherit;
         border: 0;
         padding: 0;
         margin: 0;
+        font-size: 1rem;
 
         svg {
           font-size: 1.2em;
@@ -105,13 +112,7 @@ div.data-layers {
       }
 
       span.drag-icon {
-        width: 10px;
-        position: absolute;
-        margin: 10px 0 0 10px;
-
         svg {
-          margin: 0 2px 0 0;
-          font-size: 1em;
           color: $un-blue;
         }
       }
@@ -122,17 +123,15 @@ div.data-layers {
         opacity: 0.5;
 
         &.col-key-name {
-          padding-left: 20px;
+          padding-left: 10px;
         }
         &.col-label {
-          padding-left: 30px;
+          padding-left: 20px;
+          display: inline-block;
 
           svg {
-            position: absolute;
-            margin: 3px 0 0 0;
-          }
-          span.text {
-            margin: 0 0 0 18px;
+            margin-right: 7px;
+            margin-top: 1px;
           }
         }
       }
@@ -161,7 +160,7 @@ div.data-layers {
             }
           }
 
-          button.btn.btn-default {
+          button {
             svg {
               color: $davy-grey;
             }

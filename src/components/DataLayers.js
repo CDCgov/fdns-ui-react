@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
+import { Button, IconButton, Grid } from '@material-ui/core';
 import classNames from 'classnames';
 import DragSortableList from 'react-drag-sortable';
 import { _headers } from '../fixtures/shapes';
@@ -133,19 +133,20 @@ class DataLayers extends Component {
             </span>
             <div className="col col-3 col-label">
               {icon}
-              <span className="text">{header.label}</span>
+              {header.label}
             </div>
             <div className="col col-3 col-key-name">
               {header.path.replace('$._source.', '')}
             </div>
             <div className="col col-1 col-display">
-              <Button
+              <IconButton
                 aria-label="Toggle Visibility"
                 onClick={this.handleVisibilityClick.bind(null, index)}
                 index={index}
+                size="small"
               >
                 {this.renderVisibilityIcon(header.visible)}
-              </Button>
+              </IconButton>
             </div>
           </div>
         ),
@@ -180,8 +181,8 @@ class DataLayers extends Component {
     return (
       <div className={className} style={style}>
         <div className="layers-headers fx-grd">
-          <div className="col col-2 col-label">Label</div>
-          <div className="col col-4 col-key-name">Key Name</div>
+          <div className="col col-3 col-label">Label</div>
+          <div className="col col-3 col-key-name">Key Name</div>
           <Button onClick={this.handleSaveClick} className="col col-1 col-display save">Apply</Button>
         </div>
         <div className="layers-rows">
