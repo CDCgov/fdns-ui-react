@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from 'react-bootstrap'
+import { Button } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -51,18 +51,21 @@ class OptionView extends Component {
         <Button
           aria-label="Grid View"
           onClick={this.handleSelection.bind(this, 'super-grid')}
+          disableRipple={true}
         >
           <span className={gridClassName}></span>
         </Button>
         <Button
           aria-label="Table View"
           onClick={this.handleSelection.bind(this, 'super-table')}
+          disableRipple={true}
         >
           <span className={tableClassName}></span>
         </Button>
         <Button
-          aria-label="Graph View" 
+          aria-label="Graph View"
           disabled={true}
+          disableRipple={true}
         >
           <span className="icon-super-chart"></span>
         </Button>

@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DayPickerInput from 'react-day-picker/DayPickerInput';
 import moment from 'moment';
-import Filter from './Filter';
+import LuxonUtils from '@date-io/luxon';
+import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
 
 // default date format
-const defaultDateFormat = 'MM-DD-YYYY';
+const defaultDateFormat = 'yyyy-MM-dd';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
-  start: PropTypes.string,
+  start: PropTypes.instanceOf(Date),
   startLabel: PropTypes.string,
-  end: PropTypes.string,
+  end: PropTypes.instanceOf(Date),
   endLabel: PropTypes.string,
   icon: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array
   ]),
+  onStartChanged: PropTypes.func,
+  onEndChanged: PropTypes.func,
 };
 
 // set the defaults
 const defaultProps = {
-  start: '',
+  start: new Date(),
   startLabel: 'Start Date',
-  end: '',
+  end: new Date(),
   endLabel: 'End Date',
   icon: 'calendar'
 };
@@ -47,8 +49,8 @@ class FilterDate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      start: this.convertDateToISOString(this.props.start),
-      end: this.convertDateToISOString(this.props.end)
+      start: this.props.start,
+      end: this.props.end
     };
     this.onStartChanged = this.onStartChanged.bind(this);
     this.onEndChanged = this.onEndChanged.bind(this);
@@ -98,35 +100,41 @@ class FilterDate extends Component {
   // method to reset a filter
   reset() {
     this.setState({
-      start: '',
-      end: ''
+      start: new Date(),
+      end: new Date(),
     });
   }
 
   // main render method
   render() {
     const startPicker = (
-      <DayPickerInput
+      <DatePicker
+        id="startDate"
+        margin="normal"
+        className="dayPickerInput"
+        label={this.props.startLabel}
         value={this.state.start}
-        onDayChange={this.onStartChanged}
-        format={defaultDateFormat}
-        component={StartInput}
+        onChange={this.onStartChanged}
       />
     );
 
     const endPicker = (
-      <DayPickerInput
+      <DatePicker
+        id="endDate"
+        margin="normal"
+        className="dayPickerInput"
+        label={this.props.endLabel}
         value={this.state.end}
-        onDayChange={this.onEndChanged}
-        format={defaultDateFormat}
-        component={EndInput}
+        onChange={this.onEndChanged}
       />
     );
 
     return (
       <div className="filter-date">
-        <Filter icon={this.props.icon} label={this.props.startLabel} control={startPicker} ref="start" />
-        <Filter icon={this.props.icon} label={this.props.endLabel} control={endPicker} ref="end" />
+        <MuiPickersUtilsProvider utils={LuxonUtils}>
+          {startPicker}
+          {endPicker}
+        </MuiPickersUtilsProvider>
       </div>
     )
   }

@@ -7,21 +7,8 @@ div.filter {
     font-size: 0.9em;
   }
 
-  span.input-group {
-    margin: 0;
-    width: 100%;
-
-    .input-group-addon {
-      background-color: $white;
-      border-radius: 0;
-      border-right: 0;
-      border-color: $rain;
-      padding-right: 0;
-
-      svg {
-        color: $winter;
-      }
-    }
+  svg {
+    color: $winter;
   }
 
   input {
@@ -31,6 +18,14 @@ div.filter {
 
     &.with-icon {
       border-left: 0;
+    }
+  }
+
+  // using the existing MUI color scheme to affect this
+  // TODO: change to use CDC colors;
+  .MuiInputBase-focused-283 {
+    svg {
+      color: #303f9f;
     }
   }
 }

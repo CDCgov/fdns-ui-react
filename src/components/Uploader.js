@@ -4,6 +4,7 @@ import UploaderPaste from './UploaderPaste';
 import UploaderList from './UploaderList';
 import UploaderDrop from './UploaderDrop';
 import IconButton from './IconButton';
+import { Grid } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -103,16 +104,16 @@ class Uploader extends Component {
   // main render method
   render() {
     return (
-      <div className="uploader">
-        <div className="row">
-          <div className="col col-md-6">
+      <Grid className="uploader" >
+        <Grid container className="row" spacing={32}>
+          <Grid item className="uploader-column" xs={6}>
             <UploaderPaste onUpload={this.handlePasteUpload} />
-          </div>
-          <div className="col col-md-6">
+          </Grid>
+          <Grid item className="uploader-column" xs={6}>
             {this.renderDropOrList()}
-          </div>
-        </div>
-      </div>
+          </Grid>
+        </Grid>
+      </Grid>
     )
   }
 }

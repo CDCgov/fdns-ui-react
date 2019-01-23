@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'react-bootstrap';
+import { Button } from '@material-ui/core';
 import Pane from './Pane';
 import { _history } from '../fixtures/shapes';
 
@@ -24,7 +24,7 @@ const defaultProps = {
 
 // define the class
 class PaneHistory extends Component {
-  
+
   // a pane has been collapsed
   handleCollapse = (groupIndex, itemIndex) => {
     this.props.onCollapse(groupIndex, itemIndex);
@@ -64,10 +64,10 @@ class PaneHistory extends Component {
 
     return (
       <div className="pane-history">
-        <Pane 
+        <Pane
           title={mainTitle}
-          subtitle={mainSubtitle}    
-          onCollapse={this.handleCollapse.bind(null, -1, -1)} 
+          subtitle={mainSubtitle}
+          onCollapse={this.handleCollapse.bind(null, -1, -1)}
         />
         {Object.keys(history).map(this.renderGroup)}
         <Button className="reset-history" onClick={this.handleReset}>

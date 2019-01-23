@@ -8,12 +8,14 @@ describe('<Pane />', () => {
       <p id="foo">bar</p>
     </Pane>
   );
-  
+
   it('renders', () => {
     expect(component.html()).toContain('pane');
     expect(component.html()).toContain('button');
-    expect(component.find('.pane-title').text()).toContain('foo');
-    expect(component.find('.pane-subtitle').text()).toContain('bar');
+
+    // MUI's Typography forces you to pull the children to make these tests pass
+    expect(component.find('.pane-title').children().children().text()).toContain('foo');
+    expect(component.find('.pane-subtitle').children().children().text()).toContain('bar');
   });
 
   describe('is collapsable', () => {

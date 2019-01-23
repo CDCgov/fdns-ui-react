@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import dig from 'object-dig';
-import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { IconButton, Tooltip } from '@material-ui/core';
 import { _analysis } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -10,6 +10,7 @@ const propTypes = {
   analysis: _analysis,
   onDetail: PropTypes.func,
   updateErrorsWarnings: PropTypes.func,
+  size: PropTypes.string,
 };
 
 // set the defaults
@@ -21,6 +22,7 @@ const defaultProps = {
     errors: 0,
   },
   onDetail() {},
+  size: 'medium',
 };
 
 // define the class
@@ -83,22 +85,18 @@ class OptionErrorsWarnings extends Component {
     if (errors > 0) {
       // tooltip requires a unique id
       const nonce = Math.round((Math.random() * 9999999999) + 1000000000);
-      const tooltip = (
-        <Tooltip id={`tooltip-error-${nonce}`}>
-          {`${errors} Errors`}
-        </Tooltip>
-      );
 
       return (
-        <OverlayTrigger placement="left" overlay={tooltip}>
-          <Button
+        <Tooltip id={`tooltip-error-${nonce}`} title={`${errors} Errors`} placement="left">
+          <IconButton
             aria-label="Warnings Detail"
             className="option-error"
             onClick={this.handleDetailClick}
+            size={this.props.size}
           >
             <FontAwesomeIcon icon="ban" />
-          </Button>
-        </OverlayTrigger>
+          </IconButton>
+        </Tooltip>
       )
     }
   }
@@ -111,22 +109,18 @@ class OptionErrorsWarnings extends Component {
     if (warnings > 0) {
       // tooltip requires a unique id
       const nonce = Math.round((Math.random() * 9999999999) + 1000000000);
-      const tooltip = (
-        <Tooltip id={`tooltip-warning-${nonce}`}>
-          {`${warnings} Warnings`}
-        </Tooltip>
-      );
 
       return (
-        <OverlayTrigger placement="left" overlay={tooltip}>
-          <Button
+        <Tooltip id={`tooltip-warning-${nonce}`} title={`${warnings} Warnings`} placement="left">
+          <IconButton
             aria-label="Warnings Detail"
             className="option-warning"
             onClick={this.handleDetailClick}
+            size={this.props.size}
           >
             <FontAwesomeIcon icon="exclamation-triangle" />
-          </Button>
-        </OverlayTrigger>
+          </IconButton>
+        </Tooltip>
       )
     }
   }
