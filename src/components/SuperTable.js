@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import jsonpath from 'jsonpath';
 import dig from 'object-dig';
 import classNames from 'classnames';
-import { Table, Column, Cell } from 'fixed-data-table-2';
 import OptionAction from './OptionAction';
 import OptionErrorsWarnings from './OptionErrorsWarnings';
 import { _headers } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { Paper, IconButton, Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel, Tooltip } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -43,6 +44,108 @@ const defaultMmts = {
   rowHeight: 32
 };
 
+function dynamicSort(property, order) {
+  let sortOrder = (order === 'asc') ? 1 : -1;
+  return function (a,b) {
+    var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+    return result * sortOrder;
+  }
+}
+
+function stableSort(array, order, orderBy) {
+  const reducedOrderBy = orderBy.replace(/\$./i, ''); // remove the $. from the path string if it exits
+  const newArray = array.sort(dynamicSort(reducedOrderBy, order));
+  return newArray;
+}
+
+class EnhancedTableHead extends React.Component {
+  createSortHandler = property => event => {
+    this.props.onRequestSort(event, property);
+  };
+
+  render() {
+    const { order, orderBy, rowCount, headers } = this.props;
+
+    const renderErrorsAndWarningHeader = () => {
+      if (!this.props.showErrorsAndWarnings) return;
+      return (
+        <TableCell
+          key={'warning'}
+          padding={'default'}
+          className="super-table-header warning-cell"
+        >
+        </TableCell>
+      )
+    }
+
+    const renderActionHeader = () => {
+      if (!this.props.showActions) return;
+      return (
+        <TableCell
+          key={'action'}
+          padding={'default'}
+          className="super-table-header"
+        >
+          Actions
+        </TableCell>
+      )
+    }
+
+    return (
+      <TableHead>
+        <TableRow>
+          {renderErrorsAndWarningHeader()}
+          {renderActionHeader()}
+          {headers.map(header => {
+            const { path, label, visible, icon:iconName, iconColor } = header;
+            const iconStyle = {
+              color: `#${iconColor}`,
+            };
+            return (
+              <TableCell
+                key={path}
+                padding={'default'}
+                sortDirection={orderBy === path ? order : false}
+                className="super-table-header"
+              >
+                <Tooltip
+                  title="Sort"
+                  placement={'bottom-start'}
+                  enterDelay={300}
+                >
+                  <TableSortLabel
+                    active={orderBy === path}
+                    direction={order}
+                    onClick={this.createSortHandler(path)}
+                  >
+                    <FontAwesomeIcon className="header-icon" icon={iconName} style={iconStyle} />
+                    {label}
+                  </TableSortLabel>
+                </Tooltip>
+              </TableCell>
+            );
+          }, this)}
+        </TableRow>
+      </TableHead>
+    );
+  }
+}
+
+EnhancedTableHead.propTypes = {
+  onRequestSort: PropTypes.func.isRequired,
+  order: PropTypes.string.isRequired,
+  orderBy: PropTypes.string.isRequired,
+  rowCount: PropTypes.number.isRequired,
+  headers: PropTypes.array.isRequired,
+  showActions: PropTypes.bool,
+  showErrorsAndWarnings: PropTypes.bool,
+};
+
+EnhancedTableHead.defaultProps = {
+  showActions: true,
+  showErrorsAndWarnings: true,
+}
+
 // define the class
 class SuperTable extends Component {
 
@@ -51,18 +154,30 @@ class SuperTable extends Component {
     super(props);
     this.state = {
       width: this.getWidth(),
-      height: this.getHeight()
+      height: this.getHeight(),
+      order: 'asc',
+      orderBy: 'calories',
+      data: this.props.data,
+      page: 0,
+      rowsPerPage: 5,
     };
     this.updateDimensions = this.updateDimensions.bind(this);
     this.getWidth = this.getWidth.bind(this);
     this.getHeight = this.getHeight.bind(this);
-    this.handleColumnResize = this.handleColumnResize.bind(this);
     this.handleDetail = this.handleDetail.bind(this);
-    this.renderCell = this.renderCell.bind(this);
-    this.renderColumn = this.renderColumn.bind(this);
-    this.renderErrorsAndWarningsColumn = this.renderErrorsAndWarningsColumn.bind(this);
-    this.renderActionColumn = this.renderActionColumn.bind(this);
+    // this.handleColumnResize = this.handleColumnResize.bind(this);
   }
+
+  handleRequestSort = (event, property) => {
+    const orderBy = property;
+    let order = 'desc';
+
+    if (this.state.orderBy === property && this.state.order === 'desc') {
+      order = 'asc';
+    }
+
+    this.setState({ order, orderBy });
+  };
 
   // called when an OptionAction is fired
   handleDetail(item) {
@@ -99,176 +214,86 @@ class SuperTable extends Component {
     return this.props.height;
   }
 
-  // column resizing event for the table column
-  handleColumnResize(newColumnWidth, columnKey) {
-    if (this.props.onColumnResize) return this.props.onColumnResize(newColumnWidth, columnKey);
-  }
+  renderRow (item) {
+    const renderCell = (header, index) => {
+      const cellContent = jsonpath.query(item, header.path);
+      return (
+        <TableCell key={index}>{cellContent}</TableCell>
+      )
+    }
 
-  // render a cell within a column with the data
-  renderCell({rowIndex, columnKey}) {
-    const path = this.props.headers[columnKey].path;
-    const item = this.props.data[rowIndex];
-    const data = jsonpath.query(item, path);
-
-    // return the cell
-    return (
-      <Cell>{data}</Cell>
-    );
-  }
-
-  // render a column based on a header and index
-  renderColumn(header, i) {
-    if (!header.visible) return; // exit if it is invisible
-    
-    // get values from the header
-    const { width, icon:iconName, iconColor, label } = header;
-
-    const iconStyle = {
-      color: `#${iconColor}`,
-    };
-    const icon = (
-      <FontAwesomeIcon icon={iconName} style={iconStyle} />
-    );
-    const headerCell = (
-      <Cell className="header-cell">
-        {icon}
-        <span>{label}</span>
-      </Cell>
-    );
-
-    // return the column
-    return (
-      <Column
-        key={i}
-        columnKey={i}
-        header={headerCell}
-        cell={this.renderCell}
-        isResizable={true}
-        width={width}
-        minWidth={defaultMmts.minWidth}
-        maxWidth={defaultMmts.maxWidth}
-      />
-    );
-  }
-
-  // render a special table column for the errors and warnings
-  renderErrorsAndWarningsColumn() {
-    if (!this.props.showErrorsAndWarnings) return;
-    const width = 50;
-
-    // render the cell
-    const renderCell = ({rowIndex, columnKey}) => {
-      const item = this.props.data[rowIndex];
+    const renderErrorsAndWarnings = () => {
+      if (!this.props.showErrorsAndWarnings) return;
       const analysis = dig(item, '_source', 'analysis');
 
       return (
-        <Cell className="cell-errors-warnings">
+        <TableCell key={`warning-${item.id}`} className="warning-cell">
           <OptionErrorsWarnings
             onDetail={this.handleDetail.bind(null, item)}
             updateErrorsAndWarnings={this.props.updateErrorsAndWarnings}
             analysis={analysis}
           />
-        </Cell>
-      );
+        </TableCell>
+      )
     }
 
-    // return the column
-    return (
-      <Column
-        key="errors"
-        columnKey="errors"
-        header={<Cell></Cell>}
-        cell={renderCell}
-        isResizable={false}
-        width={width}
-        minWidth={width}
-        maxWidth={width}
-      />
-    );
-  }
-
-  // render a special table column for the action
-  renderActionColumn() {
-    if (!this.props.showActions) return;
-
-    // standard with and header
-    const width = 70;
-    const header = (
-      <Cell>Actions</Cell>
-    );
-
-    // return with a custom action column
-    if (this.props.actionsColumn) {
-      // render the custom cell
-      const renderCustomCell = ({rowIndex, columnKey}) => {
-        const item = this.props.data[rowIndex];
-        return (
-          <Cell className="cell-action">
-            {this.props.actionsColumn(rowIndex, columnKey)}
-          </Cell>
-        );
-      }
-
+    const renderAction = () => {
+      if (!this.props.showActions) return;
       return (
-        <Column
-          key="actions"
-          columnKey="actions"
-          header={header}
-          cell={renderCustomCell}
-          isResizable={false}
-          width={width}
-          minWidth={width}
-          maxWidth={width}
-        />
-      );
-    }
-
-    // render the cell
-    const renderCell = ({rowIndex, columnKey}) => {
-      const item = this.props.data[rowIndex];
-      return (
-        <Cell className="cell-action">
+        <TableCell key={`action-${item.id}`}>
           <OptionAction
             onDetail={this.handleDetail.bind(null, item)}
           />
-        </Cell>
-      );
+        </TableCell>
+      )
     }
 
-    // return the column
     return (
-      <Column
-        key="actions"
-        columnKey="actions"
-        header={header}
-        cell={renderCell}
-        isResizable={false}
-        width={width}
-        minWidth={width}
-        maxWidth={width}
-      />
-    );
+      <TableRow
+        hover
+        tabIndex={-1}
+        key={item.id}
+      >
+        {renderErrorsAndWarnings()}
+        {renderAction()}
+        {this.props.headers.map(renderCell)}
+      </TableRow>
+    )
   }
 
   // main render method
   render() {
-    const actionColumn = this.renderActionColumn();
-    const errorsAndWarningsColumn = this.renderErrorsAndWarningsColumn();
+    const { data, order, orderBy, selected, rowsPerPage, page } = this.state;
+    const emptyRows = rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
+
     return (
-      <div className="super-table">
-        <Table
-          rowHeight={defaultMmts.rowHeight}
-          headerHeight={defaultMmts.rowHeight}
-          rowsCount={this.props.data.length}
-          width={this.state.width}
-          height={this.state.height}
-          isColumnResizing={false}
-          onColumnResizeEndCallback={this.handleColumnResize}>
-          {errorsAndWarningsColumn}
-          {actionColumn}
-          {this.props.headers.map(this.renderColumn)}
-        </Table>
-      </div>
+      <Paper>
+        <div className="super-table">
+          <Table aria-labelledby="tableTitle">
+            <EnhancedTableHead
+              order={order}
+              orderBy={orderBy}
+              onRequestSort={this.handleRequestSort}
+              rowCount={data.length}
+              headers={this.props.headers}
+              showErrorsAndWarnings={this.props.showErrorsAndWarnings}
+              showActions={this.props.showActions}
+            />
+            <TableBody>
+              {stableSort(data, order, orderBy)
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map(n => {
+                  return this.renderRow(n);
+                })}
+              {emptyRows > 0 && (
+                <TableRow style={{ height: 49 * emptyRows }}>
+                  <TableCell colSpan={6} />
+                </TableRow>
+              )}
+            </TableBody>
+          </Table>
+        </div>
+      </Paper>
     )
   }
 }

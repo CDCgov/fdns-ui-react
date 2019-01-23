@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import jsonpath from 'jsonpath';
 import dig from 'object-dig';
 import classNames from 'classnames';
-import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import ArrowTooltip from './ArrowTooltip';
+
 import OptionAction from './OptionAction';
 import OptionErrorsWarnings from './OptionErrorsWarnings';
 import { _headers } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -64,28 +66,21 @@ class SuperGrid extends Component {
       </span>
     );
 
-    // TODO: investigate placing the tooltip in an auto-direction if it is too close to the edge of the window
-    const tooltip = (
-      <Tooltip id={`header-${count}-${headerIndex}`}>
-        {header.label}
-      </Tooltip>
-    );
-
     return (
-      <tr className={className} key={count}>
-        <td className="text-left">
-          <OverlayTrigger placement="top" overlay={tooltip}>
+      <TableRow className={className} key={count}>
+        <TableCell>
+          <ArrowTooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="top">
             {icon}
-          </OverlayTrigger>
-        </td>
-        <td className="text-right" title={header.label}>
-          <OverlayTrigger placement="top" overlay={tooltip}>
+          </ArrowTooltip>
+        </TableCell>
+        <TableCell align="right" title={header.label}>
+          <ArrowTooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="top">
             <span className="data-element">
               {data}
             </span>
-          </OverlayTrigger>
-        </td>
-      </tr>
+          </ArrowTooltip>
+        </TableCell>
+      </TableRow>
     )
   }
 
@@ -122,6 +117,7 @@ class SuperGrid extends Component {
           onDetail={this.handleDetail.bind(null, item)}
           updateErrorsAndWarnings={this.props.updateErrorsAndWarnings}
           analysis={analysis}
+          size={'small'}
         />
       );
     }
@@ -130,7 +126,7 @@ class SuperGrid extends Component {
     let actions;
     if (showActions) {
       actions = (
-        <OptionAction onDetail={this.handleDetail.bind(null, item)} />
+        <OptionAction onDetail={this.handleDetail.bind(null, item)} size={'small'} />
       );
     }
 
@@ -159,27 +155,27 @@ class SuperGrid extends Component {
 
     // return with the cell and surrounding markup
     return (
-      <div className="grid-item" key={i}>
-        <div className="panel panel-default">
+      <Grid item className="grid-item" key={i}>
+        <Paper className="panel panel-default" elevation={6}>
           <div className="panel-body">
-            <table className={className}>
-              <tbody>
+            <Table className={className}>
+              <TableBody>
                 {cell}
-              </tbody>
-            </table>
+              </TableBody>
+            </Table>
           </div>
           {footer}
-        </div>
-      </div>
+        </Paper>
+      </Grid>
     );
   }
 
   // main render method
   render() {
     return (
-      <div className="grid">
+      <Grid className="super-grid" container>
         {this.props.data.map(this.renderCell)}
-      </div>
+      </Grid>
     )
   }
 }

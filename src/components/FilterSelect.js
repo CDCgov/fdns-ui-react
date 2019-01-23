@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Select from 'react-select';
-import { InputGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { FormControl, InputAdornment, InputLabel, MenuItem, OutlinedInput, Select } from '@material-ui/core';
+
 import { _option } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -25,29 +25,25 @@ const defaultProps = {
 };
 
 // define the class
-class FilterSelect extends Select {
+class FilterSelect extends Component {
 
   // init
   constructor(props) {
     super(props);
     this.state = {
-      selected: this.props.selected
-    };
+      selected: this.props.selected || '',
+      labelWidth: 100,
+    }
+
     this.handleChange = this.handleChange.bind(this);
   }
 
-  // update the state on prop changes
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      selected: nextProps.value
-    });
-  }
-
   // method to handle the changes from the filter
-  handleChange(selection) {
-    var value = (selection === null) ? null : selection.value;
+  handleChange(event) {
+    const selection = event.target.value;
+    var value = (selection === null) ? null : selection;
     this.setState({
-      selected: value
+      selected: value,
     });
   }
 
@@ -73,27 +69,50 @@ class FilterSelect extends Select {
     if (this.props.icon !== undefined) {
       const iconName = this.props.icon;
       icon = (
-        <InputGroup.Addon>
+        <InputAdornment position="start">
           <FontAwesomeIcon icon={iconName} />
-        </InputGroup.Addon>
+        </InputAdornment>
       );
       controlClassName = 'with-icon';
     }
 
     return (
       <div className="filter filter-select">
-        <ControlLabel>{this.props.label}</ControlLabel>
-        <InputGroup>
-          {icon}
+        <FormControl
+          variant="outlined"
+          className={controlClassName}
+          fullWidth={true}
+        >
+          <InputLabel
+            htmlFor={`outlined-select-input-${this.props.label}`}
+          >
+            {this.props.label}
+          </InputLabel>
           <Select
-            aria-label={this.props.label}
-            name="filter-select"
             value={this.state.selected}
-            placeholder={this.props.placeholder}
-            options={this.props.options}
             onChange={this.handleChange}
-            className={controlClassName} />
-        </InputGroup>
+            displayEmpty={true}
+            input={
+              <OutlinedInput
+                name={this.props.label}
+                id={`outlined-select-input-${this.props.label}`}
+                labelWidth={this.state.labelWidth}
+                startAdornment= {icon}
+              />
+            }
+          >
+            <MenuItem value="" className="select-menu-item">
+              <em>Select...</em>
+            </MenuItem>
+            {this.props.options.map(option => {
+              return (
+                <MenuItem key={option.value} value={option.value} className="select-menu-item">
+                  {option.label}
+                </MenuItem>
+              )
+            })}
+          </Select>
+        </FormControl>
       </div>
     )
   }

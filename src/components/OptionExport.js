@@ -26,10 +26,10 @@ class OptionExport extends Component {
   render() {
     return (
       <div className="option-export">
-        <IconButton image={icoCSV} imageAlt="CSV" bsStyle="white" onClick={this.handleButtonClick.bind(null, 'csv')}>.csv</IconButton>
-        <IconButton image={icoXML} imageAlt="XML" bsStyle="white" onClick={this.handleButtonClick.bind(null, 'xml')}>.xml</IconButton>
-        <IconButton image={icoJSON} imageAlt="JSON" bsStyle="white" onClick={this.handleButtonClick.bind(null, 'json')}>.json</IconButton>
-        <IconButton image={icoXLSX} imageAlt="XLSX" bsStyle="white" onClick={this.handleButtonClick.bind(null, 'xlsx')}>.xlsx</IconButton>
+        <IconButton image={icoCSV} imageAlt="CSV" variant="outlined" onClick={this.handleButtonClick.bind(null, 'csv')}>.csv</IconButton>
+        <IconButton image={icoXML} imageAlt="XML" variant="outlined" onClick={this.handleButtonClick.bind(null, 'xml')}>.xml</IconButton>
+        <IconButton image={icoJSON} imageAlt="JSON" variant="outlined" onClick={this.handleButtonClick.bind(null, 'json')}>.json</IconButton>
+        <IconButton image={icoXLSX} imageAlt="XLSX" variant="outlined" onClick={this.handleButtonClick.bind(null, 'xlsx')}>.xlsx</IconButton>
       </div>
     );
   }

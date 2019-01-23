@@ -7,6 +7,7 @@ div.uploader-drop {
     div.instructions {
       max-width: 320px;
       margin: 0 auto;
+      margin-bottom: 60px;
       text-align: center;
 
       figure.files {
@@ -23,13 +24,13 @@ div.uploader-drop {
         font-size: 1.2em;
         color: $dark-grey;
         margin: 0;
+      }
+      a {
+        color: $true-blue;
+        text-decoration: none;
 
-        a {
-          color: $true-blue;
-
-          &:hover {
-            text-decoration: underline;
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
 

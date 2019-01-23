@@ -1,14 +1,9 @@
 import './styles/fdns-ui-react.css';
 
 // Import third party libs' css
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.css';
 import 'flexbox/css/grid.min.css';
 import 'flexbox/css/media-object.min.css';
-import 'fixed-data-table-2/dist/fixed-data-table.css';
-import 'react-select/dist/react-select.css';
-import 'react-day-picker/lib/style.css';
-
 
 // Importing all fas icons from FA
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -52,75 +47,80 @@ export UploaderList from './components/UploaderList';
 
 // React Bootstrap Wrappers
 
+// Layout/Typography
+export { Grid, Paper, Typography } from '@material-ui/core';
+
+// Tables
+export { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
+
 // Buttons
-export { Button } from 'react-bootstrap';
-export { ButtonGroup } from 'react-bootstrap';
-export { ButtonToolbar } from 'react-bootstrap';
-export { DropdownButton } from 'react-bootstrap';
-export { SplitButton } from 'react-bootstrap';
-export { Dropdown } from 'react-bootstrap';
-export { MenuItem } from 'react-bootstrap';
+export { Button } from '@material-ui/core';
+// export { ButtonGroup } from '@material-ui/core';
+// export { ButtonToolbar } from '@material-ui/core';
+// export { DropdownButton } from '@material-ui/core';
+// export { SplitButton } from '@material-ui/core';
+// export { Dropdown } from '@material-ui/core';
+// export { MenuItem } from '@material-ui/core';
 
 // Overlays
-export { Modal } from 'react-bootstrap';
-export { Tooltip } from 'react-bootstrap';
-export { OverlayTrigger } from 'react-bootstrap';
-export { Popover } from 'react-bootstrap';
+// export { Modal } from '@material-ui/core';
+// export { Tooltip } from '@material-ui/core';
+// export { OverlayTrigger } from '@material-ui/core';
+// export { Popover } from '@material-ui/core';
 
 // Navigation
-export { Nav } from 'react-bootstrap';
-export { NavItem } from 'react-bootstrap';
-export { NavDropdown } from 'react-bootstrap';
-export { Navbar } from 'react-bootstrap';
-export { Breadcrumb } from 'react-bootstrap';
-export { Tabs } from 'react-bootstrap';
-export { Tab } from 'react-bootstrap';
-export { TabContainer } from 'react-bootstrap';
-export { TabContent } from 'react-bootstrap';
-export { TabPane } from 'react-bootstrap';
-export { Pagination } from 'react-bootstrap';
-export { Pager } from 'react-bootstrap';
+// export { Nav } from '@material-ui/core';
+// export { NavItem } from '@material-ui/core';
+// export { NavDropdown } from '@material-ui/core';
+// export { Navbar } from '@material-ui/core';
+// export { Breadcrumb } from '@material-ui/core';
+// export { Tabs } from '@material-ui/core';
+// export { Tab } from '@material-ui/core';
+// export { TabContainer } from '@material-ui/core';
+// export { TabContent } from '@material-ui/core';
+// export { TabPane } from '@material-ui/core';
+// export { Pagination } from '@material-ui/core';
+// export { Pager } from '@material-ui/core';
 
 // Page Layout
-export { Grid } from 'react-bootstrap';
-export { Col } from 'react-bootstrap';
-export { Row } from 'react-bootstrap';
-export { Clearfix } from 'react-bootstrap';
-export { Jumbotron } from 'react-bootstrap';
-export { PageHeader } from 'react-bootstrap';
-export { ListGroup } from 'react-bootstrap';
-export { ListGroupItem } from 'react-bootstrap';
-export { Table } from 'react-bootstrap';
-export { Panel } from 'react-bootstrap';
-export { PanelGroup } from 'react-bootstrap';
-export { Accordion } from 'react-bootstrap';
-export { Well } from 'react-bootstrap';
+// export { Col } from '@material-ui/core';
+// export { Row } from '@material-ui/core';
+// export { Clearfix } from '@material-ui/core';
+// export { Jumbotron } from '@material-ui/core';
+// export { PageHeader } from '@material-ui/core';
+// export { ListGroup } from '@material-ui/core';
+// export { ListGroupItem } from '@material-ui/core';
+// export { Table } from '@material-ui/core';
+// export { Panel } from '@material-ui/core';
+// export { PanelGroup } from '@material-ui/core';
+// export { Accordion } from '@material-ui/core';
+// export { Well } from '@material-ui/core';
 
 // Forms
-export { Form } from 'react-bootstrap';
-export { FormGroup } from 'react-bootstrap';
-export { FormControl } from 'react-bootstrap';
-export { ControlLabel } from 'react-bootstrap';
-export { InputGroup } from 'react-bootstrap';
-export { HelpBlock } from 'react-bootstrap';
-export { FieldGroup } from 'react-bootstrap';
-export { Checkbox } from 'react-bootstrap';
-export { Radio } from 'react-bootstrap';
+// export { Form } from '@material-ui/core';
+// export { FormGroup } from '@material-ui/core';
+// export { FormControl } from '@material-ui/core';
+// export { ControlLabel } from '@material-ui/core';
+// export { InputGroup } from '@material-ui/core';
+// export { HelpBlock } from '@material-ui/core';
+// export { FieldGroup } from '@material-ui/core';
+// export { Checkbox } from '@material-ui/core';
+// export { Radio } from '@material-ui/core';
 
-// Media Content
-export { Image } from 'react-bootstrap';
-export { Thumbnail } from 'react-bootstrap';
-export { ResponsiveEmbed } from 'react-bootstrap';
-export { Carousel } from 'react-bootstrap';
-export { Media } from 'react-bootstrap';
+// // Media Content
+// export { Image } from '@material-ui/core';
+// export { Thumbnail } from '@material-ui/core';
+// export { ResponsiveEmbed } from '@material-ui/core';
+// export { Carousel } from '@material-ui/core';
+// export { Media } from '@material-ui/core';
 
-// Miscellaneous
-export { Glyphicon } from 'react-bootstrap';
-export { Label } from 'react-bootstrap';
-export { Badge } from 'react-bootstrap';
-export { Alert } from 'react-bootstrap';
-export { ProgressBar } from 'react-bootstrap';
+// // Miscellaneous
+// export { Glyphicon } from '@material-ui/core';
+// export { Label } from '@material-ui/core';
+// export { Badge } from '@material-ui/core';
+// export { Alert } from '@material-ui/core';
+// export { ProgressBar } from '@material-ui/core';
 
 // Utilities
-export { Collapse } from 'react-bootstrap';
-export { Fade } from 'react-bootstrap';
+export { Collapse } from '@material-ui/core';
+// export { Fade } from '@material-ui/core';

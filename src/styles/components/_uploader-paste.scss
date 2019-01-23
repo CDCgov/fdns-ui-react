@@ -3,6 +3,13 @@ div.uploader-paste {
   border: 1px solid $true-blue;
   padding: $default-padding;
 
+  .icon-buttons {
+    display: flex;
+    align-items: center;
+    height: 12%;
+    justify-content: flex-end;
+  }
+
   textarea {
     border-radius: 0;
     border: none;

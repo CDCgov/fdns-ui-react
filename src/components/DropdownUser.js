@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown, MenuItem } from 'react-bootstrap';
+import { Button, ClickAwayListener, Divider, Grid, Grow, MenuList, Paper, Popper, Typography } from '@material-ui/core';
+
 import { _user } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const propTypes = {
   user: _user,
   onSignOut: PropTypes.func,
+  placement: PropTypes.string,
 };
 
 // set the defaults
@@ -20,6 +22,7 @@ const defaultProps = {
     org: 'ABC/DEF/XYZ',
   },
   onSignOut() {},
+  placement: 'bottom-start',
 };
 
 // define the class
@@ -28,43 +31,79 @@ class DropdownUser extends Component {
     this.props.onSignOut();
   }
 
+  state = {
+    open: false,
+  };
+
+  handleToggle = () => {
+    this.setState(state => ({ open: !state.open }));
+  };
+
+  handleClose = event => {
+    if (this.anchorEl.contains(event.target)) {
+      return;
+    }
+
+    this.setState({ open: false });
+  };
+
   // main render method
   render() {
     const { firstName, lastName, org, avatar, email } = this.props.user;
+    const { placement } = this.props;
+    const { open } = this.state;
 
     return (
       <div className="dropdown-user">
-        <Dropdown pullRight id="dropdown-user">
-          <Dropdown.Toggle>
-            <figure className="avatar">
-              <img alt="avatar icon" className="avatar img-circle" src={avatar} />
-            </figure>
-            <span className="user-name">{lastName}, {firstName}</span>
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <div className="row">
-              <div className="col-sm-12">
-                <figure className="lg-avatar">
-                  <img alt="avatar icon" className="avatar img-circle" src={avatar} />
-                </figure>
-                <p className="user-name">{lastName}, {firstName}</p>
-                <p className="user-email"><a href={`mailto:${email}`}>{email}</a></p>
-                <p className="user-organization">{org}</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-sm-12">
-                <hr/>
-                <MenuItem eventKey="1">
-                  <button className="btn btn-danger btn-block" onClick={this.handleSignOut}>
-                    <FontAwesomeIcon icon="sign-out-alt" />
-                    <span>Log Off</span>
-                  </button>
-                </MenuItem>
-              </div>
-            </div>
-          </Dropdown.Menu>
-        </Dropdown>
+        <Button
+          buttonRef={node => {
+            this.anchorEl = node;
+          }}
+          aria-owns={open ? 'menu-list-grow' : undefined}
+          aria-haspopup="true"
+          onClick={this.handleToggle}
+          disableRipple={true}
+        >
+          <figure className="avatar">
+            <img alt="avatar icon" className="avatar img-circle" src={avatar} />
+          </figure>
+          <span className="user-name">{lastName}, {firstName}</span>
+          <span className="caret"></span>
+        </Button>
+        <Popper open={open} anchorEl={this.anchorEl} transition placement={placement} disablePortal>
+          {({ TransitionProps, placement }) => (
+            <Grow
+              {...TransitionProps}
+              id="menu-list-grow"
+              style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+            >
+              <ClickAwayListener onClickAway={this.handleClose}>
+                <MenuList className="user-dropdown-menu">
+                  <div className={`source-arrow-shadow ${placement}`}></div>
+                  <div className={`source-arrow ${placement}`}></div>
+                  <Grid container direction={'column'}>
+                    <Grid item className="grid-item">
+                      <img alt="avatar icon" className="lg-avatar avatar img-circle" src={avatar} />
+                      <div className="user-info">
+                        <Typography gutterBottom className="user-name">{lastName}, {firstName}</Typography>
+                        <Typography gutterBottom className="user-email"><a href={`mailto:${email}`}>{email}</a></Typography>
+                        <Typography gutterBottom className="user-organization">{org}</Typography>
+                      </div>
+                    </Grid>
+                    <Divider />
+                    <Grid item className="grid-item" >
+                      <Button variant="contained" color="secondary" onClick={this.handleSignOut} fullWidth={true}>
+                        Log Off
+                        <FontAwesomeIcon icon="sign-out-alt" />
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </MenuList>
+              </ClickAwayListener>
+            </Grow>
+          )}
+        </Popper>
+
       </div>
     );
   }
