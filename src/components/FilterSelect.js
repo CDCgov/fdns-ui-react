@@ -24,6 +24,18 @@ const defaultProps = {
   options: []
 };
 
+// this method gets a rough measurement of the labelWidth for the OutlinedInput
+// TODO: should probably dump the OutlinedInput and use a TextField select instead which would render this unnecessary
+// using an OutlinedInput currently because it has InputAdornment by default
+function getTextWidth(text, font) {
+    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+    const context = canvas.getContext("2d");
+    context.font = font;
+    const metrics = context.measureText(text);
+    // this calculation doesn't lead to a number that fits MUI's labelWidth number exactly so we use a multiplier to get a better estimate
+    return metrics.width * 1.6;
+}
+
 // define the class
 class FilterSelect extends Component {
 
@@ -32,7 +44,7 @@ class FilterSelect extends Component {
     super(props);
     this.state = {
       selected: this.props.selected || '',
-      labelWidth: 100,
+      labelWidth: getTextWidth(this.props.label, "Roboto 16pt"),
     }
 
     this.handleChange = this.handleChange.bind(this);
