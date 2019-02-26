@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import jsonpath from 'jsonpath';
 import dig from 'object-dig';
 import classNames from 'classnames';
 import ArrowTooltip from './ArrowTooltip';
@@ -49,7 +48,8 @@ class SuperGrid extends Component {
 
   // render a row inside of a cell
   renderRow(item, header, count, headerIndex) {
-    const data = jsonpath.query(item, header.path);
+    const dataKey = header.path.replace(/\$./i, '');
+    const data = item[dataKey];
 
     // set the class to first if we are the first row
     const className = classNames({

@@ -4,6 +4,7 @@ import './styles/fdns-ui-react.css';
 import 'animate.css/animate.css';
 import 'flexbox/css/grid.min.css';
 import 'flexbox/css/media-object.min.css';
+import 'react-virtualized/styles.css';
 
 // Importing all fas icons from FA
 import { library } from '@fortawesome/fontawesome-svg-core';
