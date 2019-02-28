@@ -20,6 +20,7 @@ const defaultProps = {
 
 // define the class
 class UploaderDrop extends Component {
+  _isMounted = false;
 
   // init
   constructor(props) {
@@ -30,12 +31,22 @@ class UploaderDrop extends Component {
     this.handleDrop = this.handleDrop.bind(this);
   }
 
+  componentDidMount() {
+    this._isMounted = true;
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
   // handle drop
   handleDrop(acceptedFiles, rejectedFiles) {
     this.props.onDrop(acceptedFiles, rejectedFiles);
-    this.setState({
-      files: acceptedFiles,
-    });
+    if (this._isMounted) {
+      this.setState({
+        files: acceptedFiles,
+      });
+    }
   }
 
   // render layout

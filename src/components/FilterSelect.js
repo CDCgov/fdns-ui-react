@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormControl, InputAdornment, InputLabel, MenuItem, OutlinedInput, Select } from '@material-ui/core';
+import { FormControl, InputAdornment, InputLabel, MenuItem, OutlinedInput, Select, TextField } from '@material-ui/core';
 
 import { _option } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,18 +24,6 @@ const defaultProps = {
   options: []
 };
 
-// this method gets a rough measurement of the labelWidth for the OutlinedInput
-// TODO: should probably dump the OutlinedInput and use a TextField select instead which would render this unnecessary
-// using an OutlinedInput currently because it has InputAdornment by default
-function getTextWidth(text, font) {
-  const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
-  const context = canvas.getContext('2d');
-  context.font = font;
-  const metrics = context.measureText(text);
-  // this calculation doesn't lead to a number that fits MUI's labelWidth number exactly so we use a multiplier to get a better estimate
-  return metrics.width * 1.6;
-}
-
 // define the class
 class FilterSelect extends Component {
 
@@ -44,7 +32,6 @@ class FilterSelect extends Component {
     super(props);
     this.state = {
       selected: this.props.selected || '',
-      labelWidth: getTextWidth(this.props.label, 'Roboto 16pt'),
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -95,23 +82,17 @@ class FilterSelect extends Component {
           className={controlClassName}
           fullWidth={true}
         >
-          <InputLabel
-            htmlFor={`outlined-select-input-${this.props.label}`}
-          >
-            {this.props.label}
-          </InputLabel>
-          <Select
+          <TextField
+            id={`outlined-select-input-${this.props.label}`}
+            select
+            label={this.props.label}
             value={this.state.selected}
             onChange={this.handleChange}
-            displayEmpty={true}
-            input={
-              <OutlinedInput
-                name={this.props.label}
-                id={`outlined-select-input-${this.props.label}`}
-                labelWidth={this.state.labelWidth}
-                startAdornment= {icon}
-              />
-            }
+            margin="normal"
+            variant="outlined"
+            InputProps={{
+              startAdornment: icon,
+            }}
           >
             <MenuItem value="" className="select-menu-item">
               <em>Select...</em>
@@ -123,7 +104,7 @@ class FilterSelect extends Component {
                 </MenuItem>
               )
             })}
-          </Select>
+          </TextField>
         </FormControl>
       </div>
     )

@@ -46,6 +46,7 @@ export Uploader from './components/Uploader';
 export UploaderDrop from './components/UploaderDrop';
 export UploaderPaste from './components/UploaderPaste';
 export UploaderList from './components/UploaderList';
+export ThemeProvider from './components/ThemeProvider';
 
 // React Bootstrap Wrappers
 
@@ -59,10 +60,10 @@ export { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/c
 export { Button, Fab } from '@material-ui/core';
 
 // Overlays
-export { Dialog, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
+export { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
 
 // Forms
-export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, TextField } from '@material-ui/core';
+export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, Switch, TextField } from '@material-ui/core';
 
 // Utilities
 export { Collapse } from '@material-ui/core';
