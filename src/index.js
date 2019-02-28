@@ -4,6 +4,7 @@ import './styles/fdns-ui-react.css';
 import 'animate.css/animate.css';
 import 'flexbox/css/grid.min.css';
 import 'flexbox/css/media-object.min.css';
+import 'react-virtualized/styles.css';
 
 // Importing all fas icons from FA
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -24,6 +25,7 @@ export IconButton from './components/IconButton';
 export DataEndpoint from './components/DataEndpoint';
 export DataInspector from './components/DataInspector';
 export DataLayers from './components/DataLayers';
+export DragSortableList from './components/DragSortableList';
 export DropdownUser from './components/DropdownUser';
 export DropdownDownloads from './components/DropdownDownloads';
 export Loader from './components/Loader';
@@ -44,6 +46,7 @@ export Uploader from './components/Uploader';
 export UploaderDrop from './components/UploaderDrop';
 export UploaderPaste from './components/UploaderPaste';
 export UploaderList from './components/UploaderList';
+export ThemeProvider from './components/ThemeProvider';
 
 // React Bootstrap Wrappers
 
@@ -57,10 +60,10 @@ export { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/c
 export { Button, Fab } from '@material-ui/core';
 
 // Overlays
-export { Dialog, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
+export { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
 
 // Forms
-export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, TextField } from '@material-ui/core';
+export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, Switch, TextField } from '@material-ui/core';
 
 // Utilities
 export { Collapse } from '@material-ui/core';

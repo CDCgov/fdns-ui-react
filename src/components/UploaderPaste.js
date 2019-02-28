@@ -29,12 +29,13 @@ class UploaderDrop extends Component {
     this.handleUpload = this.handleUpload.bind(this);
     this.handleReset = this.handleReset.bind(this);
     this.reset = this.reset.bind(this);
+    this.textareaRef = React.createRef();
   }
 
   // handle drop
   handleUpload() {
     let value = '';
-    const textarea = ReactDOM.findDOMNode(this.refs.textarea);
+    const textarea = ReactDOM.findDOMNode(this.textareaRef);
     if (textarea) value = textarea.value;
 
     // create file
@@ -57,7 +58,7 @@ class UploaderDrop extends Component {
 
   // reset the textarea
   reset() {
-    const textarea = ReactDOM.findDOMNode(this.refs.textarea);
+    const textarea = this.textareaRef.current;
     if (textarea) textarea.value = '';
   }
 
@@ -69,7 +70,7 @@ class UploaderDrop extends Component {
           aria-label="Paste Text to Upload"
           component="textarea"
           placeholder={this.props.placeholder}
-          ref="textarea"
+          ref={this.textareaRef}
         />
         <hr />
         <div className="icon-buttons pull-right">

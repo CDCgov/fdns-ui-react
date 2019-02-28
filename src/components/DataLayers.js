@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, IconButton, Grid } from '@material-ui/core';
 import classNames from 'classnames';
-import DragSortableList from 'react-drag-sortable';
+import DragSortableList from './DragSortableList';
 import { _headers } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
