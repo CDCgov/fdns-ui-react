@@ -25,6 +25,7 @@ export IconButton from './components/IconButton';
 export DataEndpoint from './components/DataEndpoint';
 export DataInspector from './components/DataInspector';
 export DataLayers from './components/DataLayers';
+export DragSortableList from './components/DragSortableList';
 export DropdownUser from './components/DropdownUser';
 export DropdownDownloads from './components/DropdownDownloads';
 export Loader from './components/Loader';
