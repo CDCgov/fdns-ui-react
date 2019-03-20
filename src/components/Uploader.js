@@ -10,12 +10,14 @@ import { Grid } from '@material-ui/core';
 const propTypes = {
   checkDuplicates: PropTypes.bool,
   onError: PropTypes.func,
+  onDrop: PropTypes.func,
 };
 
 // set the defaults
 const defaultProps = {
   checkDuplicates: true,
   onError() {},
+  onDrop() {},
 };
 
 // define the class
@@ -48,6 +50,8 @@ class Uploader extends Component {
 
   // handle drop
   handleDropUpload(files) {
+    this.props.onDrop(files);
+
     let newFileNames = this.state.fileNames;
 
     // look for duplicates or just add file names
