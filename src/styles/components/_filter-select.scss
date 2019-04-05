@@ -5,6 +5,10 @@ div.filter-select {
     background: none;
   }
 
+  .MuiSelect-select-186:focus {
+    background-color: rgba(0,0,0,0);
+  }
+
   .Select {
     .Select-control {
       border-radius: 0;

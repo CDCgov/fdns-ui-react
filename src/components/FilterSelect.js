@@ -21,7 +21,8 @@ const propTypes = {
 const defaultProps = {
   selected: '',
   label: 'My Select Filter',
-  options: []
+  options: [],
+  placeholder: 'Select...'
 };
 
 // define the class
@@ -95,7 +96,7 @@ class FilterSelect extends Component {
             }}
           >
             <MenuItem value="" className="select-menu-item">
-              <em>Select...</em>
+              <em>{this.props.placeholder}</em>
             </MenuItem>
             {this.props.options.map(option => {
               return (
