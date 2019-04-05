@@ -35,8 +35,8 @@ class UploaderDrop extends Component {
   // handle drop
   handleUpload() {
     let value = '';
-    const textarea = ReactDOM.findDOMNode(this.textareaRef);
-    if (textarea) value = textarea.value;
+    const textarea = this.textareaRef;
+    if (textarea) value = textarea.current.value;
 
     // create file
     const date = new Date();
