@@ -63,7 +63,6 @@ class UploaderDrop extends Component {
 
   // reset the textarea
   reset = () => {
-    const textarea = this.textareaRef;
     this.setState({
       textValue: ''
     });
