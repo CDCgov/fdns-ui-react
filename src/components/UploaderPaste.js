@@ -26,40 +26,46 @@ class UploaderDrop extends Component {
   // init
   constructor(props) {
     super(props);
-    this.handleUpload = this.handleUpload.bind(this);
-    this.handleReset = this.handleReset.bind(this);
-    this.reset = this.reset.bind(this);
-    this.textareaRef = React.createRef();
+    this.state = {
+      textValue: '',
+    }
   }
 
   // handle drop
-  handleUpload() {
-    let value = '';
-    const textarea = this.textareaRef;
-    if (textarea) value = textarea.current.value;
+  handleUpload = () => {
+    if (this.state.textValue.length > 0) {
+      const value = this.state.textValue;
 
-    // create file
-    const date = new Date();
-    const file = new Blob([value], { type: 'text/plain' });
-    file.name = `${this.props.prefix}${date.getTime()}.txt`;
-    file.lastModified = date;
+      // create file
+      const date = new Date();
+      const file = new Blob([value], { type: 'text/plain' });
+      file.name = `${this.props.prefix}${date.getTime()}.txt`;
+      file.lastModified = date;
 
-    // reset
-    if (this.props.resetOnUpload) this.reset();
+      // reset
+      if (this.props.resetOnUpload) this.reset();
 
-    // trigger the onUpload event with the file
-    this.props.onUpload(file);
+      // trigger the onUpload event with the file
+      this.props.onUpload(file);
+    }
   }
 
   // handle reset
-  handleReset() {
+  handleReset = () => {
     this.reset();
   }
 
+  handleChange = (e) => {
+    this.setState({
+      textValue: e.target.value
+    });
+  }
+
   // reset the textarea
-  reset() {
-    const textarea = this.textareaRef.current;
-    if (textarea) textarea.value = '';
+  reset = () => {
+    this.setState({
+      textValue: ''
+    });
   }
 
   // main render method
@@ -70,7 +76,8 @@ class UploaderDrop extends Component {
           aria-label="Paste Text to Upload"
           component="textarea"
           placeholder={this.props.placeholder}
-          ref={this.textareaRef}
+          onChange={this.handleChange}
+          value={this.state.textValue}
         />
         <hr />
         <div className="icon-buttons pull-right">
