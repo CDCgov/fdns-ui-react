@@ -1,6 +1,6 @@
 {
   "name": "fdns-ui-react",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "This is the open source UI library for react components using Foundation Services (FDNS).",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.js",
@@ -89,7 +89,6 @@
     "luxon": "^1.10.0",
     "material-ui-pickers": "^2.1.1",
     "moment": "^2.19.4",
-    "npm": "^6.4.1",
     "object-dig": "^0.1.0",
     "polyfill": "^0.1.0",
     "react-day-picker": "^7.2.4",
