@@ -76,11 +76,17 @@ npm start
 
 Open [http://localhost:3000/](http://localhost:3000/) in a web browser and view your Grid. You can now add any components in the library into your application.
 
-## Development
+## Development/StyleGuidist
 
-If you wish to add or test this library, the best way currently is to utilize the [fdns-ui-react-docs](https://github.com/CDCgov/fdns-ui-react-docs) app and run it in dev mode adjacent to this repo before linking it with npm. You can then run this app in dev mode (`npm run dev`) which will run `watch` and update the docs app as you change this library. Make sure to read the instructions in the docs library as well.
+This library currently uses [react-styleguidist](https://github.com/styleguidist/react-styleguidist) to document and view examples of the various components.
 
-If you get a `Multiple copies of React loaded` error (this will often happen when you do a new `npm i` on this library or on the docs app), you will need to run `npm run link` in the docs library again to resolve this issue.
+To view the StyleGuide, after running `npm i`, use the command:
+
+```sh
+npm run styleguide
+```
+
+or `npx styleguidist server`. This will run the styleguide on `http://localhost:6060/`.
 
 ## Public Domain
 This repository constitutes a work of the United States Government and is not

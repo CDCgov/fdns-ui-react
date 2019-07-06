@@ -18,7 +18,8 @@
     "test:jest": "node ./node_modules/jest/bin/jest.js ./__tests__",
     "test:watch": "node ./node_modules/jest/bin/jest.js --watch ./__tests__",
     "test:lint": "node ./node_modules/eslint/bin/eslint.js ./src",
-    "test:lint:fix": "node ./node_modules/eslint/bin/eslint.js ./src --fix"
+    "test:lint:fix": "node ./node_modules/eslint/bin/eslint.js ./src --fix",
+    "styleguide": "npx styleguidist server"
   },
   "jest": {
     "setupFilesAfterEnv": [
