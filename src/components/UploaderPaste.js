@@ -21,7 +21,7 @@ const defaultProps = {
 };
 
 // define the class
-class UploaderDrop extends Component {
+class UploaderPaste extends Component {
 
   // init
   constructor(props) {
@@ -91,7 +91,7 @@ class UploaderDrop extends Component {
 }
 
 // set the props, defaults and export
-UploaderDrop.propTypes = propTypes;
-UploaderDrop.defaultProps = defaultProps;
+UploaderPaste.propTypes = propTypes;
+UploaderPaste.defaultProps = defaultProps;
 
-export default UploaderDrop;
+export default UploaderPaste;

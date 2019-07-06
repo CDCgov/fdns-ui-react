@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, ClickAwayListener, Divider, Grid, Grow, MenuList, Paper, Popper, Typography } from '@material-ui/core';
+import { Button, ClickAwayListener, Divider, Grid, MenuList, Paper, Popper, Typography } from '@material-ui/core';
 
 import { _user } from '../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -71,36 +71,30 @@ class DropdownUser extends Component {
           <span className="caret"></span>
         </Button>
         <Popper open={open} anchorEl={this.anchorEl} transition placement={placement} disablePortal>
-          {({ TransitionProps, placement }) => (
-            <Grow
-              {...TransitionProps}
-              id="menu-list-grow"
-              style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-            >
-              <ClickAwayListener onClickAway={this.handleClose}>
-                <MenuList className="user-dropdown-menu">
-                  <div className={`source-arrow-shadow ${placement}`}></div>
-                  <div className={`source-arrow ${placement}`}></div>
-                  <Grid container direction={'column'}>
-                    <Grid item className="grid-item">
-                      <img alt="avatar icon" className="lg-avatar avatar img-circle" src={avatar} />
-                      <div className="user-info">
-                        <Typography gutterBottom className="user-name">{lastName}, {firstName}</Typography>
-                        <Typography gutterBottom className="user-email"><a href={`mailto:${email}`}>{email}</a></Typography>
-                        <Typography gutterBottom className="user-organization">{org}</Typography>
-                      </div>
-                    </Grid>
-                    <Divider />
-                    <Grid item className="grid-item" >
-                      <Button variant="contained" color="secondary" onClick={this.handleSignOut} fullWidth={true}>
-                        Log Off
-                        <FontAwesomeIcon icon="sign-out-alt" />
-                      </Button>
-                    </Grid>
+          {({ placement }) => (
+            <ClickAwayListener onClickAway={this.handleClose}>
+              <MenuList className="user-dropdown-menu">
+                <div className={`source-arrow-shadow ${placement}`}></div>
+                <div className={`source-arrow ${placement}`}></div>
+                <Grid container direction={'column'}>
+                  <Grid item className="grid-item">
+                    <img alt="avatar icon" className="lg-avatar avatar img-circle" src={avatar} />
+                    <div className="user-info">
+                      <Typography gutterBottom className="user-name">{lastName}, {firstName}</Typography>
+                      <Typography gutterBottom className="user-email"><a href={`mailto:${email}`}>{email}</a></Typography>
+                      <Typography gutterBottom className="user-organization">{org}</Typography>
+                    </div>
                   </Grid>
-                </MenuList>
-              </ClickAwayListener>
-            </Grow>
+                  <Divider />
+                  <Grid item className="grid-item" >
+                    <Button variant="contained" color="secondary" onClick={this.handleSignOut} fullWidth={true}>
+                      Log Off
+                      <FontAwesomeIcon icon="sign-out-alt" />
+                    </Button>
+                  </Grid>
+                </Grid>
+              </MenuList>
+            </ClickAwayListener>
           )}
         </Popper>
 

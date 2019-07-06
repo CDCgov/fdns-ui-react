@@ -4,6 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 
+/**
+ * A tooltip with a flexible Arrow, similar to a chat bubble. Can be seen in SuperGrid.
+ */
+
 function arrowGenerator(color) {
   return {
     '&[x-placement*="bottom"] $arrow': {
@@ -53,7 +57,7 @@ function arrowGenerator(color) {
 
 const styles = theme => ({
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing(2),
   },
   arrowPopper: arrowGenerator(theme.palette.grey[700]),
   arrow: {
