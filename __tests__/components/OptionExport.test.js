@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { createShallow } from '@material-ui/core/test-utils';
 import OptionExport from '../../src/components/OptionExport';
 
 describe('<OptionExport />', () => {
-  const component = shallow(
-    <OptionExport />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('option-export');
+    const wrapper = shallow(<OptionExport />);
   });
 });

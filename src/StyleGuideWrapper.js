@@ -12,11 +12,11 @@ import 'flexbox/css/media-object.min.css';
 import 'react-virtualized/styles.css';
 
 const StyleGuideWrapper = ({ children }) => {
-    return (
-        <div>
-            {children}
-        </div>
-    )
+  return (
+    <div>
+      {children}
+    </div>
+  )
 };
 
 export default StyleGuideWrapper;

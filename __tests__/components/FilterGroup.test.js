@@ -1,19 +1,26 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { createShallow } from '@material-ui/core/test-utils';
 import FilterGroup from '../../src/components/FilterGroup';
 
 describe('<FilterGroup />', () => {
-  const component = shallow(
-    <FilterGroup>
-      <p id="foo">bar</p>
-    </FilterGroup>
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('filter-group');
+    const wrapper = shallow(
+      <FilterGroup>
+        <p id="foo">bar</p>
+      </FilterGroup>
+    )
   });
 
   it('renders the children', () => {
-    expect(component.find('#foo').text()).toBe('bar');
+    expect(shallow(
+      <FilterGroup>
+        <p id="foo">bar</p>
+      </FilterGroup>
+    ).find('#foo').text()).toBe('bar');
   });
 });
