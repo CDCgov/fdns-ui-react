@@ -6,7 +6,7 @@
   "jsnext:main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "dev": "watch 'npm run prepare' src",
+    "start": "npx styleguidist server",
     "prepare": "npm run babel && npm run sass",
     "webpack": "webpack --config webpack.config.js -p",
     "webpack:dev": "webpack --config webpack.config.js",
@@ -18,8 +18,7 @@
     "test:jest": "node ./node_modules/jest/bin/jest.js ./__tests__",
     "test:watch": "node ./node_modules/jest/bin/jest.js --watch ./__tests__",
     "test:lint": "node ./node_modules/eslint/bin/eslint.js ./src",
-    "test:lint:fix": "node ./node_modules/eslint/bin/eslint.js ./src --fix",
-    "styleguide": "npx styleguidist server"
+    "test:lint:fix": "node ./node_modules/eslint/bin/eslint.js ./src --fix"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -66,7 +65,6 @@
     "sinon": "^5.1.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.1.1",
-    "watch": "^1.0.2",
     "webpack": "^4.35.2"
   },
   "peerDependencies": {

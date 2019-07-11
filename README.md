@@ -83,7 +83,7 @@ This library currently uses [react-styleguidist](https://github.com/styleguidist
 To view the StyleGuide, after running `npm i`, use the command:
 
 ```sh
-npm run styleguide
+npm start
 ```
 
 or `npx styleguidist server`. This will run the styleguide on `http://localhost:6060/`.

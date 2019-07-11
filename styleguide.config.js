@@ -7,4 +7,5 @@ module.exports = {
 	},
 	skipComponentsWithoutExample: true,
 	version,
+	title: 'FDNS UI React Style Guide',
 };
