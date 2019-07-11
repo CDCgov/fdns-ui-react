@@ -109,7 +109,7 @@ class Uploader extends Component {
   render() {
     return (
       <Grid className="uploader" >
-        <Grid container className="row" spacing={32}>
+        <Grid container className="row" spacing={4}>
           <Grid item className="uploader-column" xs={6}>
             <UploaderPaste onUpload={this.handlePasteUpload} />
           </Grid>

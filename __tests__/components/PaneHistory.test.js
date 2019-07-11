@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { createShallow } from '@material-ui/core/test-utils';
 import PaneHistory from '../../src/components/PaneHistory';
 
 describe('<PaneHistory />', () => {
-  const component = shallow(
-    <PaneHistory />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('pane-history');
+    const wrapper = shallow(<PaneHistory />);
   });
 });

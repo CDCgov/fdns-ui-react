@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { createShallow } from '@material-ui/core/test-utils';
 import DropdownUser from '../../src/components/DropdownUser';
 
 describe('<DropdownUser />', () => {
-  const component = shallow(
-    <DropdownUser />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('dropdown-user');
+    const wrapper = shallow(<DropdownUser />);
   });
 });
