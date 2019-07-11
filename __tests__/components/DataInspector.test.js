@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import DataInspector from '../../src/components/DataInspector';
 
 describe('<DataInspector />', () => {
-let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <DataInspector />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<DataInspector />);
+    expect(component.html()).toContain('data-inspector');
   });
 });

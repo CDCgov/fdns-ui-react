@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import OptionAction from '../../src/components/OptionAction';
 
 describe('<OptionAction />', () => {
-  let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <OptionAction />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<OptionAction />);
+    expect(component.html()).toContain('option-action');
   });
 });

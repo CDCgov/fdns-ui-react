@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import OptionPageLimit from '../../src/components/OptionPageLimit';
 
 describe('<OptionPageLimit />', () => {
-  let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <OptionPageLimit />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<OptionPageLimit />);
+    expect(component.html()).toContain('option-page-limit');
   });
 });

@@ -17,7 +17,9 @@ const palette = {
   },
 };
 
-const typography = {};
+const typography = {
+  useNextVariants: true,
+};
 
 const lightTheme = createMuiTheme({
   palette: Object.assign(palette, {

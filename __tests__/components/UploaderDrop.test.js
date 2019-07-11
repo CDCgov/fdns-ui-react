@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import UploaderDrop from '../../src/components/UploaderDrop';
 
 describe('<UploaderDrop />', () => {
-  let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <UploaderDrop />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<UploaderDrop />);
+    expect(component.html()).toContain('uploader-drop');
   });
 });

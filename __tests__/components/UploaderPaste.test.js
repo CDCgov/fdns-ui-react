@@ -1,15 +1,13 @@
 import React from 'react';
+import { shallow } from 'enzyme';
 import UploaderPaste from '../../src/components/UploaderPaste';
-import { createShallow } from '@material-ui/core/test-utils';
 
 describe('<UploaderPaste />', () => {
-  let shallow;
-
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <UploaderPaste />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<UploaderPaste />);
+    expect(component.html()).toContain('uploader-paste');
   });
 });

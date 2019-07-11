@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import Loader from '../../src/components/Loader';
 
 describe('<Loader />', () => {
-  let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <Loader />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<Loader />);
+    expect(component.html()).toContain('loader');
   });
 });

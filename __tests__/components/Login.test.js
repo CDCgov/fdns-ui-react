@@ -1,14 +1,13 @@
 import React from 'react';
-import { createShallow } from '@material-ui/core/test-utils';
+import { shallow } from 'enzyme';
 import Login from '../../src/components/Login';
 
 describe('<Login />', () => {
-  let shallow;
-  beforeAll(() => {
-    shallow = createShallow();
-  });
-
+  const component = shallow(
+    <Login />
+  );
+  
   it('renders', () => {
-    const wrapper = shallow(<Login />);
+    expect(component.html()).toContain('login');
   });
 });
