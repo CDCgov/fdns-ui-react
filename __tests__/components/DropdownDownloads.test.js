@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import DropdownDownloads from '../../src/components/DropdownDownloads';
+import DropdownDownloads from '../../src/components/options/DropdownDownloads';
 
 describe('<DropdownDownloads />', () => {
   let shallow;

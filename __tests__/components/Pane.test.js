@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Pane from '../../src/components/Pane';
+import Pane from '../../src/components/layouts/Pane';
 
 describe('<Pane />', () => {
   const component = mount(

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import DropdownUser from '../../src/components/DropdownUser';
+import DropdownUser from '../../src/components/options/DropdownUser';
 
 describe('<DropdownUser />', () => {
   let shallow;

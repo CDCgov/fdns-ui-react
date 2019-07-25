@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { _downloads } from '../fixtures/shapes';
+import { _downloads } from '../../fixtures/shapes';
 import { Button, ClickAwayListener, Grid, Grow, IconButton, LinearProgress, MenuList, Paper, Popper, Tooltip, Typography } from '@material-ui/core';
 
 // icons

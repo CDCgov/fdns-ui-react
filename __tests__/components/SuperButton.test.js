@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SuperButton from '../../src/components/SuperButton';
+import SuperButton from '../../src/components/buttons/SuperButton';
 
 describe('<SuperButton />', () => {
   const component = shallow(

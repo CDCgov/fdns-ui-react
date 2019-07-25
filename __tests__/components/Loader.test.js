@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import Loader from '../../src/components/Loader';
+import Loader from '../../src/components/feedback/Loader';
 
 describe('<Loader />', () => {
   let shallow;

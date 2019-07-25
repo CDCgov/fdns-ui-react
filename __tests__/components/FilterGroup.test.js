@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import FilterGroup from '../../src/components/FilterGroup';
+import FilterGroup from '../../src/components/filters/FilterGroup';
 
 describe('<FilterGroup />', () => {
   let shallow;

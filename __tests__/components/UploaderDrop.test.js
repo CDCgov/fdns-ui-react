@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import UploaderDrop from '../../src/components/UploaderDrop';
+import UploaderDrop from '../../src/components/uploaders/UploaderDrop';
 
 describe('<UploaderDrop />', () => {
   let shallow;

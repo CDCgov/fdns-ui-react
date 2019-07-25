@@ -2,7 +2,7 @@ The DataLayers component is used to modify the available headers.
 
 ```js
 	import { Button } from '@material-ui/core';
-	import { headers } from '../fixtures/fixtures.js';
+	import { headers } from '../../fixtures/fixtures.js';
     initialState = {
       active: false,
     };

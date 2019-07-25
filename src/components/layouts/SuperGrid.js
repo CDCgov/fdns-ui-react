@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import dig from 'object-dig';
 import classNames from 'classnames';
-import ArrowTooltip from './ArrowTooltip';
+import ArrowTooltip from '../utils/ArrowTooltip';
 
-import OptionAction from './OptionAction';
-import OptionErrorsWarnings from './OptionErrorsWarnings';
-import { _headers } from '../fixtures/shapes';
+import OptionAction from '../options/OptionAction';
+import OptionErrorsWarnings from '../options/OptionErrorsWarnings';
+import { _headers } from '../../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 

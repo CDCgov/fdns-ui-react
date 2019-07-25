@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, ClickAwayListener, Divider, Grid, MenuList, Paper, Popper, Typography } from '@material-ui/core';
 
-import { _user } from '../fixtures/shapes';
+import { _user } from '../../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
