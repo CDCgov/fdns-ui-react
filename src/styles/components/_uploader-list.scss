@@ -1,12 +1,12 @@
 $list-height: 250px;
 
 div.uploader-list-box {
-  background-color: $white;
-  border: 1px solid $true-blue;
+  background-color: $white-00;
+  border: 1px solid $cdc-blue-800;
   padding: $default-padding;
 
   hr {
-    border-top: 1px solid $true-blue;
+    border-top: 1px solid $cdc-blue-800;
   }
 }
 
@@ -22,7 +22,7 @@ div.uploader-list {
 
       svg {
         font-size: 1.2em;
-        color: $jade;
+        color: $teal-600;
         position: relative;
         top: -4px;
       }
@@ -30,7 +30,7 @@ div.uploader-list {
       span {
         margin: 0 10px;
         font-size: 1em;
-        color: $dark-grey;
+        color: $grey-800;
         display: inline-block;
         max-width: 88%;
         overflow: hidden;

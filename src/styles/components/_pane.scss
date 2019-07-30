@@ -1,11 +1,11 @@
 $btn-size: 35px;
 
 .pane {
-  background: $white;
+  background: $white-00;
   margin: $default-margin;
   -webkit-transition: background-color 0.2s; /* Safari */
   transition: background-color 0.2s;
-  box-shadow: 0 1px 1px $winter;
+  box-shadow: 0 1px 1px $grey-500;
 
   .pane-header {
     cursor: pointer;
@@ -13,7 +13,7 @@ $btn-size: 35px;
     .pane-title, .pane-subtitle {
       padding: $default-padding;
       white-space: nowrap;
-      color: $davy-grey;
+      color: $grey-600;
     }
 
     .pane-title {
@@ -22,7 +22,7 @@ $btn-size: 35px;
 
     .pane-subtitle {
       text-align: right;
-      border-right: 1px solid $rain;
+      border-right: 1px solid $grey-200;
     }
 
     .fx-grd {
@@ -45,11 +45,11 @@ $btn-size: 35px;
   }
 
   .pane-body {
-    border-top: 1px solid $rain;
+    border-top: 1px solid $grey-200;
     padding: $default-padding;
   }
   &.collapsed {
-    background: $smoke;
+    background: $grey-50;
 
     .pane-body {
       padding: 0;

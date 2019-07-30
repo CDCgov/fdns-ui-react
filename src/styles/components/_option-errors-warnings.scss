@@ -10,13 +10,13 @@ div.option-errors-warnings {
 
   button.option-error {
     svg {
-      color: $vermilion;
+      color: $red-500;
     }
   }
 
   button.option-warning {
     svg {
-      color: $amber-gold;
+      color: $amber-600;
     }
   }
 }
