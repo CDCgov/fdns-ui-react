@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import OptionPageLimit from '../../src/components/OptionPageLimit';
+import OptionPageLimit from '../../src/components/options/OptionPageLimit';
 
 describe('<OptionPageLimit />', () => {
   let shallow;

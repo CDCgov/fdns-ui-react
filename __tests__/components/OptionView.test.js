@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import OptionView from '../../src/components/OptionView';
+import OptionView from '../../src/components/options/OptionView';
 
 describe('<OptionView />', () => {
   let shallow;

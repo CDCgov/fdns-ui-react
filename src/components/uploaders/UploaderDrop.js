@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import Dropzone from 'react-dropzone'
-import IconButton from './IconButton';
+import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import UploaderPaste from '../../src/components/UploaderPaste';
+import UploaderPaste from '../../src/components/uploaders/UploaderPaste';
 import { createShallow } from '@material-ui/core/test-utils';
 
 describe('<UploaderPaste />', () => {

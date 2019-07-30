@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import PaneHistory from '../../src/components/PaneHistory';
+import PaneHistory from '../../src/components/layouts/PaneHistory';
 
 describe('<PaneHistory />', () => {
   let shallow;

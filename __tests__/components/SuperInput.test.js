@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import SuperInput from '../../src/components/SuperInput';
+import { createShallow } from '@material-ui/core/test-utils';
+import SuperInput from '../../src/components/inputs/SuperInput';
 
 describe('<SuperInput />', () => {
-  const component = shallow(
-    <SuperInput />
-  );
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
   
   it('renders', () => {
-    expect(component.html()).toContain('super-input');
+    const wrapper = shallow(<SuperInput />);
   });
 });

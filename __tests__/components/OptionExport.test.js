@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import OptionExport from '../../src/components/OptionExport';
+import OptionExport from '../../src/components/options/OptionExport';
 
 describe('<OptionExport />', () => {
   let shallow;

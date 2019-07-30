@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UploaderPaste from './UploaderPaste';
 import UploaderList from './UploaderList';
 import UploaderDrop from './UploaderDrop';
-import IconButton from './IconButton';
+import IconButton from '../buttons/IconButton';
 import { Grid } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types

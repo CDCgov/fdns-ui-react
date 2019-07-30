@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import SuperGrid from '../../src/components/SuperGrid';
+import SuperGrid from '../../src/components/layouts/SuperGrid';
 import { messages, headers } from '../../src/fixtures/fixtures';
 
 describe('<SuperGrid />', () => {

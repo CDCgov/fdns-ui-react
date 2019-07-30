@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormControl, InputAdornment, InputLabel, MenuItem, OutlinedInput, Select, TextField } from '@material-ui/core';
 
-import { _option } from '../fixtures/shapes';
+import { _option } from '../../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types

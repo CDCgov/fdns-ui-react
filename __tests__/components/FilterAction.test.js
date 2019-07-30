@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import FilterAction from '../../src/components/FilterAction';
+import FilterAction from '../../src/components/filters/FilterAction';
 
 describe('<FilterAction />', () => {
   var applied = false;

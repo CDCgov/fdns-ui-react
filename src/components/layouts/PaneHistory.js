@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from '@material-ui/core';
 import Pane from './Pane';
-import { _history } from '../fixtures/shapes';
+import { _history } from '../../fixtures/shapes';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {

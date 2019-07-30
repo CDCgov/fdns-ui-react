@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import SuperTable from '../../src/components/SuperTable';
+import SuperTable from '../../src/components/layouts/SuperTable';
 import { messages, headers } from '../../src/fixtures/fixtures';
 
 describe('<SuperTable />', () => {

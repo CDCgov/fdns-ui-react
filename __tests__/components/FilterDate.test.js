@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import FilterDate from '../../src/components/FilterDate';
+import FilterDate from '../../src/components/filters/FilterDate';
 
 describe('<FilterDate />', () => {
   let shallow;
