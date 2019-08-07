@@ -12,7 +12,7 @@ div.data-layers {
   font-size: 0.9em;
   max-width: 0px;
   z-index: 1000;
-  background-color: $smoke;
+  background-color: $grey-50;
   -webkit-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
   box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
@@ -25,9 +25,9 @@ div.data-layers {
   overflow-x: hidden;
 
   div.layers-headers {
-    background-color: $rain;
+    background-color: $grey-200;
     height: $row-height;
-    color: $davy-grey;
+    color: $grey-600;
     font-weight: bold;
     padding: 0;
 
@@ -41,7 +41,7 @@ div.data-layers {
 
       &.col-display {
         border-radius: 0px;
-        color: $compliant-grey;
+        color: $grey-900;
         padding-left: 14px;
         font-weight: bold;
         letter-spacing: 0.05em;
@@ -55,8 +55,8 @@ div.data-layers {
       }
 
       button.save {
-        border: 1px solid $jade;
-        color: $jade;
+        border: 1px solid $teal-700;
+        color: $teal-600;
         background: none;
         padding: .1em;
         margin: 0;
@@ -74,7 +74,7 @@ div.data-layers {
         border: 0;
         padding: 0;
         margin: 0;
-        color: $davy-grey;
+        color: $grey-600;
         border-radius: 0;
       }
     }
@@ -83,11 +83,11 @@ div.data-layers {
   div.layers-rows {
     div.layers-row {
       height: $row-height;
-      color: $davy-grey;
+      color: $grey-600;
       cursor: move;
       min-width: $width;
-      background-color: $smoke;
-      border-bottom: 1px solid $rain;
+      background-color: $grey-50;
+      border-bottom: 1px solid $grey-200;
       display: flex;
       align-items: center;
 
@@ -100,20 +100,20 @@ div.data-layers {
 
         svg {
           font-size: 1.2em;
-          color: $winter-storm;
+          color: $grey-400;
         }
 
         &.visible {
           svg {
             font-size: 1.2em;
-            color: $davy-grey;
+            color: $grey-600;
           }
         }
       }
 
       span.drag-icon {
         svg {
-          color: $un-blue;
+          color: $cdc-blue-600;
         }
       }
 
@@ -144,25 +144,25 @@ div.data-layers {
     }
 
     div.placeholder {
-      background-color: $winter-storm;
-      border: 1px dashed $rain;
+      background-color: $grey-400;
+      border: 1px dashed $grey-200;
     }
 
     div.draggable {
       &.dragged {
         div.layers-row {
-          background-color: $rain;
-          color: $davy-grey;
+          background-color: $grey-200;
+          color: $grey-600;
 
           span.drag-icon {
             svg {
-              color: $davy-grey;
+              color: $grey-600;
             }
           }
 
           button {
             svg {
-              color: $davy-grey;
+              color: $grey-600;
             }
           }
         }

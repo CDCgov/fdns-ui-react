@@ -17,7 +17,7 @@ $dropdown-min-width: 120px;
       border-radius: $avatar-size / 2;
       float: left;
       margin: 0 5px 0 0;
-      background-color: $white;
+      background-color: $white-00;
 
       img {
         width: 100%;
@@ -33,7 +33,7 @@ $dropdown-min-width: 120px;
     }
 
     &.open {
-      background-color: $light-grey-blue;
+      background-color: $grey-100;
     }
   }
 
@@ -58,7 +58,7 @@ $dropdown-min-width: 120px;
       height: $lg-avatar-size;
       border-radius: 50%;
       margin-right: $default-margin;
-      background-color: $white;
+      background-color: $white-00;
     }
 
     .lg-avatar, .user-info {
@@ -71,11 +71,11 @@ $dropdown-min-width: 120px;
     }
 
     p.user-email {
-      color: $true-blue;
+      color: $cdc-blue-800;
     }
 
     p.user-organization {
-      color: $storm;
+      color: $grey-600;
     }
 
     button {

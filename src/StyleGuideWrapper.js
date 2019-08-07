@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import ThemeProvider from '../src/components/ThemeProvider';
 
 // Importing third party and local styles/icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -13,9 +14,9 @@ import 'react-virtualized/styles.css';
 
 const StyleGuideWrapper = ({ children }) => {
   return (
-    <div>
+    <ThemeProvider theme="light">
       {children}
-    </div>
+    </ThemeProvider>
   )
 };
 

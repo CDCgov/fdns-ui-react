@@ -15,7 +15,7 @@ $bar-height: 10px;
     padding-bottom: 0;
     text-align: left;
     width: $dropdown-width;
-    color: $winter;
+    color: $grey-500;
 
     .download-row {
       margin: 0;
@@ -47,7 +47,7 @@ $bar-height: 10px;
 
     p {
       font-size: 0.7rem;
-      color: $winter;
+      color: $grey-500;
     }
 
     button.dropdown-toggle {
@@ -69,25 +69,25 @@ $bar-height: 10px;
     ul.dropdown-menu {
       border: 0;
       border-radius: 0;
-      background: $winter-storm;
+      background: $grey-400;
     }
 
     &.open {
       button.dropdown-toggle {
-        background-color: $light-grey-blue;
+        background-color: $grey-100;
       }
     }
 
     div.empty {
       text-align: center;
-      color: $storm;
+      color: $grey-600;
       padding: $default-padding;
       font-weight: normal;
       font-size: 0.9em;
     }
 
     ul.dropdown-menu {
-      background-color: $light-grey-blue;
+      background-color: $grey-100;
       border-radius: 0;
       margin: 0;
       padding: $default-padding;
@@ -97,13 +97,13 @@ $bar-height: 10px;
         margin: 0;
         padding: 0;
         font-weight: normal;
-        color: $davy-grey;
+        color: $grey-600;
       }
     }
   }
 
   div.reset-downloads {
-    border-top: 1px solid $winter-storm;
+    border-top: 1px solid $grey-400;
     text-align: right;
   }
 
@@ -114,7 +114,7 @@ $bar-height: 10px;
     margin: 0;
     float: right;
     text-align: right;
-    color: $storm;
+    color: $grey-600;
     font-size: 0.85em;
   }
   button.btn.btn-default.btn-download {
@@ -123,7 +123,7 @@ $bar-height: 10px;
     padding: 5px;
     margin: 0;
     text-align: right;
-    color: $true-blue;
+    color: $cdc-blue-800;
     font-size: 1em;
   }
 }

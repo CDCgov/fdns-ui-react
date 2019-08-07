@@ -26,7 +26,7 @@ const defaultProps = {
   imageAlt: '',
   theme: 'default',
   className: '',
-  color: 'default',
+  color: 'primary',
   variant: 'text',
   onClick() {},
 };

@@ -10,16 +10,16 @@ div.option-view {
     transition: opacity 0.3s ease-in-out;
 
     &:hover {
-      background-color: $smoke;
+      background-color: $grey-50;
       opacity: 0.9;
-      text-shadow: 0 2px 0 $white;
+      text-shadow: 0 2px 0 $white-00;
     }
 
     &:active {
-      background-color: $smoke;
+      background-color: $grey-50;
       opacity: 1;
-      -webkit-box-shadow:inset 0 0 5px 1px $fog-light;
-      box-shadow:inset 0 0 5px 1px $fog-light;
+      -webkit-box-shadow:inset 0 0 5px 1px $grey-100;
+      box-shadow:inset 0 0 5px 1px $grey-100;
     }
 
     span.icon-super-grid, span.icon-super-table, span.icon-super-chart {
