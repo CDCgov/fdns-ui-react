@@ -1,22 +1,25 @@
 .super-button {
   button {
     cursor: pointer;
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(left, #ffffff 0%, #f6f6f6 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ffffff 0%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ffffff 0%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 */
-    border: 1px solid #EBEBEB;
-    padding: 8px;
+    background: #F7F8F9; /* Old browsers */
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.11), 0px 1px 1px 0px rgba(0,0,0,0.13), 0px 2px 1px -1px rgba(0,0,0,0.02);
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    min-width: 64px;
     width: 100%;
     margin: 10px 0;
-    font-size: 14px;
-    color: #6B6B6B;
+    font-size: 0.875rem;
+    color: #3E4144;
     outline: none;
 
     img {
       display: block;
-      margin: 5px auto;
+      margin: 8px auto;
     }
 
     &:hover {
@@ -24,13 +27,20 @@
     }
   }
 
-  &.blue {
+  &.primary {
     button {
-      background: #3396da; /* Old browsers */
-      background: -moz-linear-gradient(left, #3396da 0%, #1972be 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, #3396da 0%,#1972be 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #3396da 0%,#1972be 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3396da', endColorstr='#1972be',GradientType=1 ); /* IE6-9 */
+      background: #075290; /* Old browsers */
+      border: 0;
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.secondary {
+    button {
+      background: #20958E; /* Old browsers */
       border: 0;
       color: #ffffff;
 
