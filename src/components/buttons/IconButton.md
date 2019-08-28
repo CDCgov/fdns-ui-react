@@ -7,9 +7,9 @@ The IconButton component is used to have a simple button with an icon.
       <IconButton icon="envelope" color="primary" variant="contained" onClick={()=>{}}>{'Primary'}</IconButton>
       <IconButton icon="cogs" color="default" variant="contained" onClick={()=>{}}>{'Success'}</IconButton>
       <IconButton icon="info-circle" color="default" variant="contained" onClick={()=>{}}>{'Info'}</IconButton>
-      <IconButton icon="exclamation-triangle" color="secondary" variant="contained" onClick={()=>{}}>{'Danger'}</IconButton>
+      <IconButton icon="calendar" color="secondary" variant="contained" onClick={()=>{}}>{'Secondary'}</IconButton>
       <IconButton icon="bookmark" color="default" variant="text" onClick={()=>{}}>{'Transparent'}</IconButton>
-      <IconButton icon="calendar" color="default" variant="contained" onClick={()=>{}}>{'Alternate'}</IconButton>
+      <IconButton icon="exclamation-triangle" color="default" variant="contained" onClick={()=>{}}>{'Alternate'}</IconButton>
       <IconButton icon="laptop" color="default" variant="outlined" onClick={()=>{}}>{'Clear'}</IconButton>
       <IconButton image={imgDataLayers} imageAlt="Data Layers" color="default" variant="outlined" onClick={()=>{}}>{'White'}</IconButton>
     </div>
