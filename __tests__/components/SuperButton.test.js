@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { createShallow } from '@material-ui/core/test-utils';
 import SuperButton from '../../src/components/buttons/SuperButton';
 
 describe('<SuperButton />', () => {
-  const component = shallow(
-    <SuperButton />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('super-button');
+    const wrapper = shallow(<SuperButton />);
   });
 });
