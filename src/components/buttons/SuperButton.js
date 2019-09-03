@@ -32,8 +32,8 @@ class SuperButton extends Component {
     if (icon !== undefined) imgIcon = <img src={icon} alt={iconAlt} />;
 
     return (
-      <div className={`super-button ${btnStyle} ${className}`}>
-        <Button onClick={onClick}>
+      <div id="super button" className={`super-button ${btnStyle} ${className}`}>
+        <Button role="button" aria-label="super button" onClick={onClick}>
           {imgIcon}
           {label}
         </Button>

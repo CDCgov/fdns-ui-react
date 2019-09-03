@@ -10,6 +10,26 @@ module.exports = {
 	title: 'FDNS UI React Style Guide',
 	sections: [
 		{
+			name: 'Getting Started',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+        {
+          name: 'Installation',
+          content: './src/documentation/installation/installation.md',
+				},
+				{
+          name: '508 compliance',
+          content: './src/documentation/508.md',
+          description: 'The description for the 508 section'
+				},
+				{
+          name: 'FAQs',
+          content: './src/documentation/FAQs.md',
+          description: 'The description for the FAQs section'
+        },
+      ]
+		},
+		{
 			name: 'Buttons',	
 			components: './src/components/buttons/*.js',
 		},
