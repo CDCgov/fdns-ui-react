@@ -30,6 +30,24 @@ module.exports = {
       ]
 		},
 		{
+			name: 'Design Library',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+        {
+          name: 'Style',
+          content: './src/documentation/design/style.md',
+				},
+				{
+          name: 'Theme',
+          content: './src/documentation/design/theme.md',
+				},
+				{
+          name: 'Components',
+          content: './src/documentation/design/components.md',
+        },
+      ]
+		},
+		{
 			name: 'Buttons',	
 			components: './src/components/buttons/*.js',
 		},
