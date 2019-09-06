@@ -108,7 +108,7 @@ class Login extends Component {
         <SuperButton
           className="btn-login"
           label="Sign In"
-          btnStyle="blue"
+          btnStyle="primary"
           onClick={this.handleLoginClick}
         />
         <div className="hr">
@@ -117,7 +117,7 @@ class Login extends Component {
         <SuperButton
           className="btn-piv"
           label="Access Smart PIV Card"
-          btnStyle="grey"
+          btnStyle="default"
           icon={icon}
           iconAlt="Smart PIV Card Icon"
           onClick={this.handleSmartCardClick}

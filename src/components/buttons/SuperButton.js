@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   label: PropTypes.string,
-  btnStyle: PropTypes.oneOf(['grey', 'blue']),
+  btnStyle: PropTypes.oneOf(['default', 'primary', 'secondary']),
   className: PropTypes.string,
   icon: PropTypes.oneOfType([
     PropTypes.string,
@@ -17,7 +18,6 @@ const propTypes = {
 // set the defaults
 const defaultProps = {
   label: 'Super Button',
-  btnStyle: 'grey',
   onClick() {},
 };
 
@@ -32,11 +32,11 @@ class SuperButton extends Component {
     if (icon !== undefined) imgIcon = <img src={icon} alt={iconAlt} />;
 
     return (
-      <div className={`super-button ${btnStyle} ${className}`}>
-        <button onClick={onClick}>
+      <div id="super button" className={`super-button ${btnStyle} ${className}`}>
+        <Button role="button" aria-label="super button" onClick={onClick}>
           {imgIcon}
           {label}
-        </button>
+        </Button>
       </div>
     );
   }

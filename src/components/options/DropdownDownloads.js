@@ -150,7 +150,7 @@ class DropdownDownloads extends Component {
     const { open } = this.state;
 
     return (
-      <div className="dropdown-downloads">
+      <div className="dropdown-downloads" aria-label="download">
         <IconButton
           buttonRef={node => {
             this.anchorEl = node;
