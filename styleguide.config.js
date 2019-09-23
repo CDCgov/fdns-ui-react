@@ -21,7 +21,7 @@ module.exports = {
 			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
       sections: [
         {
-          name: 'Installation',
+          name: 'Installation of React Library',
           content: './src/documentation/installation/installation.md',
 				},
 				{
