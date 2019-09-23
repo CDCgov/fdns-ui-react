@@ -7,8 +7,15 @@ module.exports = {
 	},
 	skipComponentsWithoutExample: true,
 	version,
-	title: 'FDNS UI React Style Guide',
+	title: 'FDNS UI Library',
 	sections: [
+		{
+      sections: [
+        {
+          content: './src/documentation/introduction.md',
+				},
+      ]
+		},
 		{
 			name: 'Getting Started',
 			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
