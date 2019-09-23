@@ -101,11 +101,12 @@ module.exports = {
 	],
 	theme: {
     color: {
+			name: '#ffffff',
       baseBackground: '#fdfdfc',
-      sidebarBackground: '#f7f8f9',
+      sidebarBackground: '#00223D',
       codeBackground: '#ffffff',
-			link: '#717376',
-			linkHover: '#52a5e9',
+			link: '#E9E8E7',
+			linkHover: '#A6D7FF',
     },
     fontFamily: {
       base: '"Roboto", sans-serif'

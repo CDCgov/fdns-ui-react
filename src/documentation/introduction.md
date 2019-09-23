@@ -7,4 +7,4 @@ h1, h2 { text-align: center; }
 
 # FDNS UI 
 ## DESIGN & COMPONENT LIBRARY
-`Version 0.8.4`
+`Version 0.8.5`
