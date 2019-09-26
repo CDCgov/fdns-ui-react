@@ -30,6 +30,26 @@ body {
       color: aliceblue;
     }
   }
+
+  .rsg--root-63 {
+    border-color: none;
+
+    ul {
+     border-color: none;
+
+      li {
+        border-color: none;
+
+        a {
+          color: #E9E8E7;
+
+          &:hover {
+            color: #A6D7FF;
+          }
+        }
+      }
+    }
+  }
 }
 
 .rsg--code-20 {
