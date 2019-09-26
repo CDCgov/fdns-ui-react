@@ -50,8 +50,8 @@ module.exports = {
           content: './src/documentation/design/theme.md',
 				},
 				{
-          name: 'Components',
-          content: './src/documentation/design/components.md',
+          name: 'Layouts',
+          content: './src/documentation/design/layouts.md',
         },
       ]
 		},
