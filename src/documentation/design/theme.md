@@ -1,1 +1,0 @@
-Theme details go here.

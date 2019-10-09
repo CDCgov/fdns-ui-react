@@ -1,7 +1,5 @@
-Style information goes here
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-### Colors
-#### Colors Palette
 |   |   |   |   |   |
 |---|---|---|---|---|
 |![Image of FDNS Logo](img/colors/white-00.svg) __white-00:__ *#FFFFFF* |![Image of FDNS Logo](img/colors/cdc-blue-25.svg) __cdc-blue-25:__ *#F2F9FF* |![Image of FDNS Logo](img/colors/cdc-blue-50.svg) __cdc-blue-50:__ *#CEE9FF* |![Image of FDNS Logo](img/colors/cdc-blue-100.svg) __cdc-blue-100:__ *#A6D7FF* |![Image of FDNS Logo](img/colors/cdc-blue-200.svg) __cdc-blue-200:__ *#76C1FE* |

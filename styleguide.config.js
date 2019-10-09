@@ -22,19 +22,39 @@ module.exports = {
 			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
       sections: [
         {
-          name: 'Installation of React Library',
-          content: './src/documentation/installation/installation.md',
+          name: 'Design',
+          content: './src/documentation/getting-started/design.md',
 				},
 				{
-          name: '508 compliance',
-          content: './src/documentation/508.md',
-          description: 'The description for the 508 section'
+          name: 'Develop',
+          content: './src/documentation/getting-started/develop.md',
+				},
+      ]
+		},
+		{
+			name: 'Accessibility',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+				{
+          name: 'Accessibility',
+          content: './src/documentation/accessibility/accessibility.md',
+				},
+        {
+          name: 'Accessibility standards',
+          content: './src/documentation/accessibility/accessibility-standards.md',
 				},
 				{
-          name: 'FAQs',
-          content: './src/documentation/FAQs.md',
-          description: 'The description for the FAQs section'
-        },
+          name: '508 Compliance Report',
+          content: './src/documentation/accessibility/508-compliance-report.md',
+				},
+				{
+          name: 'Resources',
+          content: './src/documentation/accessibility/resources.md',
+				},
+				{
+          name: 'Tools',
+          content: './src/documentation/accessibility/tools.md',
+				},
       ]
 		},
 		{
@@ -42,22 +62,38 @@ module.exports = {
 			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
       sections: [
         {
-          name: 'Style',
-          content: './src/documentation/design/style.md',
+          name: 'Color',
+          content: './src/documentation/design-guidelines/colors.md',
 				},
 				{
-          name: 'Theme',
-          content: './src/documentation/design/theme.md',
+          name: 'Layout',
+          content: './src/documentation/design-guidelines/layout.md',
 				},
 				{
-          name: 'Layouts',
-          content: './src/documentation/design/layouts.md',
-        },
+          name: 'Spacing',
+          content: './src/documentation/design-guidelines/spacing.md',
+				},
+				{
+          name: 'Typography',
+          content: './src/documentation/design-guidelines/typography.md',
+				},
+				{
+          name: 'Themes',
+          content: './src/documentation/design-guidelines/themes.md',
+				},
+				{
+          name: 'Icons',
+          content: './src/documentation/design-guidelines/icons.md',
+				},
       ]
 		},
 		{
 			name: 'Component Library',
 			sections: [
+				{
+          name: 'Component Status',
+          content: './src/documentation/component-library/component-status.md',
+				},
 				{
 					name: 'Buttons',	
 					components: './src/components/buttons/*.js',
@@ -103,6 +139,81 @@ module.exports = {
 					components: './src/components/utils/*.js'
 				},
 			],
+		},
+		{
+			name: 'Contributing Guidelines',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+        {
+          name: 'Issue Reporting',
+          content: './src/documentation/contributing-guidelines/issue-reporting.md',
+				},
+				{
+          name: 'Pull Request',
+          content: './src/documentation/contributing-guidelines/pull-request.md',
+				},
+      ]
+		},
+		{
+			name: 'About FDNS UI',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+        {
+          name: 'Current Initiatives',
+          content: './src/documentation/about-fdns-ui/current-initiatives.md',
+				},
+				{
+          name: 'FDNS UI History',
+          content: './src/documentation/about-fdns-ui/fdns-ui-history.md',
+				},
+				{
+          name: 'Release Notes',
+          content: './src/documentation/about-fdns-ui/release-notes.md',
+				},
+				{
+          name: 'Roadmap',
+          content: './src/documentation/about-fdns-ui/roadmap.md',
+				},
+      ]
+		},
+		{
+			name: 'CDC Notices',
+      sections: [
+        {
+          name: 'Public Domain',
+          content: './src/documentation/cdc-notices/public-domain.md',
+				},
+				{
+          name: 'License',
+          content: './src/documentation//cdc-notices/license.md',
+				},
+				{
+          name: 'Privacy',
+          content: './src/documentation//cdc-notices/privacy.md',
+				},
+				{
+          name: 'Contributing',
+          content: './src/documentation//cdc-notices/contributing.md',
+				},
+				{
+          name: 'Records',
+          content: './src/documentation//cdc-notices/records.md',
+				},
+				{
+          name: 'Notices',
+          content: './src/documentation//cdc-notices/notices.md',
+				},
+      ]
+		},
+		{
+			name: 'Resources',
+			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+      sections: [
+        {
+          name: 'Links',
+          content: './src/documentation/resources/link.md',
+				},
+      ]
 		},
 	],
 

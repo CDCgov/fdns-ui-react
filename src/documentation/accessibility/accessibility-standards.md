@@ -1,0 +1,1 @@
+The Web Accessibility Initiative (WAI) seeks to improve the the accessibility of the Web for people of all abilities. [Web Accessibility Initiative (WAI) | W3C](https://www.w3.org/WAI/) The members and contributors of this initiative create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG), which is the global accessibility standard.
