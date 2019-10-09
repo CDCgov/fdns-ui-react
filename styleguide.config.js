@@ -19,7 +19,7 @@ module.exports = {
 		},
 		{
 			name: 'Getting Started',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       sections: [
         {
           name: 'Design',
@@ -33,7 +33,7 @@ module.exports = {
 		},
 		{
 			name: 'Accessibility',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       sections: [
 				{
           name: 'Accessibility',

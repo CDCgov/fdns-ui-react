@@ -14,7 +14,7 @@ You will need to have the following software installed to run this library local
 ### Basic Usage
 Create your project with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
-```sh
+```js static
 create-react-app my-app
 cd my-app
 npm install --save fdns-ui-react
@@ -22,11 +22,35 @@ npm install --save fdns-ui-react
 
 Open up `src/App.js` in your text editor of choice and include the React components:
 
+```js static
+import React, { Component } from 'react';
+import { SuperGrid, fixtures } from 'fdns-ui-react';
+import logo from './logo.svg';
+import './App.css';
+
+// grab some test fixtures
+const { headers, messages } = fixtures;
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <SuperGrid data={messages} headers={headers} />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
 Start your project:
 
-```sh
-npm start
-```
+`npm start`
 
 Open [http://localhost:3000/](http://localhost:3000/) in a web browser and view your Grid. You can now add any components in the library into your application.
 
@@ -35,9 +59,5 @@ This library currently uses [react-styleguidist](https://github.com/styleguidist
 
 To view the StyleGuide, after running `npm i`, use the command:
 
-```sh
-npm start
-```
-
-or `npx styleguidist server`. This will run the styleguide on `http://localhost:6060/`.
+`npm start` or `npx styleguidist server`. This will run the styleguide on `http://localhost:6060/`.
 _________________
