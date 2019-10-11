@@ -7,13 +7,13 @@
   }
   button.filter-apply {
     width: 100%;
-    background-color: $true-blue;
-    color: $white;
+    background-color: $cdc-blue-800;
+    color: $white-00;
     display: block;
     transition: all 0.2s ease 0s;
 
     &:hover {
-    background-color: $jade;
+    background-color: $teal-600;
     }
 
     svg {
@@ -26,12 +26,12 @@
     margin-top: 15px;
     background-color: transparent;
     display: block;
-    border-color: $winter;
-    color: $davy-grey;
+    border-color: $grey-500;
+    color: $grey-600;
     transition: all 0.2s ease 0s;
 
     &:hover {
-    background-color: $white;
+    background-color: $white-00;
     }
 
     svg {

@@ -1,6 +1,6 @@
 div.data-inspector {
   margin: $default-margin;
-  background-color: $white;
+  background-color: $white-00;
 
   .data-inspector-buttons {
     position: relative;
@@ -9,18 +9,18 @@ div.data-inspector {
   }
 
   button.close, button.print {
-    border-left: 1px solid $rain;
-    border-bottom: 1px solid $rain;
+    border-left: 1px solid $grey-200;
+    border-bottom: 1px solid $grey-200;
     border-radius: 0;
-    background-color: $white;
+    background-color: $white-00;
 
     svg {
       font-size: 0.725em;
-      color: $winter;
+      color: $grey-500;
       transition: all 0.2s ease 0s;
 
       &:hover {
-        color: $vermilion;
+        color: $red-500;
       }
     }
   }
@@ -33,7 +33,7 @@ div.data-inspector {
       font-size: 1em;
 
       &:hover {
-        color: $jade;
+        color: $teal-600;
       }
     }
   }
@@ -43,7 +43,7 @@ div.data-inspector {
     overflow: auto;
 
     .json-inspector__toolbar {
-      background-color: $white;
+      background-color: $white-00;
       z-index: 1;
       height: 51px;
       overflow: hidden;
@@ -55,9 +55,9 @@ div.data-inspector {
         border: 0;
         margin: $default-margin;
         outline: none;
-        color: $davy-grey;
+        color: $grey-600;
         font-size: 1.2em;
-        border-bottom: 1px solid $rain;
+        border-bottom: 1px solid $grey-200;
       }
     }
 
@@ -76,7 +76,7 @@ div.data-inspector {
     cursor: default;
 
     &:hover {
-      background-color: $rain;
+      background-color: $grey-200;
     }
   }
   .json-inspector__leaf_composite > .json-inspector__line {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SearchBar from '../../src/components/SearchBar';
+import SearchBar from '../../src/components/search/SearchBar';
 
 describe('<SearchBar />', () => {
   const component = shallow(

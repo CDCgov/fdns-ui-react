@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import IconButton from '../../src/components/IconButton';
+import { createShallow } from '@material-ui/core/test-utils';
+import IconButton from '../../src/components/buttons/IconButton';
 
 describe('<IconButton />', () => {
-  const component = shallow(
-    <IconButton />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('icon-button');
+    const wrapper = shallow(<IconButton />);
   });
 });

@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import OptionErrorsWarnings from '../../src/components/OptionErrorsWarnings';
+import { createShallow } from '@material-ui/core/test-utils';
+import OptionErrorsWarnings from '../../src/components/options/OptionErrorsWarnings';
 
 describe('<OptionErrorsWarnings />', () => {
-  const component = shallow(
-    <OptionErrorsWarnings />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('option-errors-warnings');
+    const wrapper = shallow(<OptionErrorsWarnings />);
   });
 });

@@ -1,20 +1,69 @@
+.super-table-paper {
+  min-height: 300px;
+}
+
 div.super-table {
-  div.public_fixedDataTable_main {
-    outline: none;
-  }
-  thead {
-    background-color: $rain;
-    background-image: none;
-    th {
-      padding-right: 40px;
-      color: $davy-grey;
-      font-weight: bold;
-      .header-icon {
-        margin-right: 5px;
-      }
+  .super-table-header {
+    font-size: 0.8rem;
+    font-weight: bold;
+    .header-icon {
+      position: relative;
+      top: 1px;
+      margin-right: 5px;
     }
   }
-  td {
-    white-space: nowrap;
+
+  .super-table-header:focus, .ReactVirtualized__Table__headerColumn:focus, .ReactVirtualized__Table__Grid:focus {
+    outline: none;
+  }
+
+  .super-table-cell {
+    border-bottom: none;
+  }
+
+  .ReactVirtualized__Table {
+    display: inline-block;
+  }
+
+  .ReactVirtualized__Table__headerRow {
+    background-color: $grey-50;
+    background-image: none;
+    color: $grey-600;
+  }
+
+  .ReactVirtualized__Table__headerColumn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ReactVirtualized__Table__headerColumn:first-of-type {
+    margin-left: 0;
+  }
+
+  .ReactVirtualized__Table__headerTruncatedText {
+    flex: auto;
+  }
+
+  .ReactVirtualized__Table__rowColumn {
+    margin-right: 0;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+  }
+
+  .DragHandle {
+    z-index: 2;
+    cursor: col-resize;
+    opacity: 0.5;
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+  .DragHandle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .DragHandleActive,
+  .DragHandleActive:hover {
+    opacity: 1;
+    z-index: 3;
   }
 }

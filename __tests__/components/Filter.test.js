@@ -1,14 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Filter from '../../src/components/Filter';
+import { createShallow } from '@material-ui/core/test-utils';
+import Filter from '../../src/components/filters/Filter';
 
 describe('<Filter />', () => {
-  const component = shallow(
-    <Filter label="Test" />
-  );
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
   
   it('renders', () => {
-    expect(component.html()).toContain('filter');
-    expect(component.html()).toContain('Test');
+    const wrapper = shallow(<Filter label="Test" />);
   });
 });

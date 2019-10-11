@@ -1,17 +1,21 @@
 div.filter-select {
-  color: $davy-grey;
+  color: $grey-600;
 
   .MuiSelect-select-326:focus {
     background: none;
   }
 
+  .MuiSelect-select-186:focus {
+    background-color: rgba(0,0,0,0);
+  }
+
   .Select {
     .Select-control {
       border-radius: 0;
-      border-color: $rain;
+      border-color: $grey-200;
 
       .Select-placeholder {
-        color: $davy-grey;
+        color: $grey-600;
       }
     }
 
@@ -25,7 +29,7 @@ div.filter-select {
       .Select-control {
         outline: none;
         box-shadow: none;
-        border-color: $rain;
+        border-color: $grey-200;
       }
     }
 

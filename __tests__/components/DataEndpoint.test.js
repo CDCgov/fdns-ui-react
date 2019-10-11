@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import DataEndpoint from '../../src/components/DataEndpoint';
+import { createShallow } from '@material-ui/core/test-utils';
+import DataEndpoint from '../../src/components/data-display/DataEndpoint';
 
 describe('<DataEndpoint />', () => {
-  const component = shallow(
-    <DataEndpoint />
-  );
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
   
   it('renders', () => {
-    expect(component.html()).toContain('data-endpoint');
+    const wrapper = shallow(<DataEndpoint />);
   });
 });

@@ -4,6 +4,7 @@ import './styles/fdns-ui-react.css';
 import 'animate.css/animate.css';
 import 'flexbox/css/grid.min.css';
 import 'flexbox/css/media-object.min.css';
+import 'react-virtualized/styles.css';
 
 // Importing all fas icons from FA
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -14,36 +15,38 @@ library.add(fas, far);
 export * as fixtures from './fixtures/fixtures';
 export * as shapes from './fixtures/shapes';
 
-export Container from './components/Container';
-export Filter from './components/Filter';
-export FilterAction from './components/FilterAction';
-export FilterDate from './components/FilterDate';
-export FilterGroup from './components/FilterGroup';
-export FilterSelect from './components/FilterSelect';
-export IconButton from './components/IconButton';
-export DataEndpoint from './components/DataEndpoint';
-export DataInspector from './components/DataInspector';
-export DataLayers from './components/DataLayers';
-export DropdownUser from './components/DropdownUser';
-export DropdownDownloads from './components/DropdownDownloads';
-export Loader from './components/Loader';
-export SuperGrid from './components/SuperGrid';
-export SuperTable from './components/SuperTable';
-export SuperInput from './components/SuperInput';
-export SuperButton from './components/SuperButton';
-export Login from './components/Login';
-export Pane from './components/Pane';
-export PaneHistory from './components/PaneHistory';
-export SearchBar from './components/SearchBar';
-export OptionAction from './components/OptionAction';
-export OptionErrorsWarnings from './components/OptionErrorsWarnings';
-export OptionView from './components/OptionView';
-export OptionExport from './components/OptionExport';
-export OptionPageLimit from './components/OptionPageLimit';
-export Uploader from './components/Uploader';
-export UploaderDrop from './components/UploaderDrop';
-export UploaderPaste from './components/UploaderPaste';
-export UploaderList from './components/UploaderList';
+export Container from './components/layouts/Container';
+export Filter from './components/filters/Filter';
+export FilterAction from './components/filters/FilterAction';
+export FilterDate from './components/filters/FilterDate';
+export FilterGroup from './components/filters/FilterGroup';
+export FilterSelect from './components/filters/FilterSelect';
+export IconButton from './components/buttons/IconButton';
+export DataEndpoint from './components/data-display/DataEndpoint';
+export DataInspector from './components/data-display/DataInspector';
+export DataLayers from './components/data-display/DataLayers';
+export DragSortableList from './components/options/DragSortableList';
+export DropdownUser from './components/options/DropdownUser';
+export DropdownDownloads from './components/options/DropdownDownloads';
+export Loader from './components/feedback/Loader';
+export SuperGrid from './components/layouts/SuperGrid';
+export SuperTable from './components/layouts/SuperTable';
+export SuperInput from './components/inputs/SuperInput';
+export SuperButton from './components/buttons/SuperButton';
+export Login from './components/layouts/Login';
+export Pane from './components/layouts/Pane';
+export PaneHistory from './components/layouts/PaneHistory';
+export SearchBar from './components/search/SearchBar';
+export OptionAction from './components/options/OptionAction';
+export OptionErrorsWarnings from './components/options/OptionErrorsWarnings';
+export OptionView from './components/options/OptionView';
+export OptionExport from './components/options/OptionExport';
+export OptionPageLimit from './components/options/OptionPageLimit';
+export Uploader from './components/uploaders/Uploader';
+export UploaderDrop from './components/uploaders/UploaderDrop';
+export UploaderPaste from './components/uploaders/UploaderPaste';
+export UploaderList from './components/uploaders/UploaderList';
+export ThemeProvider from './components/ThemeProvider';
 
 // React Bootstrap Wrappers
 
@@ -57,10 +60,10 @@ export { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/c
 export { Button, Fab } from '@material-ui/core';
 
 // Overlays
-export { Dialog, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
+export { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grow, Modal, Popover, Tooltip } from '@material-ui/core';
 
 // Forms
-export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, TextField } from '@material-ui/core';
+export { Form, FormGroup, FormControl, FormControlLabel, Input, InputAdornment, InputGroup, InputLabel, Switch, TextField } from '@material-ui/core';
 
 // Utilities
 export { Collapse } from '@material-ui/core';

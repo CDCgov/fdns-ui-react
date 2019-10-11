@@ -1,7 +1,7 @@
 div.uploader-drop {
   div.uploader-drop-box {
-    background-color: $white;
-    border: 1px dashed $true-blue;
+    background-color: $white-00;
+    border: 1px dashed $cdc-blue-800;
     padding: $default-padding;
 
     div.instructions {
@@ -22,11 +22,11 @@ div.uploader-drop {
       h3 {
         font-weight: normal;
         font-size: 1.2em;
-        color: $dark-grey;
+        color: $grey-800;
         margin: 0;
       }
       a {
-        color: $true-blue;
+        color: $cdc-blue-800;
         text-decoration: none;
 
         &:hover {
@@ -36,7 +36,7 @@ div.uploader-drop {
 
       p {
         margin: ($default-margin * 2) 0;
-        color: $dark-grey;
+        color: $grey-800;
         font-size: 1em;
         line-height: 1.3em;
         font-weight: 200;
@@ -44,7 +44,7 @@ div.uploader-drop {
     }
 
     &.active {
-      border: 1px solid $true-blue;
+      border: 1px solid $cdc-blue-800;
 
       div.instructions {
         figure.files {
@@ -54,7 +54,7 @@ div.uploader-drop {
     }
 
     &.reject {
-      border: 1px solid $vermilion;
+      border: 1px solid $red-500;
 
       div.instructions {
         figure.files {
@@ -63,7 +63,7 @@ div.uploader-drop {
 
         div.icon-button {
           button.btn.btn-primary {
-            background-color: $vermilion;
+            background-color: $red-500;
 
             i.fa.fa-plus-square-o:before {
               content: "\f05e";
@@ -95,7 +95,7 @@ div.uploader-drop {
       &.active {
         div.icon-button {
           button.btn.btn-primary {
-            background-color: $true-blue;
+            background-color: $cdc-blue-800;
 
             i.fa.fa-plus-square-o:before {
               content: "\f058";
@@ -107,7 +107,7 @@ div.uploader-drop {
       &.reject {
         div.icon-button {
           button.btn.btn-primary {
-            background-color: $vermilion;
+            background-color: $red-500;
 
             i.fa.fa-plus-square-o:before {
               content: "\f05e";

@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import DataLayers from '../../src/components/DataLayers';
+import { createShallow } from '@material-ui/core/test-utils';
+import DataLayers from '../../src/components/data-display/DataLayers';
 
 describe('<DataLayers />', () => {
-  const component = shallow(
-    <DataLayers />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('data-layers');
+    const wrapper = shallow(<DataLayers />);
   });
 });

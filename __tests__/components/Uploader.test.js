@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Uploader from '../../src/components/Uploader';
+import { createShallow } from '@material-ui/core/test-utils';
+import Uploader from '../../src/components/uploaders/Uploader';
 
 describe('<Uploader />', () => {
-  const component = shallow(
-    <Uploader />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('uploader');
+    const wrapper = shallow(<Uploader />);
   });
 });

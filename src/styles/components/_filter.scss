@@ -3,16 +3,16 @@ div.filter {
 
   label {
     font-weight: normal;
-    color: $davy-grey;
+    color: $grey-600;
   }
 
   svg {
-    color: $winter;
+    color: $grey-500;
   }
 
   input {
     border-radius: 0;
-    color: $davy-grey;
+    color: $grey-600;
 
     &.with-icon {
       border-left: 0;

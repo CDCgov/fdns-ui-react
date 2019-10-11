@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import OptionView from '../../src/components/OptionView';
+import { createShallow } from '@material-ui/core/test-utils';
+import OptionView from '../../src/components/options/OptionView';
 
 describe('<OptionView />', () => {
-  const component = shallow(
-    <OptionView />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('option-view');
+    const wrapper = shallow(<OptionView />);
   });
 });

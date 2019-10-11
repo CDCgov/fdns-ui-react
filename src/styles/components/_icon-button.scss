@@ -1,13 +1,13 @@
 div.icon-buttons {
   div.icon-button {
-    margin: 0 5px;
+    margin: 8px;
   }
 }
 
 div.icon-button {
-  display: inline;
+  display: -webkit-inline-box;
   svg {
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   button.btn {
@@ -16,7 +16,7 @@ div.icon-button {
       height: 18px;
     }
     span {
-      margin: 0 0 0 5px;
+      margin: 0 0 0 4px;
     }
   }
 }

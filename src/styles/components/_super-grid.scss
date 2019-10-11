@@ -43,7 +43,7 @@ $grid-width: 330px;
                 }
 
                 svg {
-                  color: $storm;
+                  color: $grey-600;
                 }
               }
             }
@@ -59,8 +59,8 @@ $grid-width: 330px;
       }
 
       .panel-footer {
-        background-color: $rain;
-        color: $davy-grey;
+        background-color: $grey-50;
+        color: $grey-600;
         text-align: right;
         padding: 5px;
         margin: 0;

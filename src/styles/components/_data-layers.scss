@@ -1,5 +1,5 @@
-$width: 500px;
-$row-height: 40px;
+$width: 490px;
+$row-height: 48px;
 
 div.data-layers {
   visibility: none;
@@ -12,7 +12,7 @@ div.data-layers {
   font-size: 0.9em;
   max-width: 0px;
   z-index: 1000;
-  background-color: $smoke;
+  background-color: $white-00;
   -webkit-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
   box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.1);
@@ -25,23 +25,26 @@ div.data-layers {
   overflow-x: hidden;
 
   div.layers-headers {
-    background-color: $rain;
-    height: $row-height;
-    color: $davy-grey;
-    font-weight: bold;
+    background-color: $white-00;
+    color: $grey-600;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
     padding: 0;
 
     .col {
       white-space: nowrap;
-      padding: 10px;
+      padding: 16px;
 
       &.col-label {
-        margin-left: 30px;
+        margin-left: 24px;
       }
 
       &.col-display {
         border-radius: 0px;
-        color: $compliant-grey;
+        color: $grey-900;
         padding-left: 14px;
         font-weight: bold;
         letter-spacing: 0.05em;
@@ -51,21 +54,22 @@ div.data-layers {
       }
 
       button {
-        font-size: 1.0rem;
+         font-size: 0.875rem;
       }
 
       button.save {
-        border: 1px solid $jade;
-        color: $jade;
+        color: $teal-600;
         background: none;
         padding: .1em;
         margin: 0;
-        font-weight: bold;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
         border-radius: 0;
         width: 125px;
-        text-transform: uppercase;
         display: block;
-        font-size: 1em;
+        font-size: 0.875rem;
       }
 
       button.hideall {
@@ -74,7 +78,7 @@ div.data-layers {
         border: 0;
         padding: 0;
         margin: 0;
-        color: $davy-grey;
+        color: $grey-600;
         border-radius: 0;
       }
     }
@@ -83,11 +87,11 @@ div.data-layers {
   div.layers-rows {
     div.layers-row {
       height: $row-height;
-      color: $davy-grey;
+      color: $grey-600;
       cursor: move;
       min-width: $width;
-      background-color: $smoke;
-      border-bottom: 1px solid $rain;
+      background-color: $white-00;;
+      border-bottom: 1px solid $grey-100;
       display: flex;
       align-items: center;
 
@@ -100,20 +104,20 @@ div.data-layers {
 
         svg {
           font-size: 1.2em;
-          color: $winter-storm;
+          color: $grey-500;
         }
 
         &.visible {
           svg {
             font-size: 1.2em;
-            color: $davy-grey;
+            color: $grey-600;
           }
         }
       }
 
       span.drag-icon {
         svg {
-          color: $un-blue;
+          color: $grey-500;
         }
       }
 
@@ -124,13 +128,15 @@ div.data-layers {
 
         &.col-key-name {
           padding-left: 10px;
+          color: $grey-700;
         }
         &.col-label {
-          padding-left: 20px;
+          padding-left: 24px;
+          color: $grey-700;
           display: inline-block;
 
           svg {
-            margin-right: 7px;
+            margin-right: 8px;
             margin-top: 1px;
           }
         }
@@ -144,25 +150,25 @@ div.data-layers {
     }
 
     div.placeholder {
-      background-color: $winter-storm;
-      border: 1px dashed $rain;
+      background-color: $grey-200;
+      border: 0.5px dashed $grey-300;
     }
 
     div.draggable {
       &.dragged {
         div.layers-row {
-          background-color: $rain;
-          color: $davy-grey;
+          background-color: $cdc-blue-25;
+          color: $grey-600;
 
           span.drag-icon {
             svg {
-              color: $davy-grey;
+              color: $grey-600;
             }
           }
 
           button {
             svg {
-              color: $davy-grey;
+              color: $grey-600;
             }
           }
         }

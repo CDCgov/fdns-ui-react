@@ -3,10 +3,9 @@ div.option-action {
 
   button {
     svg {
-      color: $winter;
+      color: $grey-500;
 
       &:hover, &:focus, &:active {
-        color: $turquoise;
         -webkit-transition: color .075s ease-in-out;
         -moz-transition: color .075s ease-in-out;
         -ms-transition: color .075s ease-in-out;

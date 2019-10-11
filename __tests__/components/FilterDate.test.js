@@ -1,13 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import FilterDate from '../../src/components/FilterDate';
+import { createShallow } from '@material-ui/core/test-utils';
+import FilterDate from '../../src/components/filters/FilterDate';
 
 describe('<FilterDate />', () => {
-  const component = shallow(
-    <FilterDate />
-  );
-  
+  let shallow;
+  beforeAll(() => {
+    shallow = createShallow();
+  });
+
   it('renders', () => {
-    expect(component.html()).toContain('filter-date');
+    const wrapper = shallow(<FilterDate />);
   });
 });

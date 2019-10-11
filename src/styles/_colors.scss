@@ -1,54 +1,107 @@
 // base colors
-$cloud:             #DDE0E2;
-$navy:              #143251;
-$dark-navy:         #102842;
-$jade:              #06C28B;
-$turquoise:         #06C2C2;
-$true-blue:         #1273CA;
-$white:             #FFFFFF;
-$un-blue:           #4990E2;
-$un-blue-light:     #4087DB;
-$black:             #333333;
+$white-00: #ffffff;
+
+$cdc-blue-25: #f2f9ff;
+$cdc-blue-50: #cee9ff;
+$cdc-blue-100: #a6d7ff;
+$cdc-blue-200: #76c1fe;
+$cdc-blue-300: #52a5e9;
+$cdc-blue-400: #308edc;
+$cdc-blue-500: #1b7ac9;
+$cdc-blue-600: #116cb8;
+$cdc-blue-700: #0b5ea3;
+$cdc-blue-800: #075290;
+$cdc-blue-900: #01447b;
+$cdc-blue-1000: #00315a;
+$cdc-blue-2000: #00223d;
+$cdc-blue-3000: #00192d;
+
+$teal-50: #d7f9f7;
+$teal-100: #a9e5e1;
+$teal-200: #82d9d3;
+$teal-300: #69c8c2;
+$teal-400: #54b8b2;
+$teal-500: #3aa8a2;
+$teal-600: #20958e;
+$teal-700: #0e877f;
+$teal-800: #05746d;
+$teal-900: #006a63;
+
+$green-50: #cfffe5;
+$green-100: #a2f7ca;
+$green-200: #6ed79f;
+$green-300: #52bf85;
+$green-400: #37aa6d;
+$green-500: #219357;
+$green-600: #147d46;
+$green-700: #0b6c39;
+$green-800: #06542b;
+$green-900: #034020;
 
 // grey colors
-$storm:             #828D93;
-$heavy-rain:        #adb5ba;
-$winter-storm:      #C4C9CC;
-$winter:            #96A1A7;
-$rain:              #DDE0E2;
-$smoke:             #FAFAFA;
-$fog:               #dfe2e3;
-$fog-light:         rgba(223, 226, 227, 0.8);
-
-// font colors
-$compliant-grey:    #111111;
-$dark-grey:         #4A4A4A;
-$light-grey-blue:   #E9EBEC;
-$davy-grey:         #555555;
+$grey-50: #f7f8f9;
+$grey-100: #ededed;
+$grey-200: #e9e8e7;
+$grey-300: #c8cbd0;
+$grey-400: #a5a7ab;
+$grey-500: #8d8d8e;
+$grey-600: #717376;
+$grey-700: #3e4144;
+$grey-800: #2b2d2e;
+$grey-900: #212121;
 
 // notification colors
-$amber-gold:        #F6A623;
-$vermilion:         #e34234;
-$lavender:          #6C12FE;
+$yellow-50: #fffbd3;
+$yellow-100: #fff9b8;
+$yellow-200: #fff597;
+$yellow-300: #fff27f;
+$yellow-400: #ffef60;
+$yellow-500: #ffec45;
+$yellow-600: #ffea36;
+$yellow-700: #fce625;
+$yellow-800: #f5de0d;
+$yellow-900: #dbc500;
+
+$amber-50: #fff1c3;
+$amber-100: #ffe48f;
+$amber-200: #ffda67;
+$amber-300: #fccf45;
+$amber-400: #ffca28;
+$amber-500: #ffc407;
+$amber-600: #f9bf05;
+$amber-700: #edb501;
+$amber-800: #dda800;
+$amber-900: #b88c00;
+
+$red-50: #ffc7c7;
+$red-100: #ff9091;
+$red-200: #ff7879;
+$red-300: #fc6062;
+$red-400: #fa5052;
+$red-500: #ef3c3e;
+$red-600: #e42c2e;
+$red-700: #d71e20;
+$red-800: #c51315;
+$red-900: #b6090b;
 
 // referenced colors
-$sidebar-bg: $white;
-$tabs-bg: $rain;
-$tabs-active-bg: $light-grey-blue;
+$sidebar-bg: $white-00;
+$tabs-bg: $grey-50;
+$tabs-active-bg: $grey-50;
 
 // add some optional backgrounds
 .bg-true-blue {
-  background-color: $true-blue;
+  background-color: $cdc-blue-800;
 }
 .bg-white {
-  background-color: $white;
+  background-color: $white-00;
 }
 .bg-grey {
-  background-color: $winter-storm;
+  background-color: $grey-500;
 }
 
 .blue-box {
-  background-color: $white;
-  border: 1px solid $true-blue;
+  background-color: $white-00;
+  border: 1px solid $cdc-blue-700;
   padding: 15px;
 }
