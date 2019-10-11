@@ -8,20 +8,20 @@
 
 Clone the project from Github :
 
-```
+```bash
 git clone https://github.com/CDCgov/fdns-ui-react.git
 cd fdns-ui-react
 ```
 
 Install dependencies :
 
-```
+```bash
 yarn
 ```
 
 Setup development environment:
 
-```
+```bash
 yarn dev
 ```
 
