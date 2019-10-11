@@ -1,0 +1,72 @@
+.Stepper.horizontal {
+  padding: 3px 0;
+}
+.Stepper.horizontal .Stepper-status {
+  padding: 0 0 5px 0;
+  color: #005EB0;
+  font-size: 11px;
+}
+.Stepper .Stepper-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ededed;
+}
+.Stepper.vertical .Stepper-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.Stepper.vertical .Stepper-circle {
+  background-color: #aaa;
+}
+.Stepper .Stepper-circle.active {
+  background-color: #005EB0;
+}
+.Stepper .Stepper-circle:hover {
+  opacity: 0.8;
+}
+.Stepper.Stepper .Stepper-connector {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #ededed;
+  position: relative;
+  top: -9px;
+}
+.Stepper.Stepper.Stepper.vertical .Stepper-connector {
+  display: block;
+  width: 4px;
+  height: 45px;
+  background-color: #aaa;
+  position: relative;
+  top: -4px;
+  left: 19px;
+  margin: 0;
+}
+.Stepper .Stepper-connector.active,
+.Stepper.Stepper.vertical .Stepper-connector.active {
+  background-color: #005EB0;
+}
+.Stepper.vertical {
+  padding: 0 10px;
+}
+.Stepper.vertical .Stepper-box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 -4px 0;
+}
+.Stepper.Stepper.vertical .Stepper-box .Stepper-status {
+  flex: 1;
+  padding: 0.2em 1em;
+}
+.Stepper.Stepper.vertical .Stepper-box .Stepper-status-title {
+  color: #444;
+  font-weight: 600;
+  margin: 8px 0 0 0;
+}
+.Stepper.Stepper.vertical .Stepper-box .Stepper-status-date {
+  font-size: 0.8em;
+  color: #888;
+}
