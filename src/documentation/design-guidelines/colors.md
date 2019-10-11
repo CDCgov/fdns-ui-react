@@ -1,4 +1,7 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Color plays an important part of any interface. Aesthetic, interactivity, and accessibility can all be influenced by your color choices. Color helps to tell the story of your application/brand, it connects a user to other projects and applications providing recognizable consistency. Notifications, errors and actions all rely on color to aid in the users understanding and interaction. Color usage and contrast enhances accessibility and compliance with section 508 rules. Making accessible color choices throughout, allows your users to better interact and understand your project…
+
+#### Color Palette
+The FDNS UI color palette uses a full spectrum of hues and neutrals to meet your project needs.
 
 |   |   |   |   |   |
 |---|---|---|---|---|

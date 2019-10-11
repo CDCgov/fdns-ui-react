@@ -142,11 +142,11 @@ module.exports = {
 		},
 		{
 			name: 'Contributing Guidelines',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
       sections: [
         {
-          name: 'Issue Reporting',
-          content: './src/documentation/contributing-guidelines/issue-reporting.md',
+          name: 'contributing',
+          content: './src/documentation/contributing-guidelines/contributing.md',
 				},
 				{
           name: 'Pull Request',
