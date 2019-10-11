@@ -54,7 +54,8 @@ class ActionBar extends Component {
     return (
       <AppBar position="static" color="default" className="ActionBar-options">
         <Toolbar>
-          { showSearchBar ? (
+          {
+            showSearchBar ? (
               <SearchBar query={query} onSearch={this.handleSearch} />
             ) : null
           }
