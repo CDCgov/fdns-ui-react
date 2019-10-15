@@ -16,8 +16,8 @@ The Loader component is used as a consistent wrapper for the app context.
 	    }, (3 * 1000));
 	}
 
-    <div className="loader-wrapper">
-        <Button onClick={handleTrigger}>Trigger Loader</Button>
-        <Loader active={state.active} />
+	<div className="loader-wrapper">
+			<Button onClick={handleTrigger}>Trigger Loader</Button>
+			<Loader active={state.active} />
 	</div>
 ```

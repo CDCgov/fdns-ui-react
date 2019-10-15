@@ -156,7 +156,7 @@ class SuperGrid extends Component {
     // return with the cell and surrounding markup
     return (
       <Grid item className="grid-item" key={i}>
-        <Paper className="panel panel-default" elevation={6}>
+        <Paper className="panel panel-default" elevation={4}>
           <div className="panel-body">
             <Table className={className}>
               <TableBody>

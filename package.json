@@ -1,6 +1,6 @@
 {
   "name": "fdns-ui-react",
-  "version": "0.8.1",
+  "version": "0.8.5",
   "description": "This is the open source UI library for react components using Foundation Services (FDNS).",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "start": "npx styleguidist server",
     "prepare": "npm run babel && npm run sass",
+    "styleguide-build": "styleguidist build",
     "webpack": "webpack --config webpack.config.js -p",
     "webpack:dev": "webpack --config webpack.config.js",
     "babel": "babel src -d dist",

@@ -4,9 +4,9 @@ $container-height: 740px;
 div.Container {
   background-color: $white-00;
   padding: $default-padding;
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.4);
-  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.4);
   border-radius: 6px;
   width: 90%;
   max-width: $container-width;

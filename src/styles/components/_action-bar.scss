@@ -1,0 +1,23 @@
+.ActionBar-options {
+  background-color: white !important;
+}
+.ActionBar-options button {
+  margin-right: 10px;
+}
+.ActionBar-options .search-bar {
+  padding: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+}
+.ActionBar-options .search-bar span svg {
+  font-size: 1.3em;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.ActionBar-options .search-bar input {
+  font-size: 1em;
+  height: 30px;
+}

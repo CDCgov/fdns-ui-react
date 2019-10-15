@@ -45,37 +45,37 @@ export const messages = [
     'title': 'Developer',
     'id': '10001814',
     'start': '01/21/2001',
-    'org': 'Division of Health Informatics and Surveillance'
+    'org': 'DHIS'
   },{
     'name': 'Bob',
     'title': 'Epidemiologist',
     'id': '10000522',
     'start': '06/02/1999',
-    'org': 'Division of Health Informatics and Surveillance'
+    'org': 'DHIS'
   },{
     'name': 'Carol',
     'title': 'Manager',
     'id': '10001169',
     'start': '12/01/2000',
-    'org': 'Office of the Director'
+    'org': 'OD'
   },{
     'name': 'David',
     'title': 'Analyst',
     'id': '10000343',
     'start': '05/01/1995',
-    'org': 'Division of Health Informatics and Surveillance'
+    'org': 'DHIS'
   },{
     'name': 'Eugene',
     'title': 'Informatics Specialist',
     'id': '10000502',
     'start': '02/14/1998',
-    'org': 'Office of the Chief Information Officer'
+    'org': 'OCIO'
   },{
     'name': 'Francis',
     'title': 'Epidemiologist',
     'id': '10000410',
     'start': '03/17/1996',
-    'org': 'Office of Public Health Preparedness and Response'
+    'org': 'OPHPR'
   }
 ];
 
