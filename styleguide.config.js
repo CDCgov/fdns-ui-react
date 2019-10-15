@@ -33,10 +33,8 @@ module.exports = {
 		},
 		{
 			name: 'Accessibility',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       sections: [
 				{
-          name: 'Accessibility',
           content: './src/documentation/accessibility/accessibility.md',
 				},
         {

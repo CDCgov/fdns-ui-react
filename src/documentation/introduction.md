@@ -7,4 +7,4 @@ h1, h2 { text-align: center; }
 
 # FDNS UI 
 ## React Component Library and Design Guidelines
-`Version 0.8.5`
+`Version 0.8.6`
