@@ -25,7 +25,7 @@ const defaultProps = {
   image: '',
   imageAlt: '',
   theme: 'default',
-  className: '',
+  className: 'icon-button',
   color: 'primary',
   variant: 'text',
   onClick() {},

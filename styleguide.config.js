@@ -219,7 +219,7 @@ module.exports = {
     color: {
 			name: '#FFF',
 			baseBackground: '#fdfdfc',
-			link: '#3eaf7c',
+			link: '#2E845F',
 			linkHover: '#90a7bf',
 			border: '#e0d2de',
 			sidebarLinks: '#FFF;',
