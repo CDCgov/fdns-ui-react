@@ -9,8 +9,8 @@ div.data-inspector {
   }
 
   button.close, button.print {
-    border-left: 1px solid $grey-200;
-    border-bottom: 1px solid $grey-200;
+    border-left: 1px solid $grey-500;
+    border-bottom: 1px solid $grey-500;
     border-radius: 0;
     background-color: $white-00;
 
@@ -57,7 +57,7 @@ div.data-inspector {
         outline: none;
         color: $grey-600;
         font-size: 1.2em;
-        border-bottom: 1px solid $grey-200;
+        border-bottom: 1px solid $grey-500;
       }
     }
 

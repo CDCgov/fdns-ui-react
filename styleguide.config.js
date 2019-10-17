@@ -218,10 +218,10 @@ module.exports = {
 	theme: {
     color: {
 			name: '#FFF',
-			baseBackground: '#fdfdfc',
+			baseBackground: '#FFFFFF',
 			link: '#2E845F',
 			linkHover: '#90a7bf',
-			border: '#e0d2de',
+			border: '#717376',
 			sidebarLinks: '#FFF;',
 			sidebarLink: '#FFF;',
 			sidebarBackground: '#282c34',

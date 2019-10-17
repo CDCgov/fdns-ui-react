@@ -160,6 +160,7 @@ class DropdownDownloads extends Component {
           onClick={this.handleToggle}
         >
           <GetAppIcon fontSize="small" />
+          <span className="download-text">Downloads</span>
         </IconButton>
 
         <Popper open={open} anchorEl={this.anchorEl} transition placement={'bottom-end'} disablePortal>

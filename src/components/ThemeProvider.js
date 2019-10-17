@@ -10,7 +10,7 @@ const palette = {
     contrastText: '#fff',
   },
   secondary: {
-    light: '#54b8b2',
+    light: '#038279', // Lightest color to pass WCAG 2.0 AA contrast
     main: '#038279',
     dark: '#006a63',
     contrastText: '#fff',
