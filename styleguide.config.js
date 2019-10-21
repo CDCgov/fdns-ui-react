@@ -8,12 +8,11 @@ module.exports = {
 	},
 	skipComponentsWithoutExample: true,
 	version,
-	title: 'FDNS UI Library',
+	title: 'Public Health UI',
 	sections: [
 		{
       sections: [
         {
-					name: 'Introduction',
           content: './src/documentation/introduction.md',
 				},
       ]

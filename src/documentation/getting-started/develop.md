@@ -1,6 +1,15 @@
+<style>
+.badges a {
+  display: inline-block;
+}
+</style>
+
 Develop stuff with FDNS UI react component library. 
 
+<div class="badges">
 [![Build Status](https://travis-ci.org/CDCgov/fdns-ui-react.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ui-react)
+[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})
+</div>
 
 ### Running locally
 Carefully read the following instructions on how to run and test this library in your local environment.
