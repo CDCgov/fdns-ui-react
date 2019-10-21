@@ -13,6 +13,7 @@ module.exports = {
 		{
       sections: [
         {
+					name: 'Introduction',
           content: './src/documentation/introduction.md',
 				},
       ]
@@ -33,10 +34,8 @@ module.exports = {
 		},
 		{
 			name: 'Accessibility',
+			content: './src/documentation/accessibility/accessibility.md',
       sections: [
-				{
-          content: './src/documentation/accessibility/accessibility.md',
-				},
         {
           name: 'Accessibility standards',
           content: './src/documentation/accessibility/accessibility-standards.md',
@@ -93,15 +92,15 @@ module.exports = {
           content: './src/documentation/component-library/component-status.md',
 				},
 				{
-					name: 'Buttons',	
+					name: 'Buttons',
 					components: './src/components/buttons/*.js',
 				},
 				{
-					name: 'Data Display',	
+					name: 'Data Display',
 					components: './src/components/data-display/*.js',
 				},
 				{
-					name: 'Feedback',	
+					name: 'Feedback',
 					components: './src/components/feedback/*.js',
 				},
 				{
@@ -113,15 +112,15 @@ module.exports = {
 					components: './src/components/layouts/*.js',
 				},
 				{
-					name: 'Navigation',	
+					name: 'Navigation',
 					components: './src/components/navigation/*.js',
 				},
 				{
-					name: 'Options',	
+					name: 'Options',
 					components: './src/components/options/*.js',
 				},
 				{
-					name: 'Search',	
+					name: 'Search',
 					components: './src/components/search/*.js',
 				},
 				{
