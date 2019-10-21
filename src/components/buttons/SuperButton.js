@@ -5,7 +5,19 @@ import { Button } from '@material-ui/core';
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   label: PropTypes.string,
-  btnStyle: PropTypes.oneOf(['default', 'primary', 'secondary']),
+  btnStyle: PropTypes.oneOf([
+    'default',
+    'primary',
+    'secondary',
+    'default-outlined',
+    'primary-outlined',
+    'secondary-outlined',
+    'warning-outlined',
+    'blue-on-blue',
+    'blue-on-blue-inverse',
+    'teal-on-teal',
+    'teal-on-teal-inverse',
+  ]),
   className: PropTypes.string,
   icon: PropTypes.oneOfType([
     PropTypes.string,
