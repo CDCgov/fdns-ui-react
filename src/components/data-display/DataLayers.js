@@ -5,6 +5,9 @@ import classNames from 'classnames';
 import DragSortableList from '../options/DragSortableList';
 import { _headers } from '../../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -97,9 +100,9 @@ class DataLayers extends Component {
   }
 
   renderVisibilityIcon = (visible) => {
-    let icon = <FontAwesomeIcon icon="eye" />
+    let icon = <VisibilityIcon />
     if (!visible) {
-      icon = <FontAwesomeIcon icon="eye-slash" />
+      icon = <VisibilityOffIcon />
     }
 
     return (
@@ -129,7 +132,7 @@ class DataLayers extends Component {
         content: (
           <div className={className} key={index}>
             <span className="drag-icon">
-              <FontAwesomeIcon icon="ellipsis-v" />
+              <MoreVertIcon />
             </span>
             <div className="col col-3 col-label">
               {icon}

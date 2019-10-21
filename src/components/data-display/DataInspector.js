@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Tooltip } from '@material-ui/core';
 import Inspector from 'react-json-inspector';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PrintIcon from '@material-ui/icons/Print';
+import ClearIcon from '@material-ui/icons/Clear';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -78,7 +79,7 @@ class DataInspector extends Component {
           onClick={this.handlePrintClick}
           className="print"
         >
-          <FontAwesomeIcon icon="print" />
+          <PrintIcon />
         </Button>
       </Tooltip>
     );
@@ -94,7 +95,7 @@ class DataInspector extends Component {
         onClick={this.handleCloseClick}
         className="close"
       >
-        <FontAwesomeIcon icon="times" />
+        <ClearIcon />
       </Button>
     );
 

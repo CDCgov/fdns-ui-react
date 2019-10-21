@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { IconButton } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -48,7 +49,7 @@ class OptionAction extends Component {
     if (this.props.showDetail) {
       return (
         <IconButton onClick={this.handleDetailClick} size={this.props.size} aria-label="Show Detail">
-          <FontAwesomeIcon icon={['far' ,'file-code']} />
+          <DeveloperModeIcon />
         </IconButton>
       );
     }
@@ -59,7 +60,7 @@ class OptionAction extends Component {
     if (this.props.showOption) {
       return (
         <IconButton onClick={this.handleOptionClick} size={this.props.size} aria-label="Show Option">
-          <FontAwesomeIcon icon="cog" />
+          <SettingsIcon />
         </IconButton>
       );
     }

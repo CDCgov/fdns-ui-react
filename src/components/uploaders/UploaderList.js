@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 // set the prop types from predefined shapes or standard types
 const _blob = PropTypes.instanceOf(Blob);
@@ -21,7 +21,7 @@ class UploaderList extends Component {
     const { name } = file;
     return (
       <li key={i}>
-        <FontAwesomeIcon icon="check-circle" />
+        <CheckCircleIcon />
         <span>{name}</span>
       </li>
     )
