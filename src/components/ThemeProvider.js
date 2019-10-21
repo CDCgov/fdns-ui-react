@@ -16,9 +16,9 @@ const palette = {
     contrastText: '#fff',
   },
   error: {
-    light: '#C51315', // Red 800
-    main: '#D71E20', // Red 700
-    dark: '#FF7879', // Red 200
+    light: '#E91B0C',
+    main: '#E91B0C',
+    dark: '#E91B0C',
     contrastText: '#fff',
   },
 };
