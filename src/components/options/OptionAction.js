@@ -48,7 +48,7 @@ class OptionAction extends Component {
   renderDetail() {
     if (this.props.showDetail) {
       return (
-        <IconButton onClick={this.handleDetailClick} size={this.props.size} aria-label="Show Detail">
+        <IconButton onClick={this.handleDetailClick} size={this.props.size} aria-label="Show Detail" alt="Show Detail">
           <DeveloperModeIcon />
         </IconButton>
       );
@@ -59,7 +59,7 @@ class OptionAction extends Component {
   renderOption() {
     if (this.props.showOption) {
       return (
-        <IconButton onClick={this.handleOptionClick} size={this.props.size} aria-label="Show Option">
+        <IconButton onClick={this.handleOptionClick} size={this.props.size} aria-label="Show Option" alt="Show Option">
           <SettingsIcon />
         </IconButton>
       );

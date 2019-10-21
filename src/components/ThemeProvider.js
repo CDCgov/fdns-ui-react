@@ -15,6 +15,12 @@ const palette = {
     dark: '#006a63',
     contrastText: '#fff',
   },
+  error: {
+    light: '#C51315', // Red 800
+    main: '#D71E20', // Red 700
+    dark: '#FF7879', // Red 200
+    contrastText: '#fff',
+  },
 };
 
 const typography = {};

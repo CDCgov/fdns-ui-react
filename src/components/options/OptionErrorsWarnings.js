@@ -89,7 +89,8 @@ class OptionErrorsWarnings extends Component {
       return (
         <Tooltip id={`tooltip-error-${nonce}`} title={`${errors} Errors`} placement="left">
           <IconButton
-            aria-label="Warnings Detail"
+            aria-label="Errors Detail"
+            alt="Errors"
             className="option-error"
             onClick={this.handleDetailClick}
             size={this.props.size}
@@ -114,6 +115,7 @@ class OptionErrorsWarnings extends Component {
         <Tooltip id={`tooltip-warning-${nonce}`} title={`${warnings} Warnings`} placement="left">
           <IconButton
             aria-label="Warnings Detail"
+            alt="Warnings"
             className="option-warning"
             onClick={this.handleDetailClick}
             size={this.props.size}
