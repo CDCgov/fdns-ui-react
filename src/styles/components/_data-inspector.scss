@@ -5,12 +5,12 @@ div.data-inspector {
   .data-inspector-buttons {
     position: relative;
     float: right;
-    top: 15px;
+    top: 24px;
   }
 
   button.close, button.print {
-    border-left: 1px solid $grey-200;
-    border-bottom: 1px solid $grey-200;
+    border-left: 1px solid $grey-500;
+    border-bottom: 1px solid $grey-500;
     border-radius: 0;
     background-color: $white-00;
 
@@ -57,7 +57,7 @@ div.data-inspector {
         outline: none;
         color: $grey-600;
         font-size: 1.2em;
-        border-bottom: 1px solid $grey-200;
+        border-bottom: 1px solid $grey-500;
       }
     }
 
@@ -90,7 +90,7 @@ div.data-inspector {
     margin-left: 5px;
   }
   .json-inspector__key {
-    color: #505050;
+    color: #3E4144;
   }
   .json-inspector__value_helper,
   .json-inspector__value_null,
@@ -99,13 +99,16 @@ div.data-inspector {
     font-weight: normal;;
   }
   .json-inspector__value_string {
-    color: #3B630F;
+    color: #01447B;
   }
   .json-inspector__value_boolean {
-    color: #006360;
+    color: #0A7D8A;
+  }
+  .json-inspector__value_object {
+    color: #B35C00;
   }
   .json-inspector__value_number {
-    color: #9D3600;
+    color: #007971;
   }
   .json-inspector__hl {
     background: #ff0;

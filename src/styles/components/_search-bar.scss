@@ -5,9 +5,10 @@ div.search-bar {
   span {
 
     svg {
-      font-size: 1.45em;
+      font-size: 1.65em;
       color: $grey-200;
-
+      position: relative;
+      top: 5px;
     }
   }
 
@@ -20,8 +21,7 @@ div.search-bar {
     input {
       width: 100%;
       border: 0;
-      border-bottom: 1px solid $grey-200;
-      margin-left: $default-margin;
+      border-bottom: 1px solid $grey-500;
       outline: none;
       font-size: 1.4em;
       color: $grey-600;

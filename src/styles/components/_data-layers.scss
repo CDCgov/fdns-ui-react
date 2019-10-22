@@ -58,7 +58,7 @@ div.data-layers {
       }
 
       button.save {
-        color: $teal-600;
+        color: $grey-600;
         background: none;
         padding: .1em;
         margin: 0;
@@ -104,7 +104,7 @@ div.data-layers {
 
         svg {
           font-size: 1.2em;
-          color: $grey-500;
+          color: $grey-600;
         }
 
         &.visible {
@@ -117,7 +117,7 @@ div.data-layers {
 
       span.drag-icon {
         svg {
-          color: $grey-500;
+          color: $grey-600;
         }
       }
 

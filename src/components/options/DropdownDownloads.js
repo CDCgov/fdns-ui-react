@@ -119,7 +119,7 @@ class DropdownDownloads extends Component {
     if (this.props.downloads.length > 0) {
       return (
         <div className="reset-downloads">
-          <IconButton aria-label="Clear" onClick={this.handleClear}>
+          <IconButton aria-label="Clear" alt="Clear" onClick={this.handleClear}>
             <ClearIcon fontSize="small" />
           </IconButton>
         </div>
@@ -157,6 +157,8 @@ class DropdownDownloads extends Component {
           }}
           aria-owns={open ? 'menu-list-grow' : undefined}
           aria-haspopup="true"
+          aria-label="Show Downloads"
+          alt="Show Downloads"
           onClick={this.handleToggle}
         >
           <GetAppIcon fontSize="small" />

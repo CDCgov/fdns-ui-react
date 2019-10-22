@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button, ClickAwayListener, Divider, Grid, MenuList, Paper, Popper, Typography } from '@material-ui/core';
 
 import { _user } from '../../fixtures/shapes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -89,7 +89,7 @@ class DropdownUser extends Component {
                   <Grid item className="grid-item" >
                     <Button variant="contained" color="secondary" onClick={this.handleSignOut} fullWidth={true}>
                       Log Off
-                      <FontAwesomeIcon icon="sign-out-alt" />
+                      <ExitToAppIcon />
                     </Button>
                   </Grid>
                 </Grid>

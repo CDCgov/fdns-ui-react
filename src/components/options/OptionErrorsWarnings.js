@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import dig from 'object-dig';
 import { IconButton, Tooltip } from '@material-ui/core';
 import { _analysis } from '../../fixtures/shapes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BlockIcon from '@material-ui/icons/Block';
+import WarningIcon from '@material-ui/icons/Warning';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -89,12 +89,13 @@ class OptionErrorsWarnings extends Component {
       return (
         <Tooltip id={`tooltip-error-${nonce}`} title={`${errors} Errors`} placement="left">
           <IconButton
-            aria-label="Warnings Detail"
+            aria-label="Errors Detail"
+            alt="Errors"
             className="option-error"
             onClick={this.handleDetailClick}
             size={this.props.size}
           >
-            <FontAwesomeIcon icon="ban" />
+            <BlockIcon />
           </IconButton>
         </Tooltip>
       )
@@ -114,11 +115,12 @@ class OptionErrorsWarnings extends Component {
         <Tooltip id={`tooltip-warning-${nonce}`} title={`${warnings} Warnings`} placement="left">
           <IconButton
             aria-label="Warnings Detail"
+            alt="Warnings"
             className="option-warning"
             onClick={this.handleDetailClick}
             size={this.props.size}
           >
-            <FontAwesomeIcon icon="exclamation-triangle" />
+            <WarningIcon />
           </IconButton>
         </Tooltip>
       )

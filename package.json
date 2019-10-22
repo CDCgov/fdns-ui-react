@@ -1,6 +1,6 @@
 {
   "name": "fdns-ui-react",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "This is the open source UI library for react components using Foundation Services (FDNS).",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.js",
@@ -87,6 +87,7 @@
     "flexbox": "0.0.3",
     "i": "^0.3.6",
     "interactjs": "^1.3.4",
+    "jsonpath": "^1.0.2",
     "lodash": "^4.17.14",
     "luxon": "^1.10.0",
     "moment": "^2.19.4",

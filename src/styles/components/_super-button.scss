@@ -1,9 +1,8 @@
 .super-button {
   button {
     cursor: pointer;
-    background: #F7F8F9; /* Old browsers */
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.11), 0px 1px 1px 0px rgba(0,0,0,0.13), 0px 2px 1px -1px rgba(0,0,0,0.02);
-    border-radius: 4px;
+    border-radius: 3px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
@@ -12,7 +11,7 @@
     padding: 6px 16px;
     min-width: 64px;
     width: 100%;
-    margin: 10px 0;
+    margin: 8px 0;
     font-size: 0.875rem;
     color: #3E4144;
     outline: none;
@@ -24,13 +23,13 @@
     }
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
 
   &.primary {
     button {
-      background: #075290; /* Old browsers */
+      background: #01447B; /* Old browsers */
       border: 0;
       color: #ffffff;
 
@@ -41,9 +40,93 @@
   }
   &.secondary {
     button {
-      background: #20958E; /* Old browsers */
+      background: #038279; /* Old browsers */
       border: 0;
       color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.teal-on-teal {
+    button {
+      background: #11C2B6; /* Old browsers */
+      border: 0;
+      color: #004945;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.blue-on-blue {
+    button {
+      background: #76C1FE; /* Old browsers */
+      border: 0;
+      color: #01447B;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.blue-on-blue-inverse {
+    button {
+      background: #01447B; /* Old browsers */
+      border: 0;
+      color: #76C1FE;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.teal-on-teal-inverse {
+    button {
+      background: #004945; /* Old browsers */
+      border: 0;
+      color: #11C2B6;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.default-outlined {
+    button {
+      border: 1px solid #65676A;
+      color: #65676A;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.primary-outlined {
+    button {
+      border: 1px solid #01447B;
+      color: #01447B;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.secondary-outlined {
+    button {
+      border: 1px solid #038279;
+      color: #038279;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.warning-outlined {
+    button {
+      border: 1px solid #D71E20;
+      color: #D71E20;
 
       &:hover {
         opacity: 0.9;

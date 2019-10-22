@@ -1,11 +1,13 @@
 .btn-submit {
   background-color: $cdc-blue-600;
   color: $white-00;
+  border-radius: 3px;
 }
 
 .btn.btn-default {
   background-color: $white-00;
   outline: none;
+  border-radius: 3px;
 }
 
 input.form-control, button.btn.btn-default {
@@ -13,14 +15,13 @@ input.form-control, button.btn.btn-default {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  border-color: $grey-200;
+  border-radius: 3px;
 
   &:hover, &:focus, &:active {
     outline: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: $grey-200;
   }
 }
 

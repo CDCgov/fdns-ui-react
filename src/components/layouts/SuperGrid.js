@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import dig from 'object-dig';
 import classNames from 'classnames';
-import ArrowTooltip from '../utils/ArrowTooltip';
 
 import OptionAction from '../options/OptionAction';
 import OptionErrorsWarnings from '../options/OptionErrorsWarnings';
 import { _headers } from '../../fixtures/shapes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
+import { Grid, Paper, Table, TableBody, TableCell, TableRow, Tooltip } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -69,16 +68,16 @@ class SuperGrid extends Component {
     return (
       <TableRow className={className} key={count}>
         <TableCell>
-          <ArrowTooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="top">
+          <Tooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="right">
             {icon}
-          </ArrowTooltip>
+          </Tooltip>
         </TableCell>
         <TableCell align="right" title={header.label}>
-          <ArrowTooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="top">
+          <Tooltip id={`header-${count}-${headerIndex}`} title={header.label} placement="right">
             <span className="data-element">
               {data}
             </span>
-          </ArrowTooltip>
+          </Tooltip>
         </TableCell>
       </TableRow>
     )

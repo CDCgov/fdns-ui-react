@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { IconButton, InputAdornment, OutlinedInput } from '@material-ui/core';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -39,7 +39,7 @@ class DataEndpoint extends Component {
           aria-label="Copy link"
           onClick={this.handleCopy}
         >
-          <FontAwesomeIcon icon="clipboard" />
+          <FileCopyIcon />
         </IconButton>
       </InputAdornment>
     );

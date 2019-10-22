@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
-  icon: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ]),
   image: PropTypes.string,
   imageAlt: PropTypes.string,
   theme: PropTypes.string,
@@ -25,7 +20,7 @@ const defaultProps = {
   image: '',
   imageAlt: '',
   theme: 'default',
-  className: '',
+  className: 'icon-button',
   color: 'primary',
   variant: 'text',
   onClick() {},
@@ -41,17 +36,11 @@ class IconButton extends Component {
     this.props.onClick();
   }
 
-  renderIcon = () => {
-    const { icon, image, imageAlt } = this.props;
-
-    if (image === '') {
-      return (
-        <FontAwesomeIcon icon={this.props.icon} />
-      );
-    }
-
+  renderCustomImageIcon = () => {
+    const { image, imageAlt } = this.props;
+    if (!image) return;
     return (
-      <img src={image} alt={imageAlt} className="icon" />
+      <img src={image} alt={imageAlt} className="custom-icon" />
     )
   }
 
@@ -68,8 +57,8 @@ class IconButton extends Component {
     return (
       <div className={className}>
         <Button aria-label="icon button" color={this.props.color} variant={this.props.variant} onClick={this.handleClick}>
-          {this.renderIcon()}
-          <span>{this.props.children}</span>
+          {this.renderCustomImageIcon()}
+          {this.props.children}
         </Button>
       </div>
     )

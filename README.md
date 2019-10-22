@@ -15,23 +15,6 @@ You will need to have the following software installed to run this library local
 - [Node.js](https://nodejs.org/en/)
 - **Windows Users**: Please use [Cygwin](https://www.cygwin.com/) or the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) for running the commands in this README
 
-### FontAwesome
-Note that this app uses the free version of FontAwesome v5, specifically [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) for most of its icons. Many icons have changed in syntax slightly since v4, so be sure to check against the [new FA icon gallery](https://fontawesome.com/icons).
-
-You can add a new FontAwesomeIcon to your component by first importing the React component:
-
-    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-Then you will have available `FontAwesomeIcon` (the icon name is from the base and does not include `fa fa-` like in previous versions of FA):
-
-    <FontAwesomeIcon icon='file-code' />
-
-Both the `fas` (Solid, default) and `far` (Regular) icons have been added to the library. If you need to add a Regular icon (`-o` in v4), you must add in that style such as:
-
-    <FontAwesomeIcon icon={['far' ,'file-code']} />
-
-Reference the docs for further details about what all can be done with this lib.
-
 ## Basic Usage
 Create your project with [create-react-app](https://github.com/facebookincubator/create-react-app).
 

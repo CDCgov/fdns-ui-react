@@ -16,8 +16,7 @@
 
   .forgot-password {
     a {
-      color: #6E6E6E;
-      opacity: 0.75;
+      color: $grey-600;
       text-decoration: none;
       &:hover {
         text-decoration: underline;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SearchIcon from '@material-ui/icons/Search';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -55,7 +55,7 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <span>
-          <FontAwesomeIcon icon="search" aria-hidden="true"/>
+          <SearchIcon />
         </span>
         <form className="search-form" onSubmit={this.handleSearch}>
           <input

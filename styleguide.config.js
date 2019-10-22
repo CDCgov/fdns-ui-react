@@ -8,7 +8,7 @@ module.exports = {
 	},
 	skipComponentsWithoutExample: true,
 	version,
-	title: 'FDNS UI Library',
+	title: 'FDNS UI',
 	sections: [
 		{
       sections: [
@@ -33,12 +33,8 @@ module.exports = {
 		},
 		{
 			name: 'Accessibility',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			content: './src/documentation/accessibility/accessibility.md',
       sections: [
-				{
-          name: 'Accessibility',
-          content: './src/documentation/accessibility/accessibility.md',
-				},
         {
           name: 'Accessibility standards',
           content: './src/documentation/accessibility/accessibility-standards.md',
@@ -95,15 +91,15 @@ module.exports = {
           content: './src/documentation/component-library/component-status.md',
 				},
 				{
-					name: 'Buttons',	
+					name: 'Buttons',
 					components: './src/components/buttons/*.js',
 				},
 				{
-					name: 'Data Display',	
+					name: 'Data Display',
 					components: './src/components/data-display/*.js',
 				},
 				{
-					name: 'Feedback',	
+					name: 'Feedback',
 					components: './src/components/feedback/*.js',
 				},
 				{
@@ -115,15 +111,15 @@ module.exports = {
 					components: './src/components/layouts/*.js',
 				},
 				{
-					name: 'Navigation',	
+					name: 'Navigation',
 					components: './src/components/navigation/*.js',
 				},
 				{
-					name: 'Options',	
+					name: 'Options',
 					components: './src/components/options/*.js',
 				},
 				{
-					name: 'Search',	
+					name: 'Search',
 					components: './src/components/search/*.js',
 				},
 				{
@@ -219,21 +215,26 @@ module.exports = {
 
 	theme: {
     color: {
-			name: '#ffffff',
-			baseBackground: '#fdfdfc',
+			name: '#FFF',
+			baseBackground: '#FFFFFF',
+			link: '#2E845F',
+			linkHover: '#90a7bf',
+			border: '#717376',
 			sidebarLinks: '#FFF;',
-      sidebarBackground: '#00223D',
-      codeComment: '#717376',
-      codePunctuation: '#999',
-      codeProperty: '#905',
-      codeDeleted: '#905',
-      codeString: '#690',
-      codeInserted: '#690',
-      codeOperator: '#9a6e3a',
-      codeKeyword: '#1673b1',
-      codeFunction: '#DD4A68',
-			codeVariable: '#e90',
-			codeBackground: '#FFFFFF;'
+			sidebarLink: '#FFF;',
+			sidebarBackground: '#282c34',
+			codeBase: '#fff',
+      codeComment: '#999',
+      codePunctuation: '#fff',
+      codeProperty: '#fff',
+      codeDeleted: '#fff',
+      codeString: '#3EAF7C',
+      codeInserted: '#fff',
+      codeOperator: '#F7F8F9',
+      codeKeyword: '#A6D7FF',
+      codeFunction: '#fff1c2',
+			codeVariable: '#fff',
+			codeBackground: '#282c34;'
     },
     fontFamily: {
       base: '"proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
