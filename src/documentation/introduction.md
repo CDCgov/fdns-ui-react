@@ -5,7 +5,7 @@ h1, h2 { text-align: center; }
 
 ![Image of FDNS Logo](img/fdns-logo.svg)
 
-# Public Health UI 
+# FDNS UI 
 ## React Component Library and Design Guidelines
 ### Accessible. Responsive. Secure
 `Version 0.8.6`

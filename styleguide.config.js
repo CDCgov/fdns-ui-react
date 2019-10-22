@@ -8,7 +8,7 @@ module.exports = {
 	},
 	skipComponentsWithoutExample: true,
 	version,
-	title: 'Public Health UI',
+	title: 'FDNS UI',
 	sections: [
 		{
       sections: [
