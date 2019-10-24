@@ -53,6 +53,7 @@ class DataEndpoint extends Component {
             this.input = input
           }}
           label="Label"
+          aria-label="label here"
           labelWidth={120}
           disabled={true}
           style={{ margin: 8 }}
