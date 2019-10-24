@@ -15,6 +15,7 @@ library.add(fas, far);
 export * as fixtures from './fixtures/fixtures';
 export * as shapes from './fixtures/shapes';
 
+export ContainedButton from './components/buttons/ContainedButton';
 export Container from './components/layouts/Container';
 export DataEndpoint from './components/data-display/DataEndpoint';
 export DataInspector from './components/data-display/DataInspector';
