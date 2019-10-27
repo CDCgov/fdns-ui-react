@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/ico_task</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/ico_task" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(3.000000, 3.000000)" fill="#3E4144" fill-rule="nonzero">
+            <g id="shape-square-plus">
+                <path d="M15.1578947,2.84210526 L18,2.84210526 L18,4.73684211 L15.1578947,4.73684211 L15.1578947,7.57894737 L13.2631579,7.57894737 L13.2631579,4.73684211 L10.4210526,4.73684211 L10.4210526,2.84210526 L13.2631579,2.84210526 L13.2631579,0 L15.1578947,0 L15.1578947,2.84210526 L15.1578947,2.84210526 Z M13.2631579,16.1052632 L13.2631579,10.4210526 L15.1578947,10.4210526 L15.1578947,18 L0,18 L0,2.84210526 L7.57894737,2.84210526 L7.57894737,4.73684211 L1.89473684,4.73684211 L1.89473684,16.1052632 L13.2631579,16.1052632 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

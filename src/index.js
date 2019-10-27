@@ -27,6 +27,7 @@ export FilterAction from './components/filters/FilterAction';
 export FilterDate from './components/filters/FilterDate';
 export FilterGroup from './components/filters/FilterGroup';
 export FilterSelect from './components/filters/FilterSelect';
+export { IcoTask, IcoCloudUpload, IcoCloudDownload }  from './components/icons/index.jsx';
 export IconButton from './components/buttons/IconButton';
 export Loader from './components/feedback/Loader';
 export Login from './components/layouts/Login';
