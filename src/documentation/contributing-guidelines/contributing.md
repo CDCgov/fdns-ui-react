@@ -1,7 +1,6 @@
 ### Pre-requisites
-- _Node:_ `^9.0.0` or higher.
-- _Npm:_ `6.0.0` or higher.
-- _Yarn:_ `^1.7.0` or higher.
+- _Node:_ `^11.0.0` or higher.
+- _Npm:_ `6.7.0` or higher.
 
 ### Getting started
 ⭐️ Star the project
@@ -13,16 +12,24 @@ git clone https://github.com/CDCgov/fdns-ui-react.git
 cd fdns-ui-react
 ```
 
-Install dependencies :
+**Install dependencies (Windows):**
 
-```bash
-yarn
+Simply download the  [Windows Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
+
+**Install dependencies (MacOS):**
+
+Simply download the  [macOS Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
+
+/If you want to download the package with bash:/
+
+``` zsh
+curl “https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE ‘s|.*>node-(.*)\.pkg</a>.*|\1|p’)}.pkg” > “$HOME/Downloads/node-latest.pkg” && sudo installer -store -pkg “$HOME/Downloads/node-latest.pkg” -target “/“
 ```
 
 Setup development environment:
 
 ```bash
-yarn dev
+npx styleguidist server
 ```
 
 ### Commit messages

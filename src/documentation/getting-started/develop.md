@@ -22,6 +22,20 @@ You will need to have the following software installed to run this library local
 - [Node.js](https://nodejs.org/en/)
 - **Windows Users**: Please use [Cygwin](https://www.cygwin.com/) or the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) for running the commands in this README
 
+**Install dependencies (Windows):**
+
+Simply download the  [Windows Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
+
+**Install dependencies (MacOS):**
+
+Simply download the  [macOS Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
+
+/If you want to download the package with bash:/
+
+``` zsh
+curl “https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE ‘s|.*>node-(.*)\.pkg</a>.*|\1|p’)}.pkg” > “$HOME/Downloads/node-latest.pkg” && sudo installer -store -pkg “$HOME/Downloads/node-latest.pkg” -target “/“
+```
+
 ### Basic Usage
 Create your project with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
@@ -71,4 +85,9 @@ This library currently uses [react-styleguidist](https://github.com/styleguidist
 To view the StyleGuide, after running `npm i`, use the command:
 
 `npm start` or `npx styleguidist server`. This will run the styleguide on `http://localhost:6060/`.
+
+### License
+
+This project is licensed under the terms of the
+[Apache License, Version 2.0 | Open Source Initiative](https://opensource.org/licenses/Apache-2.0)
 _________________
