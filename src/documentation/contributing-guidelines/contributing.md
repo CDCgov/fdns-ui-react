@@ -12,12 +12,10 @@ git clone https://github.com/CDCgov/fdns-ui-react.git
 cd fdns-ui-react
 ```
 
-**Install dependencies (Windows):**
-
+**Install dependencies (Windows):**<br/>
 Simply download the  [Windows Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
 
-**Install dependencies (MacOS):**
-
+**Install dependencies (MacOS):**<br/>
 Simply download the  [macOS Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
 
 /If you want to download the package with bash:/
