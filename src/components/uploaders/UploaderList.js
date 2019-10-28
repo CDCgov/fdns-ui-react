@@ -20,7 +20,7 @@ class UploaderList extends Component {
   renderRow(file, i) {
     const { name } = file;
     return (
-      <li key={i}>
+      <li key={i} tabindex="0" aria-label={`file ${i}: ${name}`}>
         <CheckCircleIcon />
         <span>{name}</span>
       </li>
@@ -30,7 +30,7 @@ class UploaderList extends Component {
   // main render method
   render() {
     return (
-      <div className="uploader-list">
+      <div className="uploader-list" aria-label='file upload list'>
         <ul>
           {this.props.files.map(this.renderRow)}
         </ul>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import LuxonUtils from '@date-io/luxon';
-import { MuiPickersUtilsProvider, DatePicker } from '@material-ui/pickers';
+import { MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers';
 
 // default date format
 const defaultDateFormat = 'yyyy-MM-dd';
@@ -108,24 +108,30 @@ class FilterDate extends Component {
   // main render method
   render() {
     const startPicker = (
-      <DatePicker
+      <KeyboardDatePicker
         id="startDate"
         margin="normal"
         className="dayPickerInput"
         label={this.props.startLabel}
         value={this.state.start}
         onChange={this.onStartChanged}
+        KeyboardButtonProps={{
+          'aria-label': 'Change Start Date',
+        }}
       />
     );
 
     const endPicker = (
-      <DatePicker
+      <KeyboardDatePicker
         id="endDate"
         margin="normal"
         className="dayPickerInput"
         label={this.props.endLabel}
         value={this.state.end}
         onChange={this.onEndChanged}
+        KeyboardButtonProps={{
+          'aria-label': 'Change End Date',
+        }}
       />
     );
 
