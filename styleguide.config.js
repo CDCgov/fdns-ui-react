@@ -141,7 +141,7 @@ module.exports = {
 			],
 		},
 		{
-			name: 'Contributing Guidelines',
+			name: 'Contribution Guidelines',
 			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
       sections: [
         {
