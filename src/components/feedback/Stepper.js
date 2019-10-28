@@ -9,7 +9,10 @@ import isString from 'lodash/isString';
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   layout: PropTypes.string,
-  statuses: PropTypes.arrayOf(_status) || PropTypes.arrayOf(PropTypes.string),
+  statuses: PropTypes.oneOfType([
+    PropTypes.arrayOf(_status),
+    PropTypes.arrayOf(PropTypes.string)
+  ]),
   currentStatus: PropTypes.string,
 };
 

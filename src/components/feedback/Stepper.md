@@ -16,10 +16,3 @@ The Stepper component is used to show the progress in a sequence of steps, event
     />
   </div>
 ```
-
-#### Horizontal Stepper
-```js
-  <div className="stepper">
-    <Stepper layout={'horizontal'} statuses={['First Step','Second Step','Third Step','Fourth Step']} currentStatus={'Third Step'}/>
-  </div>
-```
