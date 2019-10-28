@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { Tooltip } from '@material-ui/core';
+import { _status } from '../../fixtures/shapes';
+import { Tooltip, Typography } from '@material-ui/core';
+import CheckIcon from '@material-ui/icons/Check';
+import isString from 'lodash/isString';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   layout: PropTypes.string,
-  statuses: PropTypes.arrayOf(PropTypes.string),
-  status: PropTypes.string,
+  statuses: PropTypes.arrayOf(_status) || PropTypes.arrayOf(PropTypes.string),
+  currentStatus: PropTypes.string,
 };
 
 // set the defaults
@@ -20,13 +23,24 @@ const defaultProps = {
 class Stepper extends Component {
   // render the vertical layout
   renderVertical() {
-    const { status, statuses } = this.props;
-    const index = statuses.indexOf(status);
+    const { currentStatus, statuses } = this.props;
+    let index = statuses.findIndex(s => {
+      if (s.status) return s.status === currentStatus;
+    });
+    if (isString(statuses[0])) {
+      index = statuses.indexOf(currentStatus);
+    }
 
     return (
       <React.Fragment>
         {
-          statuses.map((status, key) => {
+          statuses.map((statusItem, key) => {
+            let status = statusItem;
+            let substatus = '';
+            if (!isString(statusItem)) {
+              status = statusItem.status;
+              substatus = statusItem.substatus;
+            }
             return (
               <div className="Stepper-box" key={key}>
                 <div className="Stepper-icon">
@@ -34,16 +48,25 @@ class Stepper extends Component {
                     <span
                       className={classnames({
                         'Stepper-circle': true,
-                        'active': (key <= index),
+                        'active': (key < index),
+                        'in-progress': (key === index),
                       })}
                     />
                   </Tooltip>
+                  {
+                    key < index ? (
+                      <CheckIcon className="check-icon" />
+                    ) : (
+                      <Typography className="number-label">{key + 1}</Typography>
+                    )
+                  }
                   {
                     (key < (statuses.length - 1)) ? (
                       <span
                         className={classnames({
                           'Stepper-connector': true,
-                          'active': (key < index),
+                          'active': (key < index - 1),
+                          'in-progress': (key === index - 1),
                         })}
                       />
                     ) : null
@@ -51,6 +74,13 @@ class Stepper extends Component {
                 </div>
                 <div className="Stepper-status">
                   <div className="Stepper-status-title">{status}</div>
+                  {
+                    substatus ? (
+                      <div className="Stepper-status-subtitle">{substatus}</div>
+                    ) : (
+                      null
+                    )
+                  }
                 </div>
               </div>
             );
@@ -62,8 +92,8 @@ class Stepper extends Component {
 
   // render the horizontal layout
   renderHorizontal() {
-    const { status, statuses } = this.props;
-    const index = statuses.indexOf(status);
+    const { currentStatus, statuses } = this.props;
+    const index = statuses.indexOf(currentStatus);
 
     return (
       <React.Fragment>
@@ -76,7 +106,8 @@ class Stepper extends Component {
                   <span
                     className={classnames({
                       'Stepper-circle': true,
-                      'active': (key <= index),
+                      'active': (key < index),
+                      'in-progress': (key === index),
                     })}
                   />
                 </Tooltip>
@@ -85,7 +116,8 @@ class Stepper extends Component {
                     <span
                       className={classnames({
                         'Stepper-connector': true,
-                        'active': (key < index),
+                        'active': (key < index - 1),
+                        'in-progress': (key === index - 1),
                       })}
                     />
                   ) : null
