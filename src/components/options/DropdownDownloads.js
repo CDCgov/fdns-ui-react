@@ -119,9 +119,14 @@ class DropdownDownloads extends Component {
     if (this.props.downloads.length > 0) {
       return (
         <div className="reset-downloads">
-          <IconButton aria-label="Clear" alt="Clear" onClick={this.handleClear}>
-            <ClearIcon fontSize="small" />
-          </IconButton>
+          <Button
+            aria-label="Clear"
+            alt="Clear"
+            onClick={this.handleClear}
+            startIcon={<ClearIcon />}
+          >
+            Clear
+          </Button>
         </div>
       );
     }
