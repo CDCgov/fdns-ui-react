@@ -1,1 +1,1 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Themes are used to quickly modify components and the overall application to a specific visual style. Our Theme system is currently under-development and will be available early 2020. Themes can easily customize all your components by changing a set of universal variables, eliminating the need to change individual components. 
