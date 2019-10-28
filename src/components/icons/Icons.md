@@ -7,7 +7,7 @@ The Icon component.
 	import IcoTask from './IcoTask.jsx';
 
 <div>
-	<div class="Test">
+	<div className="Test">
 		<IcoCloudDownload />
 		<IcoCloudUpload />
 		<IcoTask />
@@ -24,7 +24,7 @@ The Icon component.
 		<IcoCloudUpload />
 		<IcoTask />
 	</div>
-	<div class="Test">
+	<div className="Test">
 		<IcoCloudDownload />
 		<IcoCloudUpload />
 		<IcoTask />

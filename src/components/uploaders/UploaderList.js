@@ -20,7 +20,7 @@ class UploaderList extends Component {
   renderRow(file, i) {
     const { name } = file;
     return (
-      <li key={i} tabindex="0" aria-label={`file ${i}: ${name}`}>
+      <li key={i} tabIndex="0" aria-label={`file ${i}: ${name}`}>
         <CheckCircleIcon />
         <span>{name}</span>
       </li>

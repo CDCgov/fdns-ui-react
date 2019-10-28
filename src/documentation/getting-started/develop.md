@@ -4,11 +4,11 @@
 }
 </style>
 
-Develop stuff with FDNS UI react component library. 
+Develop stuff with FDNS UI react component library.
 
 <div class="badges">
 [![Build Status](https://travis-ci.org/CDCgov/fdns-ui-react.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ui-react)
-[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})
+[![Known Vulnerabilities](https://snyk.io/test/github/CDCgov/fdns-ui-react/badge.svg)](https://snyk.io/test/github/CDCgov/fdns-ui-react)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 </div>
@@ -16,7 +16,7 @@ Develop stuff with FDNS UI react component library.
 ### Running locally
 Carefully read the following instructions on how to run and test this library in your local environment.
 
-### Dependencies 
+### Dependencies
 You will need to have the following software installed to run this library locally:
 
 - [Node.js](https://nodejs.org/en/)
