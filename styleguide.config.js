@@ -107,6 +107,10 @@ module.exports = {
 					components: './src/components/filters/*.js',
 				},
 				{
+					name: 'Icons',
+					components: './src/components/icons/index.jsx',
+				},
+				{
 					name: 'Layouts',
 					components: './src/components/layouts/*.js',
 				},
