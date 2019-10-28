@@ -19,7 +19,7 @@ module.exports = {
 		},
 		{
 			name: 'Getting Started',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			description: 'FDNS UI kit is a pragmatic UI kit for building evolving interfaces for public health applications on the web. It is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS',
       sections: [
         {
           name: 'Design',
