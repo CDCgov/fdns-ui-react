@@ -179,7 +179,17 @@ class DropdownDownloads extends Component {
               <Paper className="dropdown-downloads-menu" elevation={6}>
                 <ClickAwayListener onClickAway={this.handleClose}>
                   <MenuList>
-                    <Typography gutterBottom variant="h5">Download Queue</Typography>
+                    <div className="header">
+                      <Typography gutterBottom variant="h5">Download Queue</Typography>
+                      <IconButton
+                        className="close-button"
+                        aria-label="Close"
+                        alt="Close"
+                        onClick={this.handleClose}
+                      >
+                        <ClearIcon />
+                      </IconButton>
+                    </div>
                     {this.renderRows()}
                     {this.renderReset()}
                   </MenuList>
