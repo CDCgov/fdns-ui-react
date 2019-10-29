@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Button } from '@material-ui/core';
+import { Button, ButtonGroup } from '@material-ui/core';
+import GridOnIcon from '@material-ui/icons/GridOn';
+import MenuIcon from '@material-ui/icons/Menu';
+import TimelineIcon from '@material-ui/icons/Timeline';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -46,30 +49,38 @@ class OptionView extends Component {
       'active': (this.state.selected === 'super-table')
     });
 
+    const graphClassName = classNames({
+      'icon-super-graph': true,
+      'active': (this.state.selected === 'super-graph')
+    });
+
     return (
-      <div className="option-view">
+      <ButtonGroup className="option-view">
         <Button
+          className={gridClassName}
           aria-label="Grid View"
           onClick={this.handleSelection.bind(this, 'super-grid')}
           disableRipple={true}
         >
-          <span className={gridClassName}></span>
+          <GridOnIcon className='icon'/>
         </Button>
         <Button
+          className={tableClassName}
           aria-label="Table View"
           onClick={this.handleSelection.bind(this, 'super-table')}
           disableRipple={true}
         >
-          <span className={tableClassName}></span>
+          <MenuIcon className='icon'/>
         </Button>
         <Button
           aria-label="Graph View"
-          disabled={true}
+          className={graphClassName}
+          onClick={this.handleSelection.bind(this, 'super-graph')}
           disableRipple={true}
         >
-          <span className="icon-super-chart"></span>
+          <TimelineIcon className='icon'/>
         </Button>
-      </div>
+      </ButtonGroup>
     )
   }
 }
