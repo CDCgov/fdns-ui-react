@@ -3,9 +3,9 @@ The Stepper component is used to show the progress in a sequence of steps, event
 #### Vertical Stepper
 ```js
   const statuses = [
-    { status: 'First Step', substatus: 'Pending' },
-    { status: 'Second Step' },
-    { status: 'Third Step', substatus: 'Pending' },
+    { status: 'First Step', substatus: 'Complete' },
+    { status: 'Second Step', substatus: 'Complete' },
+    { status: 'Third Step', substatus: 'Active' },
     { status: 'Fourth Step', substatus: 'Pending' },
   ];
   <div className="stepper">
