@@ -31,7 +31,7 @@ The IconButton component is used to have a simple button with an icon. The Icons
       </IconButton>
       <IconButton color="default" variant="outlined" onClick={()=>{}}>
         <IcoFolderClosedEmpty />
-        {'Custom Image Icon'}
+        {'Custom JSX Icon'}
       </IconButton>
     </div>
 ```
