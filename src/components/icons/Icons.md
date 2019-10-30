@@ -5,6 +5,9 @@ The Icon component.
 	import IcoCloudDownload from './IcoCloudDownload.jsx';
 	import IcoCloudUpload from './IcoCloudUpload.jsx';
 	import IcoTask from './IcoTask.jsx';
+	import IcoBlueInfo from './IcoBlueInfo.jsx';
+	import IcoGreenCheckmark from './IcoGreenCheckmark.jsx';
+	import IcoRedError from './IcoRedError.jsx';
 
 <div>
 	<div class="Test">
@@ -12,26 +15,26 @@ The Icon component.
 		<IcoCloudUpload />
 		<IcoTask />
 
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
+		<IcoRedError />
+
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
 		<IcoTask />
 
-		<IcoCloudDownload />
-		<IcoCloudUpload />
-		<IcoTask />
-
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
 		<IcoTask />
 	</div>
-	<div class="Test">
-		<IcoCloudDownload />
+	<div className="Test">
+		<IcoBlueInfo />
 		<IcoCloudUpload />
-		<IcoTask />
+		<IcoRedError />
 
 		<IcoCloudDownload />
 		<IcoCloudUpload />
-		<IcoTask />
+		<IcoRedError />
 
 		<IcoCloudDownload />
 		<IcoCloudUpload />

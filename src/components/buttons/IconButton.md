@@ -7,6 +7,9 @@ The IconButton component is used to have a simple button with an icon. The Icons
     import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
     import BookmarkIcon from '@material-ui/icons/Bookmark';
     import LaptopIcon from '@material-ui/icons/Laptop';
+    import IcoBlueInfo from '../icons/IcoBlueInfo.jsx';
+    import IcoRedError from '../icons/IcoRedError.jsx';
+    import IcoGreenCheckmark from '../icons/IcoGreenCheckmark.jsx';
 
     <div className="icon-buttons">
       <IconButton color="primary" variant="contained" onClick={()=>{}}>
@@ -14,7 +17,7 @@ The IconButton component is used to have a simple button with an icon. The Icons
         {'Primary'}
       </IconButton>
       <IconButton color="default" variant="contained" onClick={()=>{}}>
-        <SettingsIcon />
+        <IcoBlueInfo />
         {'Default'}
       </IconButton>
       <IconButton color="secondary" variant="contained" onClick={()=>{}}>
@@ -22,7 +25,7 @@ The IconButton component is used to have a simple button with an icon. The Icons
         {'Secondary'}
       </IconButton>
       <IconButton color="default" variant="text" onClick={()=>{}}>
-        <BookmarkIcon />
+        <IcoGreenCheckmark />
         {'Transparent'}
       </IconButton>
       <IconButton color="default" variant="outlined" onClick={()=>{}}>
