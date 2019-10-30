@@ -8,11 +8,15 @@ The Icon component.
 	import IcoBlueInfo from './IcoBlueInfo.jsx';
 	import IcoGreenCheckmark from './IcoGreenCheckmark.jsx';
 	import IcoRedError from './IcoRedError.jsx';
+	import IcoFolderOpenEmpty from './IcoFolderOpenEmpty.jsx';
+	import IcoFolderOpenFull from './IcoFolderOpenFull.jsx';
+	import IcoFolderClosedFull from './IcoFolderClosedFull.jsx';
+	import IcoFolderClosedEmpty from './IcoFolderClosedEmpty.jsx';
 
 <div>
 	<div class="Test">
 		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoFolderOpenFull />
 		<IcoTask />
 
 		<IcoBlueInfo />
@@ -30,14 +34,14 @@ The Icon component.
 	<div className="Test">
 		<IcoBlueInfo />
 		<IcoCloudUpload />
-		<IcoRedError />
+		<IcoFolderOpenFull />
+
+		<IcoFolderOpenEmpty />
+		<IcoFolderClosedFull />
+		<IcoFolderClosedEmpty />
 
 		<IcoCloudDownload />
-		<IcoCloudUpload />
-		<IcoRedError />
-
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoFolderOpenEmpty />
 		<IcoTask />
 
 		<IcoCloudDownload />

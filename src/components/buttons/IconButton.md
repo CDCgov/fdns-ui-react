@@ -9,11 +9,16 @@ The IconButton component is used to have a simple button with an icon. The Icons
     import LaptopIcon from '@material-ui/icons/Laptop';
     import IcoBlueInfo from '../icons/IcoBlueInfo.jsx';
     import IcoRedError from '../icons/IcoRedError.jsx';
+    // import IcoAmberWarning from '../icons/IcoAmberWarning.jsx';
     import IcoGreenCheckmark from '../icons/IcoGreenCheckmark.jsx';
+    import IcoFolderOpenEmpty from '../icons/IcoFolderOpenEmpty.jsx';
+    import IcoFolderOpenFull from '../icons/IcoFolderOpenFull.jsx';
+    import IcoFolderClosedFull from '../icons/IcoFolderClosedFull.jsx';
+    import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty.jsx';
 
     <div className="icon-buttons">
       <IconButton color="primary" variant="contained" onClick={()=>{}}>
-        <MailIcon />
+        <IcoBlueInfo />
         {'Primary'}
       </IconButton>
       <IconButton color="default" variant="contained" onClick={()=>{}}>
@@ -21,7 +26,7 @@ The IconButton component is used to have a simple button with an icon. The Icons
         {'Default'}
       </IconButton>
       <IconButton color="secondary" variant="contained" onClick={()=>{}}>
-        <CalendarTodayIcon />
+        <IcoBlueInfo />
         {'Secondary'}
       </IconButton>
       <IconButton color="default" variant="text" onClick={()=>{}}>
@@ -29,10 +34,11 @@ The IconButton component is used to have a simple button with an icon. The Icons
         {'Transparent'}
       </IconButton>
       <IconButton color="default" variant="outlined" onClick={()=>{}}>
-        <LaptopIcon />
+        <IcoBlueInfo />
         {'Clear'}
       </IconButton>
-      <IconButton image={imgDataLayers} imageAlt="Data Layers" color="default" variant="outlined" onClick={()=>{}}>
+      <IconButton color="default" variant="outlined" onClick={()=>{}}>
+        <IcoFolderClosedEmpty />
         {'Custom Image Icon'}
       </IconButton>
     </div>
