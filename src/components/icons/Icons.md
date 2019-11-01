@@ -5,36 +5,43 @@ The Icon component.
 	import IcoCloudDownload from './IcoCloudDownload.jsx';
 	import IcoCloudUpload from './IcoCloudUpload.jsx';
 	import IcoTask from './IcoTask.jsx';
+	import IcoBlueInfo from './IcoBlueInfo.jsx';
+	import IcoGreenCheckmark from './IcoGreenCheckmark.jsx';
+	import IcoRedError from './IcoRedError.jsx';
+	import IcoFolderOpenEmpty from './IcoFolderOpenEmpty.jsx';
+	import IcoFolderOpenFull from './IcoFolderOpenFull.jsx';
+	import IcoFolderClosedFull from './IcoFolderClosedFull.jsx';
+	import IcoFolderClosedEmpty from './IcoFolderClosedEmpty.jsx';
 
 <div>
 	<div className="Test">
 		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoFolderOpenFull />
 		<IcoTask />
 
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
+		<IcoRedError />
+
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
 		<IcoTask />
 
-		<IcoCloudDownload />
-		<IcoCloudUpload />
-		<IcoTask />
-
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoBlueInfo />
+		<IcoGreenCheckmark />
 		<IcoTask />
 	</div>
 	<div className="Test">
-		<IcoCloudDownload />
+		<IcoBlueInfo />
 		<IcoCloudUpload />
-		<IcoTask />
+		<IcoFolderOpenFull />
+
+		<IcoFolderOpenEmpty />
+		<IcoFolderClosedFull />
+		<IcoFolderClosedEmpty />
 
 		<IcoCloudDownload />
-		<IcoCloudUpload />
-		<IcoTask />
-
-		<IcoCloudDownload />
-		<IcoCloudUpload />
+		<IcoFolderOpenEmpty />
 		<IcoTask />
 
 		<IcoCloudDownload />

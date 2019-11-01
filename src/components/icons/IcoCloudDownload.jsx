@@ -2,7 +2,7 @@ import React from "react";
 
 // This icons is for blah blah blah
 const IcoCloudDownload = props => (
-  <svg width="2em" height="2em" viewBox="0 0 24 24" {...props}>
+  <svg width="1.7em" height="1.7em" viewBox="0 0 24 24" {...props}>
     <g fill="none" fillRule="evenodd">
       <path d="M-1-1h26.4v26.4H-1z" />
       <path
