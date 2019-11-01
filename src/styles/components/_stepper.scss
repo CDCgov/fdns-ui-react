@@ -11,7 +11,7 @@
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background-color: #ededed;
+  background-color: #6a6a6b;
   position: relative;
   z-index: 1;
 }
@@ -21,13 +21,13 @@
   border-radius: 40px;
 }
 .Stepper.vertical .Stepper-circle {
-  background-color: #aaa;
+  background-color: #6a6a6b;
 }
 .Stepper .Stepper-circle.active {
   background-color: #075290;
 }
 .Stepper .Stepper-circle.in-progress {
-  background-color: #308EDC;
+  background-color: #2178C0;
   box-shadow: 0 0 0px 5px rgba(48, 142, 220, 0.6);
   -webkit-box-shadow: 0 0 0px 5px rgba(48, 142, 220, 0.6);
   -moz-box-shadow: 0 0 0px 5px rgba(48, 142, 220, 0.6);
@@ -39,7 +39,7 @@
   display: inline-block;
   width: 20px;
   height: 2px;
-  background-color: #ededed;
+  background-color: #6a6a6b;
   position: relative;
   top: -9px;
   z-index: 0;
@@ -48,7 +48,7 @@
   display: block;
   width: 4px;
   height: 45px;
-  background-color: #aaa;
+  background-color: #6a6a6b;
   position: relative;
   top: -4px;
   left: 19px;
@@ -68,16 +68,16 @@
 .Stepper.vertical .check-icon {
   position: absolute;
   color: white;
-  margin-left: -32px;
-  font-size: 25px;
-  margin-top: 7px;
+  margin-left: -30px;
+  font-size: 20px;
+  margin-top: 10px;
   z-index: 2;
 }
 .Stepper.vertical .number-label {
   position: absolute;
   color: white;
-  font-size: 21px;
-  margin-top: -39px;
+  font-size: 20px;
+  margin-top: -38px;
   margin-left: 14px;
   z-index: 2;
 }
