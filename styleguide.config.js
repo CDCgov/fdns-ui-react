@@ -59,7 +59,7 @@ module.exports = {
       sections: [
         {
           name: 'Color',
-          content: './src/documentation/design-guidelines/colors.md',
+          content: './src/documentation/design-guidelines/colors.html',
 				},
 				{
           name: 'Layout',
