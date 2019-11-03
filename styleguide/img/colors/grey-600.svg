@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="204px" height="148px" viewBox="0 0 204 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
     <title>grey-600</title>
     <desc>Created with Sketch.</desc>
-    <g id="Colors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="grey-600" fill="#717376" transform="translate(100.000000, 100.000000) rotate(90.000000) translate(-100.000000, -100.000000) " x="0" y="0" width="200" height="200"></rect>
+    <defs>
+        <filter x="-3.2%" y="-4.5%" width="106.5%" height="109.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.395432692 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Noodlings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="color-number" transform="translate(2.000000, 1.000000)">
+            <g filter="url(#filter-1)">
+                <rect id="cdc-blue-25" fill="#717376" x="0" y="0" width="200" height="144"></rect>
+                <rect id="cdc-blue-25" fill="#FFFFFF" fill-rule="nonzero" x="0" y="96" width="200" height="48"></rect>
+                <text id="#F2F9FF" font-family="Roboto-Regular, Roboto" font-size="11" font-weight="normal" letter-spacing="0.314285714" fill="#717376">
+                    <tspan x="16" y="131">#717376</tspan>
+                </text>
+                <text id="Name" font-family="Roboto-Medium, Roboto" font-size="10" font-weight="400" letter-spacing="0.285714286" fill="#3E4144">
+                    <tspan x="16" y="115">Grey 600</tspan>
+                </text>
+            </g>
+        </g>
     </g>
 </svg>
