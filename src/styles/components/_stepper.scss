@@ -16,9 +16,9 @@
   z-index: 1;
 }
 .Stepper.vertical .Stepper-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
 }
 .Stepper.vertical .Stepper-circle {
   background-color: #6a6a6b;
@@ -51,7 +51,7 @@
   background-color: #6a6a6b;
   position: relative;
   top: -4px;
-  left: 19px;
+  left: 14px;
   margin: 0;
 }
 .Stepper .Stepper-connector.active,
@@ -68,17 +68,18 @@
 .Stepper.vertical .check-icon {
   position: absolute;
   color: white;
-  margin-left: -30px;
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-left: -24px;
+  font-weight: 700;
+  margin-top: 8px;
   z-index: 2;
 }
 .Stepper.vertical .number-label {
   position: absolute;
   color: white;
-  font-size: 20px;
-  margin-top: -38px;
-  margin-left: 14px;
+  font-size: 16px;
+  margin-top: -31px;
+  margin-left: 12px;
   z-index: 2;
 }
 .Stepper.vertical .Stepper-box {
@@ -94,10 +95,12 @@
   height: 40px;
 }
 .Stepper.Stepper.vertical .Stepper-box .Stepper-status-title {
-  font-weight: 600;
+  color: $grey-800;
+  font-size: 16px;
 }
 .Stepper.Stepper.vertical .Stepper-box .Stepper-status-subtitle {
-  color: #6a6a6b;
+  color: $grey-600;
+  font-size: 14px;
 }
 .Stepper.Stepper.vertical .Stepper-box .Stepper-status-date {
   font-size: 0.8em;
