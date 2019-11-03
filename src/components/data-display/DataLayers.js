@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+import ClearIcon from '@material-ui/icons/Clear';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
@@ -16,6 +17,7 @@ const propTypes = {
   height: PropTypes.number,
   getHeight: PropTypes.func,
   onSave: PropTypes.func,
+  onClose: PropTypes.func,
 };
 
 // set the defaults
@@ -85,6 +87,17 @@ class DataLayers extends Component {
 
     this.setState({
       headers: nextHeaders,
+    });
+  }
+
+  // close
+  handleClose = () => {
+    if (this.props.onClose) {
+      this.props.onClose();
+      return;
+    }
+    this.setState({
+      active: false,
     });
   }
 
@@ -186,6 +199,7 @@ class DataLayers extends Component {
         <div className="layers-headers fx-grd">
           <div className="col col-3 col-label">Label</div>
           <div className="col col-3 col-key-name">Key Name</div>
+          <Button onClick={this.handleClose} className="col col-1 col-display close">Close</Button>
           <Button onClick={this.handleSaveClick} className="col col-1 col-display save">Apply</Button>
         </div>
         <div className="layers-rows">
