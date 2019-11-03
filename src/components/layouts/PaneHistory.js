@@ -6,10 +6,15 @@ import { _history } from '../../fixtures/shapes';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An object that contains history shapes */
   history: _history,
+  /** The title of the overall PaneHistory pane */
   mainTitle: PropTypes.string,
+  /** The subtitle of the overall PaneHistory pane */
   mainSubtitle: PropTypes.string,
+  /** onCollapse event of the overall PaneHistory pane */
   onCollapse: PropTypes.func,
+  /** onReset event of the overall PaneHistory pane */
   onReset: PropTypes.func,
 };
 

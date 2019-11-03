@@ -1,4 +1,4 @@
-The Icon component.
+Custom icons available for use. [Material UI icons](https://material-ui.com/components/material-icons/) are also available by using this library.
 
 
 ```jsx

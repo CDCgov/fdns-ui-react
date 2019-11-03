@@ -8,11 +8,16 @@ import isString from 'lodash/isString';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
-  layout: PropTypes.string,
+  layout: PropTypes.oneOf([
+    'vertical',
+    'horizontal',
+  ]),
+  /** The array of status objects or strings that can exist in the series. */
   statuses: PropTypes.oneOfType([
     PropTypes.arrayOf(_status),
     PropTypes.arrayOf(PropTypes.string)
   ]),
+  /** The current status of the series. */
   currentStatus: PropTypes.string,
 };
 

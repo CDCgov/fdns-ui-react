@@ -6,8 +6,11 @@ import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** String type of files this can accept */
   accept: PropTypes.string,
+  /** Type of layout */
   layout: PropTypes.string,
+  /** onDrop event if you want to do anything after the files are dropped into the list. AcceptedFiles, RejectedFiles are the arguments accepted. */
   onDrop: PropTypes.func,
 };
 

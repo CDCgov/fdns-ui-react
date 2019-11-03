@@ -4,6 +4,7 @@ import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** onExport event, accepts the `type` of export as an argument */
   onExport: PropTypes.func,
 };
 

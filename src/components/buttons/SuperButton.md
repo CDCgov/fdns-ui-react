@@ -1,4 +1,4 @@
-The SuperButton component is a larger button to be used for forms.
+The SuperButton component is a wide button to be used for forms. It will fill the width of the container.
 
 ```js
       <div className="super-button">

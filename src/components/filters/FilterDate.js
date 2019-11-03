@@ -9,15 +9,17 @@ const defaultDateFormat = 'yyyy-MM-dd';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The start date of your filter. Default is current date. */
   start: PropTypes.instanceOf(Date),
+  /** The label of the start date. */
   startLabel: PropTypes.string,
+  /** The end date of your filter. Default is current date. */
   end: PropTypes.instanceOf(Date),
+  /** The label of the end date. */
   endLabel: PropTypes.string,
-  icon: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  /** Event triggered when changing the start date */
   onStartChanged: PropTypes.func,
+  /** Event triggered when changing the end date */
   onEndChanged: PropTypes.func,
 };
 
@@ -27,20 +29,7 @@ const defaultProps = {
   startLabel: 'Start Date',
   end: new Date(),
   endLabel: 'End Date',
-  icon: 'calendar'
 };
-
-// custom inputs
-class StartInput extends React.Component {
-  render() {
-    return <input aria-label="Start Date" {...this.props} />;
-  }
-}
-class EndInput extends React.Component {
-  render() {
-    return <input aria-label="End Date" {...this.props} />;
-  }
-}
 
 // define the class
 class FilterDate extends Component {

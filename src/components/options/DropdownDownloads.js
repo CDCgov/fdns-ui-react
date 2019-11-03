@@ -10,8 +10,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An array of Downloads shapes */
   downloads: _downloads,
+  /** onClear event */
   onClear: PropTypes.func,
+  /** Function to determine the URL of the download  */
   renderURL: PropTypes.func,
 };
 
@@ -150,8 +153,6 @@ class DropdownDownloads extends Component {
 
   // main render method
   render() {
-
-    const { classes } = this.props;
     const { open } = this.state;
 
     return (
@@ -169,7 +170,7 @@ class DropdownDownloads extends Component {
           <GetAppIcon fontSize="small" />
         </IconButton>
 
-        <Popper open={open} anchorEl={this.anchorEl} transition placement={'bottom-end'} disablePortal>
+        <Popper className="download-tooltip" open={open} anchorEl={this.anchorEl} transition placement={'bottom-end'} disablePortal>
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}

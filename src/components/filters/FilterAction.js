@@ -4,7 +4,9 @@ import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** onApply event */
   onApply: PropTypes.func,
+  /** onReset event */
   onReset: PropTypes.func
 };
 

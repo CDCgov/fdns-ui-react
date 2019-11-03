@@ -8,7 +8,9 @@ import TimelineIcon from '@material-ui/icons/Timeline';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Selected Option */
   selected: PropTypes.string,
+  /** onChange event */
   onChange: PropTypes.func
 };
 

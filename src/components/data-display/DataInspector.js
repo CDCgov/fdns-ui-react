@@ -7,9 +7,13 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The JSON object you are inspecting */
   data: PropTypes.object,
+  /** Custom onPrint event if you wish to manipulate the data before printing */
   onPrint: PropTypes.func,
+  /** Whether or not to show the print button */
   showPrint: PropTypes.bool,
+  /** onClose event */
   onClose: PropTypes.func
 };
 

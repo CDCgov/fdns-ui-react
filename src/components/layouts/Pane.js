@@ -7,9 +7,13 @@ import IcoFolderOpenEmpty from '../icons/IcoFolderOpenEmpty.jsx';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Controls the expansion of the pane */
   collapsed: PropTypes.bool,
+  /** onCollapse event */
   onCollapse: PropTypes.func,
+  /** Title of the pane */
   title: PropTypes.string,
+  /** Subtitle of the pane */
   subtitle: PropTypes.string
 };
 

@@ -12,6 +12,10 @@ $bar-height: 10px;
 .dropdown-downloads {
   margin: 0;
   padding: 0;
+
+  .download-tooltip {
+    z-index: 10000;
+  }
   .header {
     display: flex;
     justify-content: space-between;
