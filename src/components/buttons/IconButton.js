@@ -5,12 +5,23 @@ import { Button } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** A custom image string you may use in place of an Icon */
   image: PropTypes.string,
+  /** custom image Alt name for accessibility purposes */
   imageAlt: PropTypes.string,
-  theme: PropTypes.string,
-  className: PropTypes.string,
-  color: PropTypes.string,
-  variant: PropTypes.string,
+  /** The color of the button */
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'secondary',
+  ]),
+  /** The type of button container */
+  variant: PropTypes.oneOf([
+    'text',
+    'outlined',
+    'contained',
+  ]),
+  /** onClick event, by default does nothing */
   onClick: PropTypes.func,
 };
 
@@ -18,9 +29,7 @@ const propTypes = {
 const defaultProps = {
   icon: 'plus',
   image: '',
-  imageAlt: '',
-  theme: 'default',
-  className: 'icon-button',
+  imageAlt: 'custom image',
   color: 'primary',
   variant: 'text',
   onClick() {},
@@ -48,14 +57,13 @@ class IconButton extends Component {
   render() {
     let className = classNames({
       'icon-button': true,
-      'light': (this.props.theme === 'light')
     });
 
     // add from the props (if we have it)
     className += ` ${this.props.className}`;
 
     return (
-      <div className={className}>
+      <div className='icon-button'>
         <Button aria-label="icon button" color={this.props.color} variant={this.props.variant} onClick={this.handleClick}>
           {this.renderCustomImageIcon()}
           {this.props.children}

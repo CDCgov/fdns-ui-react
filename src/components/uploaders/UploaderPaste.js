@@ -6,9 +6,13 @@ import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Placeholder of the Paste Input */
   placeholder: PropTypes.string,
+  /** Prefix for the paste option */
   prefix: PropTypes.string,
+  /** onUpload event */
   onUpload: PropTypes.func,
+  /** Reset the input on upload */
   resetOnUpload: PropTypes.bool,
 };
 

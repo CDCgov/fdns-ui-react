@@ -5,6 +5,7 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 // set the prop types from predefined shapes or standard types
 const _blob = PropTypes.instanceOf(Blob);
 const propTypes = {
+  /** Array of files (see Blob Shape) */
   files: PropTypes.arrayOf(_blob),
 };
 

@@ -1,4 +1,4 @@
-The IconButton component is used to have a simple button with an icon. The Icons are passed in as children of the component (see code), and can utilize [Material UI icons](https://material-ui.com/components/material-icons/) or your own custom icons/images.
+The IconButton component is used to have a simple button with an icon. The Icons are passed in as children of the component (see code), and can utilize [Material UI icons](https://material-ui.com/components/material-icons/) or your own custom icons/images. There is no external padding or margins by default, you must add it via CSS.
 
 ```js
     import AccountBoxIcon from '@material-ui/icons/AccountBox';

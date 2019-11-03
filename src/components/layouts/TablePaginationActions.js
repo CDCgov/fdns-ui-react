@@ -9,8 +9,11 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 
 const propTypes = {
+  /** onChangePage event */
   onChangePage: PropTypes.func,
+  /** The current page number */
   page: PropTypes.number,
+  /** The rowsPerPage from the SuperTable selection */
   rowsPerPage: PropTypes.number,
 };
 

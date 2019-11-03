@@ -4,8 +4,11 @@ import { FormControl, InputLabel, MenuItem, OutlinedInput, Select } from '@mater
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An array of number options to determine the limit */
   limits: PropTypes.arrayOf(PropTypes.number),
+  /** Default index in the array of limits */
   defaultLimitIndex: PropTypes.number,
+  /** onChange event */
   onChange: PropTypes.func,
 };
 

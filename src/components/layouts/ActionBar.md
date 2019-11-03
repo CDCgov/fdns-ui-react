@@ -8,11 +8,11 @@ You have the ability to add custom actions via child components.
   </div>
 ```
 
-##### With Custom Actions
+##### With Custom Actions And No Search Bar
 ```js
   import IconButton from '../buttons/IconButton';
   <div className="action-bar">
-    <ActionBar>
+    <ActionBar showSearchBar={false}>
       <IconButton icon="angle-double-up" color="secondary" variant="contained" onClick= {()=>{}}>
         Collapse All
       </IconButton>

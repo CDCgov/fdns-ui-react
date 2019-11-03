@@ -6,6 +6,7 @@ import FileCopyIcon from '@material-ui/icons/FileCopy';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The URL or data you wish to be copied. */
   endpoint: PropTypes.string,
 };
 
@@ -20,11 +21,14 @@ class DataEndpoint extends Component {
   // copy event passed
   handleCopy = (e) => {
     if (this.input) {
-      // TODO: This does nothing on old or new versions...
-      // Might need it to be not in an input
-      this.input.select();
+      // the default input is not able to be copied for some reason so this workaround was implemented
+      const dummyTextArea = document.createElement("textarea");
+      document.body.appendChild(dummyTextArea);
+      dummyTextArea.value = this.input.value;
+      dummyTextArea.select();
+      dummyTextArea.setSelectionRange(0, 99999);
       document.execCommand('copy');
-      this.input.blur();
+      document.body.removeChild(dummyTextArea);
     }
   }
 

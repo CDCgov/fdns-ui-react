@@ -6,11 +6,14 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** onDetail click event */
   onDetail: PropTypes.func,
+  /** onOption click event */
   onOption: PropTypes.func,
+  /** Show the option button */
   showOption: PropTypes.bool,
+  /** Show the detail button */
   showDetail: PropTypes.bool,
-  size: PropTypes.string,
 };
 
 // set the defaults
@@ -19,7 +22,6 @@ const defaultProps = {
   onOption() {},
   showOption: false,
   showDetail: true,
-  size: 'medium'
 };
 
 // define the class
@@ -48,7 +50,7 @@ class OptionAction extends Component {
   renderDetail() {
     if (this.props.showDetail) {
       return (
-        <IconButton onClick={this.handleDetailClick} size={this.props.size} aria-label="Show Detail" alt="Show Detail">
+        <IconButton onClick={this.handleDetailClick} size="medium" aria-label="Show Detail" alt="Show Detail">
           <DeveloperModeIcon />
         </IconButton>
       );
@@ -59,7 +61,7 @@ class OptionAction extends Component {
   renderOption() {
     if (this.props.showOption) {
       return (
-        <IconButton onClick={this.handleOptionClick} size={this.props.size} aria-label="Show Option" alt="Show Option">
+        <IconButton onClick={this.handleOptionClick} size="medium" aria-label="Show Option" alt="Show Option">
           <SettingsIcon />
         </IconButton>
       );

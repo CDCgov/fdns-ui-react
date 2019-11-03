@@ -1,5 +1,6 @@
 const path = require('path');
 const { version } = require('./package');
+const fs = require('fs');
 
 module.exports = {
 	assetsDir: './src/assets/',
@@ -141,6 +142,20 @@ module.exports = {
 			],
 		},
 		{
+			name: 'Shapes & Fixtures',
+			description: 'The shapes and fixtures used in the various components.',
+			sections: [
+				{
+					name: 'Shapes',
+					content: './src/fixtures/shapes.md',
+				},
+				{
+					name: 'Fixtures',
+					content: './src/fixtures/fixtures.md',
+				}
+			]
+		},
+		{
 			name: 'Contribution Guidelines',
 			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
       sections: [
@@ -243,5 +258,24 @@ module.exports = {
     fontFamily: {
       base: '"proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     }
-  },
+	},
+  updateExample(props, exampleFilePath) {
+    // props.settings are passed by any fenced code block, in this case
+    const { settings, lang } = props
+    // "../mySourceCode.js"
+    if (typeof settings.file === 'string') {
+      // "absolute path to mySourceCode.js"
+      const filepath = path.resolve(exampleFilePath, settings.file)
+      // displays the block as static code
+      settings.static = true
+      // no longer needed
+      delete settings.file
+      return {
+        content: fs.readFileSync(filepath, 'utf8'),
+        settings,
+        lang
+      }
+    }
+    return props
+  }
 };

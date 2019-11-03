@@ -10,15 +10,25 @@ import SearchBar from '../search/SearchBar';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Custom error text that can be displayed on error. */
   errorText: PropTypes.string,
+  /** onOptionsClick event */
   onOptionsClick: PropTypes.func,
+  /** If the user canSave. This disables the save button if false. */
   canSave: PropTypes.bool,
+  /** onSave event */
   onSave: PropTypes.func,
+  /** onSearch event */
   onSearch: PropTypes.func,
+  /** The CSS position of the ActionBar. It is not recommended that you override this, but it is provided for rare use cases. */
   position: PropTypes.string,
+  /** The search query for the SearchBar*/
   query: PropTypes.string,
+  /** If the Actions should be shown (e.g. you might set this based on the user's permissions) */
   showActions: PropTypes.bool,
+  /** Whether or not to show the Options action */
   showOptions: PropTypes.bool,
+  /** Whether or not to show the SearchBar */
   showSearchBar: PropTypes.bool,
 };
 
@@ -28,7 +38,7 @@ const defaultProps = {
   onOptionsClick() {},
   onSave() {},
   onSearch() {},
-  position: 'fixed',
+  position: 'static',
   query: '',
   showActions: true,
   showOptions: true,
@@ -50,9 +60,9 @@ class ActionBar extends Component {
   }
 
   render() {
-    const { canSave, errorText, query, showActions, showOptions, showSearchBar } = this.props;
+    const { canSave, errorText, position, query, showActions, showOptions, showSearchBar } = this.props;
     return (
-      <AppBar position="static" color="default" className="ActionBar-options">
+      <AppBar position={position} color="default" className="ActionBar-options">
         <Toolbar>
           {
             showSearchBar ? (

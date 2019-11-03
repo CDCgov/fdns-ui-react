@@ -4,19 +4,22 @@ import { Button } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The text displayed in the button */
   label: PropTypes.string,
+  /** The color of the button */
   btnStyle: PropTypes.oneOf([
     'default',
     'primary',
     'secondary',
   ]),
-  className: PropTypes.string,
+  /** onClick event function */
   onClick: PropTypes.func,
 };
 
 // set the defaults
 const defaultProps = {
   label: 'Contained Button',
+  btnStyle: 'default',
   onClick() {},
 };
 
@@ -24,10 +27,11 @@ const defaultProps = {
 class ContainedButton extends Component {
   // main render method
   render() {
-    const { label, btnStyle, className, onClick } = this.props;
+    const { label, btnStyle, onClick } = this.props;
 
     return (
-      <div id="Contained Button" className={`ContainedButton ${btnStyle} ${className}`}>
+      // TODO: this div wrapper seems like the wrong way to build this button
+      <div className={`ContainedButton ${btnStyle}`}>
         <Button role="button" aria-label="Contained Button" onClick={onClick}>
           {label}
         </Button>
