@@ -4,8 +4,6 @@
 }
 </style>
 
-Develop stuff with FDNS UI react component library.
-
 <div class="badges">
 [![npm version](https://badge.fury.io/js/fdns-ui-react.svg)](https://badge.fury.io/js/fdns-ui-react)
 [![Build Status](https://travis-ci.org/CDCgov/fdns-ui-react.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ui-react)
@@ -24,22 +22,22 @@ You will need to have the following software installed to run this library local
 
 **Install dependencies (Windows):**
 
-Simply download the  [Windows Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
+Download the  [Windows Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
 
 **Install dependencies (MacOS):**
 
 Simply download the  [macOS Installer](https://nodejs.org/en/#home-downloadhead)  directly from the  [nodejs.org](https://nodejs.org/)  web site.
 
-/If you want to download the package with bash:/
+** If you want to download the package with bash:**
 
-``` zsh
+```bash
 curl “https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE ‘s|.*>node-(.*)\.pkg</a>.*|\1|p’)}.pkg” > “$HOME/Downloads/node-latest.pkg” && sudo installer -store -pkg “$HOME/Downloads/node-latest.pkg” -target “/“
 ```
 
 ### Basic Usage
-Create your project with [create-react-app](https://github.com/facebookincubator/create-react-app).
+The quickest way to create a new project is using [create-react-app](https://github.com/facebookincubator/create-react-app).
 
-```js static
+```bash
 create-react-app my-app
 cd my-app
 npm install --save fdns-ui-react
@@ -74,8 +72,9 @@ export default App;
 ```
 
 Start your project:
-
-`npm start`
+```bash
+npm start
+```
 
 Open [http://localhost:3000/](http://localhost:3000/) in a web browser and view your Grid. You can now add any components in the library into your application.
 

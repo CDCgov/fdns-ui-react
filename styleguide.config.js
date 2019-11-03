@@ -20,7 +20,6 @@ module.exports = {
 		},
 		{
 			name: 'Getting Started',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       sections: [
         {
           name: 'Design',
@@ -87,10 +86,6 @@ module.exports = {
 		{
 			name: 'Component Library',
 			sections: [
-				{
-          name: 'Component Status',
-          content: './src/documentation/component-library/component-status.md',
-				},
 				{
 					name: 'Buttons',
 					components: './src/components/buttons/*.js',
