@@ -168,14 +168,14 @@ export const activity = {
 
 export const history = {
   'October 11': [
-    { title: 'title1', subtitle: 'subtitle1' },
-    { title: 'title2', subtitle: 'subtitle2' },
-    { title: 'title3', subtitle: 'subtitle3' },
+    { title: 'Search History 1', subtitle: 'Search Results' },
+    { title: 'Search History 2', subtitle: 'Search Results' },
+    { title: 'Search History 3', subtitle: 'Search Results' },
   ],
   'October 12': [
-    { title: 'title1', subtitle: 'subtitle1' },
-    { title: 'title2', subtitle: 'subtitle2' },
-    { title: 'title3', subtitle: 'subtitle3' },
+    { title: 'Search History 1', subtitle: 'Search Results' },
+    { title: 'Search History 2', subtitle: 'Search Results' },
+    { title: 'Search History 3', subtitle: 'Search Results' },
   ],
 }
 
