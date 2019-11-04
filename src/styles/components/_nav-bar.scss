@@ -1,0 +1,18 @@
+.navbar {
+  .nav-search-bar {
+    display: flex;
+    margin-left: 24px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.50);
+    }
+    .search-icon {
+      position: relative;
+      top: 4px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .dropdown-user {
+    margin-left: auto;
+  }
+}
