@@ -10,4 +10,4 @@ h1, h2 { text-align: center; }
 ### Accessible. Responsive. Secure
 `Version 0.8.8`
 
-FDNS UI kit is a pragmatic UI kit for building evolving interfaces for public health applications on the web. It is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS'
+FDNS UI kit is a pragmatic UI kit for building evolving interfaces for public health applications on the web. It is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS

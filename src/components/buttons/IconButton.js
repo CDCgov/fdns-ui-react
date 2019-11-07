@@ -14,6 +14,7 @@ const propTypes = {
     'default',
     'primary',
     'secondary',
+    'tertiary',
   ]),
   /** The type of button container */
   variant: PropTypes.oneOf([

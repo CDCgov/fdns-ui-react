@@ -1,19 +1,19 @@
 .ContainedButton {
   button {
     cursor: pointer;
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.11), 0px 1px 1px 0px rgba(0,0,0,0.13), 0px 2px 1px -1px rgba(0,0,0,0.02);
-    border-radius: 3px;
-    background: #3E4144;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+    background: #ffffff;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
     line-height: 1.75;
-    letter-spacing: 0.02857em;
+    letter-spacing: 1.25px;
     text-transform: uppercase;
     padding: 6px 16px;
     min-width: 64px;
     margin: 8px 0;
+    font-weight: bold;
     font-size: 0.875rem;
-    color: #ffffff;
+    color: $grey-700;
     outline: none;
 
     &:hover {
@@ -23,7 +23,7 @@
 
   &.primary {
     button {
-      background: #01447B; /* Old browsers */
+      background: $cdc-blue-800; /* Old browsers */
       border: 0;
       color: #ffffff;
 
@@ -34,7 +34,18 @@
   }
   &.secondary {
     button {
-      background: #038279; /* Old browsers */
+      background: $pine-700; /* Old browsers */
+      border: 0;
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.tertiary {
+    button {
+      background: $teal-700; /* Old browsers */
       border: 0;
       color: #ffffff;
 

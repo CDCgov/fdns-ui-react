@@ -11,6 +11,8 @@ const propTypes = {
     'default',
     'primary',
     'secondary',
+    'tertiary',
+    'disabled'
   ]),
   /** onClick event function */
   onClick: PropTypes.func,
