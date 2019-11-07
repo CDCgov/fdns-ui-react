@@ -11,6 +11,11 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 </div>
 
+### Development Prerequisites
+To avoid issues with `node_modules`, please ensure that you are using supported versions of Node & NPM:
+- _Node:_ `^11.0.0` or higher.
+- _Npm:_ `6.10.0` or higher.
+
 ### Running locally
 Carefully read the following instructions on how to run and test this library in your local environment.
 
