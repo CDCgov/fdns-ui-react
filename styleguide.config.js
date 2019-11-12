@@ -96,7 +96,7 @@ module.exports = {
       ]
 		},
 		{
-			name: 'Code Components',
+			name: 'Coded Components',
 			description: 'Current FDNS UI is built using react, however the code could be refactored using style and pattern libraries as a guide into other front-end frameworks.',
 			content: './src/documentation/coded-components/component-status.md',
 			sections: [
