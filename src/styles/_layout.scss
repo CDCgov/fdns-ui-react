@@ -28,6 +28,11 @@ body {
     nav {
       border: none;
 
+      input {
+        background: $grey-100;
+        border: none;
+      }
+
       ul {
         border: none;
 
