@@ -1,9 +1,9 @@
-$default-margin: 15px;
-$default-padding: 15px;
-$data-header-height: 45px;
-$header-height: 60px;
-$header-top: 14px;
-$table-row-height: 38px;
+$default-margin: 16px;
+$default-padding: 16px;
+$data-header-height: 48px;
+$header-height: 64px;
+$header-top: 16px;
+$table-row-height: 40px;
 
 // bootstrap widths
 $bs-xs-width: 575px;
@@ -20,9 +20,10 @@ body {
 }
 
 .rsg--sidebar-4 {
-  width: 16rem;
+  width: 18rem;
+  border-right: #d8d8d8 solid 1px;
 
-  .rsg--root-62 {
+  .rsg--root-66 {
 
     nav {
       border: none;
@@ -34,7 +35,7 @@ body {
           border: none;
 
           a {
-            color:#cee9fe;
+            color:#2c3e50;
           }
         }
       }
@@ -44,7 +45,7 @@ body {
     border: none;
 
     p {
-      color: #A9E5E1;
+      color: #2E845F;
       font-weight: bold;
     }
   }
