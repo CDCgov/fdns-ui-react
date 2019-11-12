@@ -11,4 +11,6 @@ Both Chrome and Firefox extensions offer an evaluation web scan for better acces
 **Deque’s Axe Chrome Extension**<br/>
 Accessibility checker for WCAG 2 and Section 508 accessibility. 
 
-[axe - Web Accessibility Testing - Chrome Web Store](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US)
+[Axe Web Accessibility Testing - Chrome Web Store](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US)
+
+_________________

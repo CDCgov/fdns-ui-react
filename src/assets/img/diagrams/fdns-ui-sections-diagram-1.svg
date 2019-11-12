@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1004px" height="503px" viewBox="0 0 1004 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>fdns-ui-sections-diagram-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="fdns-ui-sections-diagram-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" transform="translate(96.000000, 60.000000)">
+            <polygon id="Fill-7" fill="#01447B" points="242 0 572 0 572 58 242 58"></polygon>
+            <text id="FDNS-UI:-LIBRARY-&amp;-D" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="16" letter-spacing="0.4375" fill="#FFFFFF">
+                <tspan x="272.40625" y="34">FDNS UI: LIBRARY &amp; DESIGN GUIDELINE</tspan>
+            </text>
+            <polygon id="Fill-8" fill="#DFF0FF" points="426 150 609 150 609 207 426 207"></polygon>
+            <text id="CODE-COMPONENTS" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#01447B">
+                <tspan x="449" y="183">CODE COMPONENTS</tspan>
+            </text>
+            <polygon id="Fill-9" fill="#DFF0FF" points="199 150 382 150 382 207 199 207"></polygon>
+            <text id="PATTERN-LIBRARY" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#01447B">
+                <tspan x="228" y="183">PATTERN LIBRARY</tspan>
+            </text>
+            <polygon id="Fill-10" fill="#DFF0FF" points="0 150 182 150 182 207 0 207"></polygon>
+            <text id="STYLE-GUIDE" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#01447B">
+                <tspan x="46" y="183">STYLE GUIDE</tspan>
+            </text>
+            <polygon id="Fill-11" fill="#DFF0FF" points="630 150 812 150 812 207 630 207"></polygon>
+            <text id="DOCUMENTATION" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#01447B">
+                <tspan x="661" y="183">DOCUMENTATION</tspan>
+            </text>
+        </g>
+        <text id="Style-guides-focuses" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#3E4144">
+            <tspan x="97" y="316">Style guides focuses on the </tspan>
+            <tspan x="97" y="340">visual identity, it includes: </tspan>
+            <tspan x="97" y="364">Colors, Typography, Layout, and </tspan>
+            <tspan x="97" y="388">Branding.</tspan>
+        </text>
+        <text id="A-Pattern-library-is" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#3E4144">
+            <tspan x="297" y="321">A Pattern library is a collection </tspan>
+            <tspan x="297" y="345">of functional design modules </tspan>
+            <tspan x="297" y="369">(components), that appear </tspan>
+            <tspan x="297" y="393">across or within an application </tspan>
+            <tspan x="297" y="417">multiple times.</tspan>
+        </text>
+        <text id="FDNS-UI-is-built-usi" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#3E4144">
+            <tspan x="523" y="321">FDNS UI is built using react, </tspan>
+            <tspan x="523" y="345">however the code could be </tspan>
+            <tspan x="523" y="369">refactored using style and </tspan>
+            <tspan x="523" y="393">pattern libraries into other </tspan>
+            <tspan x="523" y="417">frameworks.</tspan>
+        </text>
+        <text id="Documentation-that-i" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#3E4144">
+            <tspan x="728" y="321">Documentation that is easy to </tspan>
+            <tspan x="728" y="345">understand and provides details </tspan>
+            <tspan x="728" y="369">from design to development.</tspan>
+        </text>
+        <path d="M502,140 L502,174.5 L189,174.5 C187.895431,174.5 187,175.395431 187,176.5 L187,210 L187,210" id="Path" stroke="#A5A7AB" stroke-width="2"></path>
+        <path d="M817,118 L817,174.5 L504,174.5 C502.895431,174.5 502,175.395431 502,176.5 L502,210 L502,210" id="Path" stroke="#A5A7AB" stroke-width="2" transform="translate(659.500000, 164.000000) scale(-1, 1) translate(-659.500000, -164.000000) "></path>
+        <line x1="386.5" y1="175" x2="386.5" y2="210" id="Path-2" stroke="#A5A7AB" stroke-width="2"></line>
+        <line x1="614.5" y1="175" x2="614.5" y2="210" id="Path-2" stroke="#A5A7AB" stroke-width="2"></line>
+        <text id="Design-Guideline-Sec" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" letter-spacing="0.5" fill="#3E4144">
+            <tspan x="97" y="294">Design Guideline Sections</tspan>
+        </text>
+        <text id="Sketch-and-Illustrat" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" letter-spacing="0.5" fill="#3E4144">
+            <tspan x="297" y="294">Sketch and Illustrator* files</tspan>
+        </text>
+        <text id="*Illustrator-files," opacity="0.598005022" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal" letter-spacing="0.5" fill="#717376">
+            <tspan x="297" y="447">*Illustrator files, in development</tspan>
+        </text>
+        <text id="React-Components" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" letter-spacing="0.5" fill="#3E4144">
+            <tspan x="523" y="294">React Components</tspan>
+        </text>
+        <text id="Library-and-GitHub-D" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" letter-spacing="0.5" fill="#3E4144">
+            <tspan x="728" y="294">Library and GitHub Docs</tspan>
+        </text>
+        <polygon id="Fill-8" fill="#CFFFE5" points="411 135 594 135 594 192 411 192"></polygon>
+        <text id="ACCESSIBLE-(508)" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#0B6C39">
+            <tspan x="439" y="168">ACCESSIBLE (508)</tspan>
+        </text>
+    </g>
+</svg>

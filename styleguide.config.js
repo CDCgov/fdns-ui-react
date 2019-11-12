@@ -36,7 +36,7 @@ module.exports = {
 			content: './src/documentation/accessibility/accessibility.md',
       sections: [
         {
-          name: 'Accessibility standards',
+          name: 'Accessibility Standards',
           content: './src/documentation/accessibility/accessibility-standards.md',
 				},
 				{
@@ -54,37 +54,51 @@ module.exports = {
       ]
 		},
 		{
-			name: 'Design Guidelines',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			name: 'Style Guide',
+			description: 'A Style Guide is a set of standards and rules for the formatting of digital interfaces. Representing a subclass in the design system, this static documentation describes the design system itself: how products should look and feel, use cases for UI patterns, correct typographic scales, etc.',
+			content: './src/documentation/style-guide/introduction.md',
       sections: [
         {
           name: 'Color',
-          content: './src/documentation/design-guidelines/colors.html',
+          content: './src/documentation/style-guide/colors.html',
 				},
 				{
           name: 'Layout',
-          content: './src/documentation/design-guidelines/layout.md',
+          content: './src/documentation/style-guide/layout.md',
 				},
 				{
           name: 'Spacing',
-          content: './src/documentation/design-guidelines/spacing.md',
+          content: './src/documentation/style-guide/spacing.md',
 				},
 				{
           name: 'Typography',
-          content: './src/documentation/design-guidelines/typography.md',
-				},
-				{
-          name: 'Themes',
-          content: './src/documentation/design-guidelines/themes.md',
-				},
-				{
-          name: 'Icons',
-          content: './src/documentation/design-guidelines/icons.md',
+          content: './src/documentation/style-guide/typography.md',
 				},
       ]
 		},
 		{
-			name: 'Component Library',
+			name: 'Pattern Library',
+			description: 'A Pattern library is a collection of functional design modules (components), that appear across or within an application multiple times.',
+			content: './src/documentation/pattern-library/introduction.md',
+      sections: [
+        {
+          name: 'Pattern Components',
+          content: './src/documentation/pattern-library/patterns.md',
+				},
+				{
+          name: 'Themes',
+          content: './src/documentation/pattern-library/themes.md',
+				},
+				{
+          name: 'Icons',
+          content: './src/documentation/pattern-library/icons.md',
+				},
+      ]
+		},
+		{
+			name: 'Code Components',
+			description: 'Current FDNS UI is built using react, however the code could be refactored using style and pattern libraries as a guide into other front-end frameworks.',
+			content: './src/documentation/coded-components/component-status.md',
 			sections: [
 				{
 					name: 'Buttons',

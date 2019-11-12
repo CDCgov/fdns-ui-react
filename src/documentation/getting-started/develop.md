@@ -89,4 +89,5 @@ To view the StyleGuide, after running `npm i`, use the command:
 
 This project is licensed under the terms of the
 [Apache License, Version 2.0 | Open Source Initiative](https://opensource.org/licenses/Apache-2.0)
+
 _________________

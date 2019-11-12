@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1004px" height="503px" viewBox="0 0 1004 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>FDNS UI: LIBRARY &amp; DESIGN GUIDELINE DIAGRAM 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="FDNS-UI:-LIBRARY-&amp;-DESIGN-GUIDELINE-DIAGRAM-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" transform="translate(96.000000, 82.000000)">
+            <polygon id="Fill-7" fill="#075290" points="257 0 555 0 555 58 257 58"></polygon>
+            <text id="FDNS-UI:-LIBRARY-&amp;-D" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="16" letter-spacing="0.4375" fill="#FFFFFF">
+                <tspan x="272.40625" y="34">FDNS UI: LIBRARY &amp; DESIGN GUIDELINE</tspan>
+            </text>
+            <polygon id="Fill-8" fill-opacity="0.102" fill="#1B7AC9" points="426 128 609 128 609 185 426 185"></polygon>
+            <text id="CODE-COMPONENTS" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#075290">
+                <tspan x="449" y="161">CODE COMPONENTS</tspan>
+            </text>
+            <polygon id="Fill-9" fill-opacity="0.102" fill="#1B7AC9" points="199 128 382 128 382 185 199 185"></polygon>
+            <text id="PATTERN-LIBRARY" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#075290">
+                <tspan x="228" y="161">PATTERN LIBRARY</tspan>
+            </text>
+            <polygon id="Fill-10" fill-opacity="0.102" fill="#1B7AC9" points="0 128 182 128 182 185 0 185"></polygon>
+            <text id="STYLE-GUIDE" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#075290">
+                <tspan x="46" y="161">STYLE GUIDE</tspan>
+            </text>
+            <polygon id="Fill-11" fill-opacity="0.102" fill="#1B7AC9" points="630 128 812 128 812 185 630 185"></polygon>
+            <text id="DOCUMENTATION" font-family="Roboto-Bold, Roboto" font-size="13" font-weight="bold" letter-spacing="1" fill="#075290">
+                <tspan x="661" y="161">DOCUMENTATION</tspan>
+            </text>
+        </g>
+        <text id="Style-guides-focuses" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#000000" fill-opacity="0.6">
+            <tspan x="97" y="287">Style guides focuses on the </tspan>
+            <tspan x="97" y="311">visual identity, it includes: </tspan>
+            <tspan x="97" y="335">Colors, Typography, Layout, and </tspan>
+            <tspan x="97" y="359">Branding.</tspan>
+        </text>
+        <text id="A-Pattern-library-is" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#000000" fill-opacity="0.6">
+            <tspan x="297" y="287">A Pattern library is a collection </tspan>
+            <tspan x="297" y="311">of functional design modules </tspan>
+            <tspan x="297" y="335">(components), that appear </tspan>
+            <tspan x="297" y="359">across or within an application </tspan>
+            <tspan x="297" y="383">multiple times.</tspan>
+        </text>
+        <text id="Current-FDNS-UI-is-b" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#000000" fill-opacity="0.6">
+            <tspan x="523" y="287">Current FDNS UI is built using </tspan>
+            <tspan x="523" y="311">react, however the code could </tspan>
+            <tspan x="523" y="335">be refactored using style and </tspan>
+            <tspan x="523" y="359">pattern libraries as a guide into </tspan>
+            <tspan x="523" y="383">other front-end frameworks.</tspan>
+        </text>
+        <text id="Easy-to-read-and-und" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="24" letter-spacing="0.214285714" fill="#000000" fill-opacity="0.6">
+            <tspan x="728" y="287">Easy to read and understand </tspan>
+            <tspan x="728" y="311">documentation is key to a </tspan>
+            <tspan x="728" y="335">design and component system. </tspan>
+            <tspan x="728" y="359">FDNS UI provides </tspan>
+            <tspan x="728" y="383">documentation for both design </tspan>
+            <tspan x="728" y="407">and development.</tspan>
+        </text>
+        <path d="M502,140 L502,174.5 L189,174.5 C187.895431,174.5 187,175.395431 187,176.5 L187,210 L187,210" id="Path" stroke-opacity="0.400622815" stroke="#979797" stroke-width="2"></path>
+        <path d="M817,140 L817,174.5 L504,174.5 C502.895431,174.5 502,175.395431 502,176.5 L502,210 L502,210" id="Path" stroke-opacity="0.400622815" stroke="#979797" stroke-width="2" transform="translate(659.500000, 175.000000) scale(-1, 1) translate(-659.500000, -175.000000) "></path>
+        <line x1="386.5" y1="175" x2="386.5" y2="210" id="Path-2" stroke-opacity="0.400622815" stroke="#979797" stroke-width="2"></line>
+        <line x1="614.5" y1="175" x2="614.5" y2="210" id="Path-2" stroke-opacity="0.400622815" stroke="#979797" stroke-width="2"></line>
+    </g>
+</svg>
