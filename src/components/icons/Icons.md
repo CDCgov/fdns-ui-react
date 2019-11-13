@@ -29,6 +29,16 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 	import IcoFileRedoGrey from './IcoFileRedoGrey.jsx';
 	import IcoFileRemoveGrey from './IcoFileRemoveGrey.jsx';
 	import IcoPIVchip from './IcoPIVchip.jsx';
+	import IcoAmberWarning from './IcoAmberWarning.jsx';
+	import IcoCollectionAmberQuestionRound from './IcoCollectionAmberQuestionRound.jsx';
+	import IcoCollectionGreenAddRound from './IcoCollectionGreenAddRound.jsx';
+	import IcoCollectionGreyRound from './IcoCollectionGreyRound.jsx';
+	import IcoCollectionRedCloseRound from './IcoCollectionRedCloseRound.jsx';
+	import IcoCollectionTealCheckRound from './IcoCollectionTealCheckRound.jsx';
+	import IcoDatabase from './IcoDatabase.jsx';
+	import IcoPlaceholder from './IcoPlaceholder.jsx';
+	import IcoReport from './IcoReport.jsx';
+	import IcoMilestone from './IcoMilestone.jsx';
 
 <div className="icon-row">
 	<ul>
@@ -49,6 +59,9 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 		<li class="icon-item"><IcoFileCollectionGrey /></li>
 		<li class="icon-item"><IcoPIVchip /></li>
 		<li class="icon-item"><IcoTask /></li>
+		<li class="icon-item"><IcoMilestone /></li>
+		<li class="icon-item"><IcoReport /></li>
+		<li class="icon-item"><IcoDatabase /></li>
 	</ul>
 </div>
 ```

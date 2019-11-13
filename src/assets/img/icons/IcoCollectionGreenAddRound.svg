@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/icons/IcoCollectionGreenAddRound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/icons/IcoCollectionGreenAddRound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-error" transform="translate(9.000000, 6.000000)"></g>
+        <g id="Group-9" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" fill="#52BF85" fill-rule="nonzero" x="2.44444444" y="0" width="17.1111111" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#219357" fill-rule="nonzero" x="1.22222222" y="2.44444444" width="19.5555556" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#0B6C39" fill-rule="nonzero" x="0" y="4.88888889" width="22" height="17.1111111" rx="1.22222222"></rect>
+            <path d="M11.7972612,12.5969602 L14.5715409,12.5969602 C14.9615847,12.5969602 15.2777778,12.9131532 15.2777778,13.3031971 C15.2777778,13.6932409 14.9615847,14.009434 14.5715409,14.009434 L11.7972612,14.009434 L11.7972612,14.009434 L11.7972612,16.924961 C11.7972612,17.3652762 11.4403152,17.7222222 11,17.7222222 C10.5596848,17.7222222 10.2027388,17.3652762 10.2027388,16.924961 L10.2027388,14.009434 L10.2027388,14.009434 L7.42845912,14.009434 C7.03841525,14.009434 6.72222222,13.6932409 6.72222222,13.3031971 C6.72222222,12.9131532 7.03841525,12.5969602 7.42845912,12.5969602 L10.2027388,12.5969602 L10.2027388,12.5969602 L10.2027388,9.96392786 C10.2027388,9.52361266 10.5596848,9.16666667 11,9.16666667 C11.4403152,9.16666667 11.7972612,9.52361266 11.7972612,9.96392786 L11.7972612,12.5969602 L11.7972612,12.5969602 Z" id="+" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

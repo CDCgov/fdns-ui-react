@@ -16,7 +16,7 @@ table th:nth-of-type(5) {
 }
 </style>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Listed react coded components. Below shows the component ID/name, grouping, direct anchor link, current status, and its last update timestamp.
 
 <div class="component-status-table">
 |       Component      |     Group      |    Link                              |  Status | Last Updated |
