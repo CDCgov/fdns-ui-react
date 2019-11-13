@@ -10,7 +10,7 @@ h1, h2 { text-align: center; }
 ### Accessible. Responsive. Secure
 `Version 0.8.9`
 
-FDNS UI kit is a pragmatic UI kit for building evolving interfaces for public health applications on the web. Using a system of styles, patterns and components; it seeks to provide a unified language and consistent look and feel when designing data-driven applications. This project is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS.
+FDNS UI is a pragmatic component and design library used to build evolving interfaces for public health applications. It utilizes a system of styles, patterns, components and documentation; to provide a unified language and consistent look and feel when designing data-driven applications. This project is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS.
 
 Our component library and design guidelines system is divided into four sections.
 * **Style Guide:** A Style Guide is a set of standards and rules for the formatting of digital interfaces. Representing a subclass in the design system, this static documentation describes the design system itself: how products should look and feel, use cases for UI patterns, correct typographic scales, etc.
