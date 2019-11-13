@@ -21,9 +21,6 @@ Our component library and design guidelines system is divided into four sections
 
 * **Documentation:** Solid documentation is paramount to a foundational design-system library. Design systems have many versioned visual and technical documents. From step-by-step instructions and getting-started docs, to live demos and architectural diagrams. Detailed-interactive documentation allows teams to successfully understand and build quickly and efficiently.
 
-<details>
-<summary><em>FDNS UI Sections Diagram</em></summary>
-![FDNS UI Sections Diagram](img/diagrams/fdns-ui-sections-diagram-1.svg)
-</details>
+![FDNS UI Sections Diagram](img/diagrams/fdns-ui-sections-diagram-1-1.svg)
 
 _________________

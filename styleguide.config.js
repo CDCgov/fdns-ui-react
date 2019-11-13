@@ -169,7 +169,7 @@ module.exports = {
 			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
       sections: [
         {
-          name: 'contributing',
+          name: 'Contributing',
           content: './src/documentation/contributing-guidelines/contributing.md',
 				},
 				{
