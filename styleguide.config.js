@@ -62,11 +62,6 @@ module.exports = {
           name: 'Color',
           content: './src/documentation/style-guide/colors.html',
 				},
-				{
-          name: 'Layout',
-          content: './src/documentation/style-guide/layout.md',
-				},
-				{
           name: 'Spacing',
           content: './src/documentation/style-guide/spacing.md',
 				},
@@ -84,6 +79,10 @@ module.exports = {
         {
           name: 'Pattern Components',
           content: './src/documentation/pattern-library/patterns.md',
+				},
+				{
+          name: 'Layout',
+          content: './src/documentation/pattern-library/layout.md',
 				},
 				{
           name: 'Themes',
