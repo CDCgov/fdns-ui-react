@@ -1,6 +1,6 @@
 import React from "react";
 
-const SvgIcoFolderClosedEmpty = props => (
+const IcoFolderClosedEmpty = props => (
   <svg width="1.7em" height="1.7em" viewBox="0 0 22 24" {...props}>
     <g fillRule="nonzero" fill="none">
       <path
@@ -12,5 +12,5 @@ const SvgIcoFolderClosedEmpty = props => (
   </svg>
 );
 
-export default SvgIcoFolderClosedEmpty;
+export default IcoFolderClosedEmpty;
 

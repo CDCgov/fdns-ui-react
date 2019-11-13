@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/icoPIVChip</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="17.8233732%" y1="2.34505208%" x2="87.4538773%" y2="97.625%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.12" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="16.5234375%" y1="2.34505208%" x2="88.9670139%" y2="97.625%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.12" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icons/icoPIVChip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PIV-chip" transform="translate(4.000000, 3.500000)">
+            <g id="Group">
+                <g id="Rectangle-9" fill-rule="nonzero">
+                    <g id="path-2-link" fill="#FFD353">
+                        <rect id="path-2" x="0" y="0.460317461" width="14.4069264" height="16.004415" rx="1.492992"></rect>
+                    </g>
+                    <g id="path-2-link" fill="url(#linearGradient-2)" stroke="#E4B93C" stroke-width="0.5">
+                        <rect id="path-2" x="0" y="0.460317461" width="14.4069264" height="16.004415" rx="1.492992"></rect>
+                    </g>
+                </g>
+                <polygon id="Rectangle-12" stroke="#E4B93C" stroke-width="0.514285714" points="5.71975446 16.1498614 8.535048 16.3001888 8.535048 11.1496745 5.71975446 11.1496745"></polygon>
+                <polygon id="Rectangle-12" stroke="#E4B93C" stroke-width="0.514285714" transform="translate(7.071783, 3.211799) scale(-1, 1) translate(-7.071783, -3.211799) " points="5.72920674 0.688465714 5.72920674 5.73513183 8.4143596 5.73513183 8.4143596 0.688465714"></polygon>
+                <polyline id="Path-2" stroke="#E4B93C" stroke-width="0.571428571" points="2.98810326 0.567013561 2.0276415 8.51587303 2.98810326 16.4647325"></polyline>
+                <polyline id="Path-2" stroke="#E4B93C" stroke-width="0.571428571" transform="translate(12.219208, 8.515873) scale(-1, 1) translate(-12.219208, -8.515873) " points="12.6994389 0.567013561 11.7389771 8.51587303 12.6994389 16.4647325"></polyline>
+            </g>
+            <line x1="14.4658414" y1="11.087249" x2="0.0417681277" y2="11.087249" id="Path-3" stroke="#E4B93C" stroke-width="0.514285714"></line>
+            <line x1="14.4331414" y1="5.75851971" x2="0.0310513055" y2="5.75851971" id="Path-3" stroke="#E4B93C" stroke-width="0.514285714"></line>
+        </g>
+    </g>
+</svg>
