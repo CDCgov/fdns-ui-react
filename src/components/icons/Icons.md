@@ -1,3 +1,13 @@
+<style>
+	.icon-row {
+		margin: 4px;
+	}
+	.icon-item {
+		padding: 4px;
+		display: inline-block;
+	}
+</style>
+
 Custom icons available for use. [Material UI icons](https://material-ui.com/components/material-icons/) are also available by using this library.
 
 
@@ -14,39 +24,53 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 	import IcoFolderClosedEmpty from './IcoFolderClosedEmpty.jsx';
 
 <div>
-	<div className="Test">
-		<IcoCloudDownload />
-		<IcoFolderOpenFull />
-		<IcoTask />
-
-		<IcoBlueInfo />
-		<IcoGreenCheckmark />
-		<IcoRedError />
-
-		<IcoBlueInfo />
-		<IcoGreenCheckmark />
-		<IcoTask />
-
-		<IcoBlueInfo />
-		<IcoGreenCheckmark />
-		<IcoTask />
+	<div className="icon-row">
+		<ul>
+			<li class="icon-item"><IcoCloudDownload /></li>
+			<li class="icon-item"><IcoFolderOpenFull /></li>
+			<li class="icon-item"><IcoCloudUpload /></li>
+			<li class="icon-item"><IcoFolderOpenEmpty /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoRedError /></li>
+			<li class="icon-item"><IcoFolderClosedFull /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoFolderClosedEmpty /></li>
+			<li class="icon-item"><IcoBlueInfo /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+			<li class="icon-item"><IcoFolderClosedFull /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoFolderClosedEmpty /></li>
+			<li class="icon-item"><IcoBlueInfo /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+		</ul>
 	</div>
-	<div className="Test">
-		<IcoBlueInfo />
-		<IcoCloudUpload />
-		<IcoFolderOpenFull />
-
-		<IcoFolderOpenEmpty />
-		<IcoFolderClosedFull />
-		<IcoFolderClosedEmpty />
-
-		<IcoCloudDownload />
-		<IcoFolderOpenEmpty />
-		<IcoTask />
-
-		<IcoCloudDownload />
-		<IcoCloudUpload />
-		<IcoTask />
+	<div className="icon-row">
+		<ul>
+			<li class="icon-item"><IcoCloudDownload /></li>
+			<li class="icon-item"><IcoFolderOpenFull /></li>
+			<li class="icon-item"><IcoCloudUpload /></li>
+			<li class="icon-item"><IcoFolderOpenEmpty /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoRedError /></li>
+			<li class="icon-item"><IcoFolderClosedFull /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoFolderClosedEmpty /></li>
+			<li class="icon-item"><IcoBlueInfo /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+			<li class="icon-item"><IcoFolderClosedFull /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoFolderClosedEmpty /></li>
+			<li class="icon-item"><IcoBlueInfo /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+			<li class="icon-item"><IcoGreenCheckmark /></li>
+			<li class="icon-item"><IcoTask /></li>
+		</ul>
 	</div>
 </div>
 ```
