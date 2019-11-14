@@ -231,7 +231,7 @@ module.exports = {
 		},
 		{
 			name: 'Resources',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'There are many online reference sites and forums which are a great place for learning best practices and application architecture',
       sections: [
         {
           name: 'Links',
