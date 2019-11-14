@@ -1,4 +1,5 @@
 * Currently includes 35 components built in React
+* Over 252 Pattern Design components and states.
 * Custom UI/UX design that combines elements of Google’s Material Design with Microsoft’s Fluent Design
 * Components designed specifically for CDC users after extensive research
 * Currently in use by MMGAT and NOT with many more examples in projects like ngMVPS, AHA Data Hub, etc.
