@@ -180,7 +180,7 @@ module.exports = {
 		},
 		{
 			name: 'About FDNS UI',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'FDNS UI is a pragmatic component and design library used to build evolving interfaces for public health applications. It utilizes a system of styles, patterns, components and documentation; to provide a unified language and consistent look and feel when designing data-driven applications. This project is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS.',
       sections: [
         {
           name: 'Current Initiatives',
