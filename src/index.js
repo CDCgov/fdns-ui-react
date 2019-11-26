@@ -28,7 +28,7 @@ export FilterAction from './components/filters/FilterAction';
 export FilterDate from './components/filters/FilterDate';
 export FilterGroup from './components/filters/FilterGroup';
 export FilterSelect from './components/filters/FilterSelect';
-export { IcoCloudDownload, IcoCloudUpload, IcoTask, IcoBlueInfo, IcoGreenCheckmark, IcoRedError, IcoFolderOpenEmpty, IcoFolderOpenFull, IcoFolderClosedFull, IcoFolderClosedEmpty, IcoFileAddGrey, IcoFileBlankGrey, IcoFileCheckGrey, IcoFileRemoveGrey, IcoFileRedoGrey, IcoPIVchip }  from './components/icons/index.jsx';
+export { IcoCloudDownload, IcoCloudUpload, IcoTask, IcoBlueInfo, IcoGreenCheckmark, IcoRedError, IcoFolderOpenEmpty, IcoFolderOpenFull, IcoFolderClosedFull, IcoFolderClosedEmpty, IcoFileAddGrey, IcoFileBlankGrey, IcoFileCheckGrey, IcoFileRemoveGrey, IcoFileRedoGrey, IcoPIVchip }  from './components/icons/index.js';
 export IconButton from './components/buttons/IconButton';
 export Loader from './components/feedback/Loader';
 export Login from './components/layouts/Login';
