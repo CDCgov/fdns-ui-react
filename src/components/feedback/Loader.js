@@ -24,7 +24,7 @@ class Loader extends Component {
         <div className="loader-active">
           <div className="loading-mask"></div>
           <div className="loading-message">
-              <CircularProgress />
+            <CircularProgress />
           </div>
         </div>
       );

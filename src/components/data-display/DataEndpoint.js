@@ -22,7 +22,7 @@ class DataEndpoint extends Component {
   handleCopy = (e) => {
     if (this.input) {
       // the default input is not able to be copied for some reason so this workaround was implemented
-      const dummyTextArea = document.createElement("textarea");
+      const dummyTextArea = document.createElement('textarea');
       document.body.appendChild(dummyTextArea);
       dummyTextArea.value = this.input.value;
       dummyTextArea.select();

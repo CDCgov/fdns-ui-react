@@ -55,6 +55,7 @@ class Pane extends Component {
   }
 
   // force a collapse event
+  // TODO: Update this to componentDidMount
   componentWillReceiveProps(nextProps) {
     if (nextProps.collapsed) {
       this.collapse();

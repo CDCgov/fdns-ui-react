@@ -12,7 +12,7 @@ const propTypes = {
   /** onSignOut event */
   onSignOut: PropTypes.func,
   /** Placement of the Dropdown relative to the button */
-  placement: PropTypes.oneOfType([
+  placement: PropTypes.oneOf([
     'bottom-start',
     'bottom-end',
   ]),
