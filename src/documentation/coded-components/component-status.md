@@ -18,7 +18,7 @@ table th:nth-of-type(5) {
 
 Listed react coded components. Below shows the component ID/name, grouping, direct anchor link, current status, and its last update timestamp.
 
-<div class="component-status-table">
+<div className="component-status-table">
 |       Component      |     Group      |    Link                              |  Status | Last Updated |
 -----------------|----------------|--------------------------------------|---------|-----------------|
 | `ContainedButton` | Buttons | [ContainedButton](/#containedbutton) |Active   | Nov. 14th 2019 |

@@ -42,26 +42,26 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 
 <div className="icon-row">
 	<ul>
-		<li class="icon-item"><IcoCloudDownload /></li>
-		<li class="icon-item"><IcoCloudUpload /></li>
-		<li class="icon-item"><IcoBlueInfo /></li>
-		<li class="icon-item"><IcoGreenCheckmark /></li>
-		<li class="icon-item"><IcoRedError /></li>
-		<li class="icon-item"><IcoFolderOpenEmpty /></li>
-		<li class="icon-item"><IcoFolderOpenFull /></li>
-		<li class="icon-item"><IcoFolderClosedFull /></li>
-		<li class="icon-item"><IcoFolderClosedEmpty /></li>
-		<li class="icon-item"><IcoFileBlankGrey /></li>
-		<li class="icon-item"><IcoFileAddGrey /></li>
-		<li class="icon-item"><IcoFileCheckGrey /></li>
-		<li class="icon-item"><IcoFileRedoGrey /></li>
-		<li class="icon-item"><IcoFileRemoveGrey /></li>
-		<li class="icon-item"><IcoFileCollectionGrey /></li>
-		<li class="icon-item"><IcoPIVchip /></li>
-		<li class="icon-item"><IcoTask /></li>
-		<li class="icon-item"><IcoMilestone /></li>
-		<li class="icon-item"><IcoReport /></li>
-		<li class="icon-item"><IcoDatabase /></li>
+		<li className="icon-item"><IcoCloudDownload /></li>
+		<li className="icon-item"><IcoCloudUpload /></li>
+		<li className="icon-item"><IcoBlueInfo /></li>
+		<li className="icon-item"><IcoGreenCheckmark /></li>
+		<li className="icon-item"><IcoRedError /></li>
+		<li className="icon-item"><IcoFolderOpenEmpty /></li>
+		<li className="icon-item"><IcoFolderOpenFull /></li>
+		<li className="icon-item"><IcoFolderClosedFull /></li>
+		<li className="icon-item"><IcoFolderClosedEmpty /></li>
+		<li className="icon-item"><IcoFileBlankGrey /></li>
+		<li className="icon-item"><IcoFileAddGrey /></li>
+		<li className="icon-item"><IcoFileCheckGrey /></li>
+		<li className="icon-item"><IcoFileRedoGrey /></li>
+		<li className="icon-item"><IcoFileRemoveGrey /></li>
+		<li className="icon-item"><IcoFileCollectionGrey /></li>
+		<li className="icon-item"><IcoPIVchip /></li>
+		<li className="icon-item"><IcoTask /></li>
+		<li className="icon-item"><IcoMilestone /></li>
+		<li className="icon-item"><IcoReport /></li>
+		<li className="icon-item"><IcoDatabase /></li>
 	</ul>
 </div>
 ```

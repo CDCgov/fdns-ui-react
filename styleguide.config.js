@@ -14,6 +14,7 @@ module.exports = {
 		{
       sections: [
         {
+					name: '', // N.B. ALL SECTIONS MUST HAVE A NAME, EVEN IF IT'S JUST AN EMPTY STRING
           content: './src/documentation/introduction.md',
 				},
       ]

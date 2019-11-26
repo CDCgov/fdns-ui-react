@@ -25,12 +25,13 @@ div.uploader-drop {
         color: $grey-800;
         margin: 0;
       }
-      a {
+      .browse {
         color: $cdc-blue-800;
         text-decoration: none;
 
         &:hover {
           text-decoration: underline;
+          cursor: pointer;
         }
       }
 

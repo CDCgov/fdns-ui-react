@@ -5,10 +5,10 @@ h1, h2 { text-align: center; }
 
 ![Image of FDNS Logo](img/fdns-logo.svg)
 
-# FDNS UI 
+# FDNS UI
 ## React Component Library and Design Guidelines
 ### Accessible. Responsive. Secure
-`Version 0.8.9`
+`Version 0.8.11`
 
 FDNS UI is a pragmatic component and design library used to build evolving interfaces for public health applications. It utilizes a system of styles, patterns, components and documentation; to provide a unified language and consistent look and feel when designing data-driven applications. This project is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS.
 

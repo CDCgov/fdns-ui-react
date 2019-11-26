@@ -14,7 +14,7 @@ import DropdownUser from '../options/DropdownUser';
 // set the prop types from predefined shapes or standard types
 const propTypes = {
   /** Background color of the bar */
-  color: PropTypes.oneOfType([
+  color: PropTypes.oneOf([
     'default',
     'primary',
     'secondary',
