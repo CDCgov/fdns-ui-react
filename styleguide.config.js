@@ -119,7 +119,7 @@ module.exports = {
 				},
 				{
 					name: 'Icons',
-					components: './src/components/icons/index.jsx',
+					components: './src/components/icons/index.js',
 				},
 				{
 					name: 'Layouts',

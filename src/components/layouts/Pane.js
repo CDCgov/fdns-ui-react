@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button, Typography } from '@material-ui/core';
-import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty.jsx';
-import IcoFolderOpenEmpty from '../icons/IcoFolderOpenEmpty.jsx';
+import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty';
+import IcoFolderOpenEmpty from '../icons/IcoFolderOpenEmpty';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {

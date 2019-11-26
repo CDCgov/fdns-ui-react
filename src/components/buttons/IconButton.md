@@ -4,9 +4,9 @@ The IconButton component is used to have a simple button with an icon. The Icons
     import AccountBoxIcon from '@material-ui/icons/AccountBox';
     import DnsIcon from '@material-ui/icons/Dns';
     import SwapHorizontalCircleIcon from '@material-ui/icons/SwapHorizontalCircle';
-    import IcoBlueInfo from '../icons/IcoBlueInfo.jsx';
-    import IcoGreenCheckmark from '../icons/IcoGreenCheckmark.jsx';
-    import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty.jsx';
+    import IcoBlueInfo from '../icons/IcoBlueInfo';
+    import IcoGreenCheckmark from '../icons/IcoGreenCheckmark';
+    import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty';
 
     <div className="icon-buttons">
       <IconButton color="primary" variant="contained" onClick={()=>{}}>

@@ -12,33 +12,33 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 
 
 ```jsx
-	import IcoCloudDownload from './IcoCloudDownload.jsx';
-	import IcoCloudUpload from './IcoCloudUpload.jsx';
-	import IcoTask from './IcoTask.jsx';
-	import IcoBlueInfo from './IcoBlueInfo.jsx';
-	import IcoGreenCheckmark from './IcoGreenCheckmark.jsx';
-	import IcoRedError from './IcoRedError.jsx';
-	import IcoFolderOpenEmpty from './IcoFolderOpenEmpty.jsx';
-	import IcoFolderOpenFull from './IcoFolderOpenFull.jsx';
-	import IcoFolderClosedFull from './IcoFolderClosedFull.jsx';
-	import IcoFolderClosedEmpty from './IcoFolderClosedEmpty.jsx';
-	import IcoFileAddGrey from './IcoFileAddGrey.jsx';
-	import IcoFileBlankGrey from './IcoFileBlankGrey.jsx';
-	import IcoFileCheckGrey from './IcoFileCheckGrey.jsx';
-	import IcoFileCollectionGrey from './IcoFileCollectionGrey.jsx';
-	import IcoFileRedoGrey from './IcoFileRedoGrey.jsx';
-	import IcoFileRemoveGrey from './IcoFileRemoveGrey.jsx';
-	import IcoPIVchip from './IcoPIVchip.jsx';
-	import IcoAmberWarning from './IcoAmberWarning.jsx';
-	import IcoCollectionAmberQuestionRound from './IcoCollectionAmberQuestionRound.jsx';
-	import IcoCollectionGreenAddRound from './IcoCollectionGreenAddRound.jsx';
-	import IcoCollectionGreyRound from './IcoCollectionGreyRound.jsx';
-	import IcoCollectionRedCloseRound from './IcoCollectionRedCloseRound.jsx';
-	import IcoCollectionTealCheckRound from './IcoCollectionTealCheckRound.jsx';
-	import IcoDatabase from './IcoDatabase.jsx';
-	import IcoPlaceholder from './IcoPlaceholder.jsx';
-	import IcoReport from './IcoReport.jsx';
-	import IcoMilestone from './IcoMilestone.jsx';
+	import IcoCloudDownload from './IcoCloudDownload';
+	import IcoCloudUpload from './IcoCloudUpload';
+	import IcoTask from './IcoTask';
+	import IcoBlueInfo from './IcoBlueInfo';
+	import IcoGreenCheckmark from './IcoGreenCheckmark';
+	import IcoRedError from './IcoRedError';
+	import IcoFolderOpenEmpty from './IcoFolderOpenEmpty';
+	import IcoFolderOpenFull from './IcoFolderOpenFull';
+	import IcoFolderClosedFull from './IcoFolderClosedFull';
+	import IcoFolderClosedEmpty from './IcoFolderClosedEmpty';
+	import IcoFileAddGrey from './IcoFileAddGrey';
+	import IcoFileBlankGrey from './IcoFileBlankGrey';
+	import IcoFileCheckGrey from './IcoFileCheckGrey';
+	import IcoFileCollectionGrey from './IcoFileCollectionGrey';
+	import IcoFileRedoGrey from './IcoFileRedoGrey';
+	import IcoFileRemoveGrey from './IcoFileRemoveGrey';
+	import IcoPIVchip from './IcoPIVchip';
+	import IcoAmberWarning from './IcoAmberWarning';
+	import IcoCollectionAmberQuestionRound from './IcoCollectionAmberQuestionRound';
+	import IcoCollectionGreenAddRound from './IcoCollectionGreenAddRound';
+	import IcoCollectionGreyRound from './IcoCollectionGreyRound';
+	import IcoCollectionRedCloseRound from './IcoCollectionRedCloseRound';
+	import IcoCollectionTealCheckRound from './IcoCollectionTealCheckRound';
+	import IcoDatabase from './IcoDatabase';
+	import IcoPlaceholder from './IcoPlaceholder';
+	import IcoReport from './IcoReport';
+	import IcoMilestone from './IcoMilestone';
 
 <div className="icon-row">
 	<ul>
