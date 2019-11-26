@@ -166,16 +166,11 @@ module.exports = {
 		},
 		{
 			name: 'Contribution Guidelines',
-			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
       sections: [
         {
           name: 'Contributing',
           content: './src/documentation/contributing-guidelines/contributing.md',
-				},
-				{
-          name: 'Pull Request',
-          content: './src/documentation/contributing-guidelines/pull-request.md',
-				},
+				}
       ]
 		},
 		{
@@ -214,10 +209,6 @@ module.exports = {
 				{
           name: 'Privacy',
           content: './src/documentation//cdc-notices/privacy.md',
-				},
-				{
-          name: 'Contributing',
-          content: './src/documentation//cdc-notices/contributing.md',
 				},
 				{
           name: 'Records',
