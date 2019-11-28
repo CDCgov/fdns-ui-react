@@ -64,7 +64,7 @@ class IconButton extends Component {
     className += ` ${this.props.className}`;
 
     return (
-      <div className='icon-button'>
+      <div className={className}>
         <Button aria-label="icon button" color={this.props.color} variant={this.props.variant} onClick={this.handleClick}>
           {this.renderCustomImageIcon()}
           {this.props.children}

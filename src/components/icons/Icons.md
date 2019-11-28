@@ -39,6 +39,9 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 	import IcoPlaceholder from './IcoPlaceholder';
 	import IcoReport from './IcoReport';
 	import IcoMilestone from './IcoMilestone';
+	import IcoFileExcel from './IcoFileExcel';
+	import IcoFlask from './IcoFlask';
+	import IcoCodeBranch from './IcoCodeBranch';
 
 <div className="icon-row">
 	<ul>
@@ -62,6 +65,9 @@ Custom icons available for use. [Material UI icons](https://material-ui.com/comp
 		<li className="icon-item"><IcoMilestone /></li>
 		<li className="icon-item"><IcoReport /></li>
 		<li className="icon-item"><IcoDatabase /></li>
+		<li className="icon-item"><IcoFileExcel /></li>
+		<li className="icon-item"><IcoFlask /></li>
+		<li className="icon-item"><IcoCodeBranch /></li>
 	</ul>
 </div>
 ```
