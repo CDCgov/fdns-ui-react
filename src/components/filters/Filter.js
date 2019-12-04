@@ -9,21 +9,24 @@ const defaultValue = '';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Value of the input */
   value: PropTypes.string,
+  /** Label of the input */
   label: PropTypes.string,
+  /** Placeholder of the input */
   placeholder: PropTypes.string,
+  /** Optional icon. String name or array name (e.g. `["far", "file"]`) of FontAwesome Icon to be used. Will be replaced with MUI & internal icons soon */
   icon: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.array
+    PropTypes.array,
   ]),
-  control: PropTypes.object
 };
 
 // set the defaults
 const defaultProps = {
   value: defaultValue,
   label: 'Filter',
-  placeholder: 'Placeholder'
+  placeholder: 'Placeholder',
 };
 
 // define the class

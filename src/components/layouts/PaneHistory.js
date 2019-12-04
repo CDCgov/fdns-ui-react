@@ -6,10 +6,15 @@ import { _history } from '../../fixtures/shapes';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An object that contains history shapes */
   history: _history,
+  /** The title of the overall PaneHistory pane */
   mainTitle: PropTypes.string,
+  /** The subtitle of the overall PaneHistory pane */
   mainSubtitle: PropTypes.string,
+  /** onCollapse event of the overall PaneHistory pane */
   onCollapse: PropTypes.func,
+  /** onReset event of the overall PaneHistory pane */
   onReset: PropTypes.func,
 };
 
@@ -38,7 +43,7 @@ class PaneHistory extends Component {
   // render an item
   renderItem = (item, groupIndex, itemIndex) => {
     return (
-      <Pane title={item.title} subtitle={item.subtitle} onCollapse={this.handleCollapse.bind(null, groupIndex, itemIndex)} key={itemIndex} />
+      <Pane title={item.title} subtitle={item.subtitle} key={itemIndex} />
     );
   }
 
@@ -61,15 +66,14 @@ class PaneHistory extends Component {
   // main render method
   render() {
     const { history, mainTitle, mainSubtitle } = this.props;
-
     return (
       <div className="pane-history">
         <Pane
           title={mainTitle}
           subtitle={mainSubtitle}
-          onCollapse={this.handleCollapse.bind(null, -1, -1)}
-        />
-        {Object.keys(history).map(this.renderGroup)}
+        >
+          {Object.keys(history).map(this.renderGroup)}
+        </Pane>
         <Button className="reset-history" onClick={this.handleReset}>
           Clear History
         </Button>

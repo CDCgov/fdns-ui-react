@@ -10,8 +10,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An array of Downloads shapes */
   downloads: _downloads,
+  /** onClear event */
   onClear: PropTypes.func,
+  /** Function to determine the URL of the download  */
   renderURL: PropTypes.func,
 };
 
@@ -119,9 +122,14 @@ class DropdownDownloads extends Component {
     if (this.props.downloads.length > 0) {
       return (
         <div className="reset-downloads">
-          <IconButton aria-label="Clear" alt="Clear" onClick={this.handleClear}>
-            <ClearIcon fontSize="small" />
-          </IconButton>
+          <Button
+            aria-label="Clear"
+            alt="Clear"
+            onClick={this.handleClear}
+            startIcon={<ClearIcon />}
+          >
+            Clear
+          </Button>
         </div>
       );
     }
@@ -145,8 +153,6 @@ class DropdownDownloads extends Component {
 
   // main render method
   render() {
-
-    const { classes } = this.props;
     const { open } = this.state;
 
     return (
@@ -164,7 +170,7 @@ class DropdownDownloads extends Component {
           <GetAppIcon fontSize="small" />
         </IconButton>
 
-        <Popper open={open} anchorEl={this.anchorEl} transition placement={'bottom-end'} disablePortal>
+        <Popper className="download-tooltip" open={open} anchorEl={this.anchorEl} transition placement={'bottom-end'} disablePortal>
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
@@ -174,7 +180,17 @@ class DropdownDownloads extends Component {
               <Paper className="dropdown-downloads-menu" elevation={6}>
                 <ClickAwayListener onClickAway={this.handleClose}>
                   <MenuList>
-                    <Typography gutterBottom variant="h5">Download Queue</Typography>
+                    <div className="header">
+                      <Typography gutterBottom variant="h5">Download Queue</Typography>
+                      <IconButton
+                        className="close-button"
+                        aria-label="Close"
+                        alt="Close"
+                        onClick={this.handleClose}
+                      >
+                        <ClearIcon />
+                      </IconButton>
+                    </div>
                     {this.renderRows()}
                     {this.renderReset()}
                   </MenuList>

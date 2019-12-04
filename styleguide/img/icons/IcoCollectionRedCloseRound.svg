@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/IcoCollectionRedCloseRound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/IcoCollectionRedCloseRound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" fill="#FC6062" fill-rule="nonzero" x="2.44444444" y="0" width="17.1111111" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#EF3C3E" fill-rule="nonzero" x="1.22222222" y="2.44444444" width="19.5555556" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#D71E20" fill-rule="nonzero" x="0" y="4.88888889" width="22" height="17.1111111" rx="1.22222222"></rect>
+            <path d="M11.7358414,12.5355404 L14.5101211,12.5355404 C14.900165,12.5355404 15.216358,12.8517334 15.216358,13.2417773 C15.216358,13.6318212 14.900165,13.9480142 14.5101211,13.9480142 L11.7358414,13.9480142 L11.7358414,13.9480142 L11.7358414,16.8635413 C11.7358414,17.3038565 11.3788954,17.6608025 10.9385802,17.6608025 C10.498265,17.6608025 10.141319,17.3038565 10.141319,16.8635413 L10.141319,13.9480142 L10.141319,13.9480142 L7.36703936,13.9480142 C6.97699549,13.9480142 6.66080246,13.6318212 6.66080246,13.2417773 C6.66080246,12.8517334 6.97699549,12.5355404 7.36703936,12.5355404 L10.141319,12.5355404 L10.141319,12.5355404 L10.141319,9.90250809 C10.141319,9.4621929 10.498265,9.10524691 10.9385802,9.10524691 C11.3788954,9.10524691 11.7358414,9.4621929 11.7358414,9.90250809 L11.7358414,12.5355404 L11.7358414,12.5355404 Z" id="+" fill="#FFFFFF" transform="translate(10.938580, 13.383025) rotate(45.000000) translate(-10.938580, -13.383025) "></path>
+        </g>
+    </g>
+</svg>

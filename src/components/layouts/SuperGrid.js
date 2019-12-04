@@ -11,12 +11,19 @@ import { Grid, Paper, Table, TableBody, TableCell, TableRow, Tooltip } from '@ma
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** An array of objects that are to be displayed */
   data: PropTypes.arrayOf(PropTypes.object),
+  /** An array of Headers shapes */
   headers: _headers,
+  /** The limit of how many items to display in the grid */
   limit: PropTypes.number,
+  /** Event triggered by clicking on the Details button in the bottom right of the panel */
   onDetail: PropTypes.func,
+  /** Footer for showing the errors and actions and details button */
   footer: PropTypes.object,
+  /** Show the ErrorsAndWarnings in the footer */
   showErrorsAndWarnings: PropTypes.bool,
+  /** Show the Actions in the footer */
   showActions: PropTypes.bool,
 };
 

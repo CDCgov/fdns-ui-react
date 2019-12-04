@@ -1,5 +1,5 @@
 FDNS UI library components are checked for compliance before being actively deployed in our library. Furthermore, as these components are expanded and updated over time we regularly audit the our components for accessibility standards and section 508 compliance. 
 
-Our current attached report is based on a WCAG Conformance. User interface components and content of platforms and applications shall conform to Level A and Level AA Success Criteria and Conformance Requirements specified for web pages in [WCAG 2.0](https://www.w3.org/TR/WCAG20/) This `Fall 2019` report is checking for aggregate support of WCAG Conformance.
+Our current attached report is based on a WCAG Conformance. User interface components and content of platforms and applications shall conform to Level A and Level AA Success Criteria and Conformance Requirements specified for web pages in [WCAG 2.0](https://www.w3.org/TR/WCAG20/) Oct 2019 a report was created for `v0.8.4` checking  aggregate support of WCAG Conformance. A second 508 review for `v0.9.0` is expected to be processed for the lastest accessibility compliance report card.
 
-[Section 508 Checklist Report](https://www.w3.org/)
+Section 508 Checklist Report: Available upon request

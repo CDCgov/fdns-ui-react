@@ -37,6 +37,6 @@ The DropdownDownloads component is used to display information about downloads f
 		return '#DocDropdownDownloads';
 	}
 		<div className='alignment'>
-			<DropdownDownloads role="button" aria-label="download button" downloads={downloads} onClear={()=>{}} renderURL={renderURL} />
+			<DropdownDownloads role="button" aria-label="downloads button" downloads={downloads} onClear={()=>{}} renderURL={renderURL} />
 		</div>
 ```

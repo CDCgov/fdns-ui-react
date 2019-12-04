@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import ThemeProvider from '../src/components/ThemeProvider';
 
 // Importing third party and local styles/icons

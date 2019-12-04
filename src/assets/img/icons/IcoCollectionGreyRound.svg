@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/IcoCollectionGreyRound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/IcoCollectionGreyRound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#E9E8E7" x="2.44444444" y="0" width="17.1111111" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#C8CBD0" x="1.22222222" y="2.44444444" width="19.5555556" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#A5A7AB" x="0" y="4.88888889" width="22" height="17.1111111"></rect>
+        </g>
+    </g>
+</svg>

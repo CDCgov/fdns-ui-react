@@ -8,11 +8,17 @@ const icon = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Large Title of the Login */
   title: PropTypes.string,
+  /** Forgot Password Link */
   resetURL: PropTypes.string,
+  /** onSmartCard login click, accepts the smartCardURL as an arg */
   onSmartCard: PropTypes.func,
+  /** URL of the SmartCard Login */
   smartCardURL: PropTypes.string,
+  /** onLogin event, accepts the loginURL and an object with { username, password }as params */
   onLogin: PropTypes.func,
+  /** The URL of the login. Passed into the onLogin event */
   loginURL: PropTypes.string,
 };
 

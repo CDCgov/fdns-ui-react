@@ -5,6 +5,7 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 // set the prop types from predefined shapes or standard types
 const _blob = PropTypes.instanceOf(Blob);
 const propTypes = {
+  /** Array of files (see Blob Shape) */
   files: PropTypes.arrayOf(_blob),
 };
 
@@ -20,7 +21,7 @@ class UploaderList extends Component {
   renderRow(file, i) {
     const { name } = file;
     return (
-      <li key={i}>
+      <li key={i} tabIndex="0" aria-label={`file ${i}: ${name}`}>
         <CheckCircleIcon />
         <span>{name}</span>
       </li>
@@ -30,7 +31,7 @@ class UploaderList extends Component {
   // main render method
   render() {
     return (
-      <div className="uploader-list">
+      <div className="uploader-list" aria-label='file upload list'>
         <ul>
           {this.props.files.map(this.renderRow)}
         </ul>

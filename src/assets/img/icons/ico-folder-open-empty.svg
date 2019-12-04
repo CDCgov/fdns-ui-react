@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/ico-folder-open-empty</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/ico-folder-open-empty" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-folder-open-empty" transform="translate(1.000000, 7.000000)" fill-rule="nonzero">
+            <path d="M1.1,0 L9.94409651,0 C10.5272559,-7.73258458e-16 11,0.472744097 11,1.05590349 L11,1.05590349 L11,1.05590349 L20.9,1.05590349 L20.9,16.0769231 L1.1,16.0769231 L1.1,0 Z" id="Rectangle" fill="#DCB047"></path>
+            <polygon id="Rectangle" fill="#FFD164" points="22 3.21538462 20.9 16.0769231 1.1 16.0769231 0 3.21538462"></polygon>
+        </g>
+    </g>
+</svg>

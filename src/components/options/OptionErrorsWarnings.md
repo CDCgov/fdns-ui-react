@@ -1,4 +1,4 @@
-The OptionErrorsWarnings component is used to give an action button.
+The OptionErrorsWarnings component is used to give action buttons based on error/warning analysis.
 
 ```js
 	import { errors, warnings } from '../../fixtures/fixtures.js';

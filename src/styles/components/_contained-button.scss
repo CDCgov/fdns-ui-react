@@ -1,0 +1,57 @@
+.ContainedButton {
+  button {
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+    background: #ffffff;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.75;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    min-width: 64px;
+    margin: 8px 0;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: $grey-700;
+    outline: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &.primary {
+    button {
+      background: $cdc-blue-800; /* Old browsers */
+      border: 0;
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.secondary {
+    button {
+      background: $pine-700; /* Old browsers */
+      border: 0;
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  &.tertiary {
+    button {
+      background: $teal-700; /* Old browsers */
+      border: 0;
+      color: #ffffff;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

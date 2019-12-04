@@ -4,20 +4,19 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
-  message: PropTypes.string,
+  /** Controls whether or not the loader is active */
   active: PropTypes.bool,
 };
 
 // set the defaults
 const defaultProps = {
-  message: 'Loading...',
   active: false,
 };
 
 // define the class
 class Loader extends Component {
   render() {
-    const { message, active } = this.props;
+    const { active } = this.props;
 
     let loader;
     if (active) {
@@ -25,9 +24,7 @@ class Loader extends Component {
         <div className="loader-active">
           <div className="loading-mask"></div>
           <div className="loading-message">
-            <div className="message-wrapper">
-              <CircularProgress />
-            </div>
+            <CircularProgress />
           </div>
         </div>
       );
