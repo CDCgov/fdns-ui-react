@@ -7,13 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Selected item in the Select Dropdown */
   selected: PropTypes.string,
+  /** Label of the Select Dropdown */
   label: PropTypes.string,
+  /** Optional icon. String name or array name (e.g. `["far", "file"]`) of FontAwesome Icon to be used. Will be replaced with MUI & internal icons soon */
   icon: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.array
+    PropTypes.array,
   ]),
+  /** Placeholder of the Select Dropdown */
   placeholder: PropTypes.string,
+  /** An array of Option shapes */
   options: PropTypes.arrayOf(_option)
 };
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/ico_blue_info</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/ico_blue_info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-info-sign" transform="translate(3.000000, 3.000000)" fill="#116CB8" fill-rule="nonzero">
+            <path d="M9,0 C13.9725,0 18,4.0275 18,9 C18,13.9725 13.9725,18 9,18 C4.0275,18 0,13.9725 0,9 C0,4.0275 4.0275,0 9,0 Z M10.125,6.75 L6.75,6.75 L6.75,7.875 L7.875,7.875 L7.875,13.5 L6.75,13.5 L6.75,14.625 L11.25,14.625 L11.25,13.5 L10.125,13.5 L10.125,6.75 Z M10.125,3.375 L7.875,3.375 L7.875,5.625 L10.125,5.625 L10.125,3.375 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

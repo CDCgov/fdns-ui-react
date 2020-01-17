@@ -1,5 +1,6 @@
 const path = require('path');
 const { version } = require('./package');
+const fs = require('fs');
 
 module.exports = {
 	assetsDir: './src/assets/',
@@ -13,13 +14,13 @@ module.exports = {
 		{
       sections: [
         {
+					name: '', // N.B. ALL SECTIONS MUST HAVE A NAME, EVEN IF IT'S JUST AN EMPTY STRING
           content: './src/documentation/introduction.md',
 				},
       ]
 		},
 		{
 			name: 'Getting Started',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       sections: [
         {
           name: 'Design',
@@ -36,7 +37,7 @@ module.exports = {
 			content: './src/documentation/accessibility/accessibility.md',
       sections: [
         {
-          name: 'Accessibility standards',
+          name: 'Accessibility Standards',
           content: './src/documentation/accessibility/accessibility-standards.md',
 				},
 				{
@@ -54,42 +55,52 @@ module.exports = {
       ]
 		},
 		{
-			name: 'Design Guidelines',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			name: 'Style Guide',
+			description: 'A Style Guide is a set of standards and rules for the formatting of digital interfaces. Representing a subclass in the design system, this static documentation describes the design system itself: how products should look and feel, use cases for UI patterns, correct typographic scales, etc.',
+			content: './src/documentation/style-guide/introduction.md',
       sections: [
         {
           name: 'Color',
-          content: './src/documentation/design-guidelines/colors.md',
-				},
-				{
-          name: 'Layout',
-          content: './src/documentation/design-guidelines/layout.md',
+          content: './src/documentation/style-guide/colors.html',
 				},
 				{
           name: 'Spacing',
-          content: './src/documentation/design-guidelines/spacing.md',
+          content: './src/documentation/style-guide/spacing.md',
 				},
 				{
           name: 'Typography',
-          content: './src/documentation/design-guidelines/typography.md',
-				},
-				{
-          name: 'Themes',
-          content: './src/documentation/design-guidelines/themes.md',
-				},
-				{
-          name: 'Icons',
-          content: './src/documentation/design-guidelines/icons.md',
+          content: './src/documentation/style-guide/typography.md',
 				},
       ]
 		},
 		{
-			name: 'Component Library',
-			sections: [
-				{
-          name: 'Component Status',
-          content: './src/documentation/component-library/component-status.md',
+			name: 'Pattern Library',
+			description: 'A Pattern library is a collection of functional design modules (components), that appear across or within an application multiple times.',
+			content: './src/documentation/pattern-library/introduction.md',
+      sections: [
+        {
+          name: 'Pattern Components',
+          content: './src/documentation/pattern-library/patterns.md',
 				},
+				{
+          name: 'Layout',
+          content: './src/documentation/pattern-library/layout.md',
+				},
+				{
+          name: 'Themes',
+          content: './src/documentation/pattern-library/themes.md',
+				},
+				{
+          name: 'Icons',
+          content: './src/documentation/pattern-library/icons.md',
+				},
+      ]
+		},
+		{
+			name: 'Coded Components',
+			description: 'Current FDNS UI is built using react, however the code could be refactored using style and pattern libraries as a guide into other front-end frameworks.',
+			content: './src/documentation/coded-components/component-status.md',
+			sections: [
 				{
 					name: 'Buttons',
 					components: './src/components/buttons/*.js',
@@ -105,6 +116,10 @@ module.exports = {
 				{
 					name: 'Filters',
 					components: './src/components/filters/*.js',
+				},
+				{
+					name: 'Icons',
+					components: './src/components/icons/index.js',
 				},
 				{
 					name: 'Layouts',
@@ -137,22 +152,31 @@ module.exports = {
 			],
 		},
 		{
-			name: 'Contributing Guidelines',
-			description: 'Contributions are welcomed and appreciated! If you want to contribute to FDNS UI….',
-      sections: [
-        {
-          name: 'contributing',
-          content: './src/documentation/contributing-guidelines/contributing.md',
+			name: 'Shapes & Fixtures',
+			description: 'The shapes and fixtures used in the various components.',
+			sections: [
+				{
+					name: 'Shapes',
+					content: './src/fixtures/shapes.md',
 				},
 				{
-          name: 'Pull Request',
-          content: './src/documentation/contributing-guidelines/pull-request.md',
-				},
+					name: 'Fixtures',
+					content: './src/fixtures/fixtures.md',
+				}
+			]
+		},
+		{
+			name: 'Contribution Guidelines',
+      sections: [
+        {
+          name: 'Contributing',
+          content: './src/documentation/contributing-guidelines/contributing.md',
+				}
       ]
 		},
 		{
 			name: 'About FDNS UI',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'FDNS UI is a pragmatic component and design library used to build evolving interfaces for public health applications. It utilizes a system of styles, patterns, components and documentation; to provide a unified language and consistent look and feel when designing data-driven applications. This project is built and maintained open-source by the Centers for Disease Control under the CSELS/DHIS.',
       sections: [
         {
           name: 'Current Initiatives',
@@ -188,10 +212,6 @@ module.exports = {
           content: './src/documentation//cdc-notices/privacy.md',
 				},
 				{
-          name: 'Contributing',
-          content: './src/documentation//cdc-notices/contributing.md',
-				},
-				{
           name: 'Records',
           content: './src/documentation//cdc-notices/records.md',
 				},
@@ -203,7 +223,7 @@ module.exports = {
 		},
 		{
 			name: 'Resources',
-			description: 'Install FDNS-UI, a CDC material design inspired UI and Framework.',
+			description: 'There are many online reference sites and forums which are a great place for learning best practices and application architecture',
       sections: [
         {
           name: 'Links',
@@ -220,9 +240,9 @@ module.exports = {
 			link: '#2E845F',
 			linkHover: '#90a7bf',
 			border: '#717376',
-			sidebarLinks: '#FFF;',
-			sidebarLink: '#FFF;',
-			sidebarBackground: '#282c34',
+			sidebarLinks: '#2c3e50;',
+			sidebarLink: '#2c3e50;',
+			sidebarBackground: '#FFFFFF',
 			codeBase: '#fff',
       codeComment: '#999',
       codePunctuation: '#fff',
@@ -239,5 +259,24 @@ module.exports = {
     fontFamily: {
       base: '"proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     }
-  },
+	},
+  updateExample(props, exampleFilePath) {
+    // props.settings are passed by any fenced code block, in this case
+    const { settings, lang } = props
+    // "../mySourceCode.js"
+    if (typeof settings.file === 'string') {
+      // "absolute path to mySourceCode.js"
+      const filepath = path.resolve(exampleFilePath, settings.file)
+      // displays the block as static code
+      settings.static = true
+      // no longer needed
+      delete settings.file
+      return {
+        content: fs.readFileSync(filepath, 'utf8'),
+        settings,
+        lang
+      }
+    }
+    return props
+  }
 };

@@ -8,8 +8,11 @@ import { Grid } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Whether or not to check for duplicates when adding to the Uploader list */
   checkDuplicates: PropTypes.bool,
+  /** onError event */
   onError: PropTypes.func,
+  /** onDrop event if you want to do anything after the files are dropped into the list. Accepts the files as an argument */
   onDrop: PropTypes.func,
 };
 

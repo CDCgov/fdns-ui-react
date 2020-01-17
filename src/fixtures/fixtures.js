@@ -166,6 +166,19 @@ export const activity = {
   }
 };
 
+export const history = {
+  'October 11': [
+    { title: 'Search History 1', subtitle: 'Search Results' },
+    { title: 'Search History 2', subtitle: 'Search Results' },
+    { title: 'Search History 3', subtitle: 'Search Results' },
+  ],
+  'October 12': [
+    { title: 'Search History 1', subtitle: 'Search Results' },
+    { title: 'Search History 2', subtitle: 'Search Results' },
+    { title: 'Search History 3', subtitle: 'Search Results' },
+  ],
+}
+
 export const downloads = [
   {
     file: 'search-results1234567.csv.zip',

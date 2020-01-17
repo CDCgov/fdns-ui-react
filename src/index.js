@@ -15,6 +15,7 @@ library.add(fas, far);
 export * as fixtures from './fixtures/fixtures';
 export * as shapes from './fixtures/shapes';
 
+export ContainedButton from './components/buttons/ContainedButton';
 export Container from './components/layouts/Container';
 export DataEndpoint from './components/data-display/DataEndpoint';
 export DataInspector from './components/data-display/DataInspector';
@@ -27,6 +28,7 @@ export FilterAction from './components/filters/FilterAction';
 export FilterDate from './components/filters/FilterDate';
 export FilterGroup from './components/filters/FilterGroup';
 export FilterSelect from './components/filters/FilterSelect';
+export { IcoCloudDownload, IcoCloudUpload, IcoTask, IcoBlueInfo, IcoGreenCheckmark, IcoRedError, IcoFolderOpenEmpty, IcoFolderOpenFull, IcoFolderClosedFull, IcoFolderClosedEmpty, IcoFileAddGrey, IcoFileBlankGrey, IcoFileCheckGrey, IcoFileRemoveGrey, IcoFileRedoGrey, IcoPIVchip, IcoFileExcel, IcoFlask, IcoCodeBranch }  from './components/icons/index.js';
 export IconButton from './components/buttons/IconButton';
 export Loader from './components/feedback/Loader';
 export Login from './components/layouts/Login';

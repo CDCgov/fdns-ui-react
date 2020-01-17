@@ -1,4 +1,4 @@
-The Loader component is used as a consistent wrapper for the app context.
+The Loader component is used as a consistent background wrapper for the app context.
 
 ```js
 	import { Button } from '@material-ui/core';

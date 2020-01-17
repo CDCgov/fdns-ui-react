@@ -19,6 +19,11 @@ export const _historyItem = PropTypes.shape({
   subtitle: PropTypes.string,
 });
 
+export const _status = PropTypes.shape({
+  status: PropTypes.string,
+  substatus: PropTypes.string,
+});
+
 export const _history = PropTypes.object;
 
 export const _message = PropTypes.object;

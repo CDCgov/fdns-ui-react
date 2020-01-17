@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/fdns-ui-react.svg)](https://badge.fury.io/js/fdns-ui-react)
+[![Known Vulnerabilities](https://snyk.io/test/github/CDCgov/fdns-ui-react/badge.svg)](https://snyk.io/test/github/CDCgov/fdns-ui-react)
 [![Build Status](https://travis-ci.org/CDCgov/fdns-ui-react.svg?branch=master)](https://travis-ci.org/CDCgov/fdns-ui-react)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/ico-folder-open-full</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/ico-folder-open-full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-folder-open-full" transform="translate(1.000000, 2.000000)" fill-rule="nonzero">
+            <path d="M1.1,4.8816568 L9.93127177,4.8816568 C10.5215141,4.8816568 11,5.36014273 11,5.95038504 L11,5.95038504 L11,5.95038504 L20.9,5.95038504 L20.9,21.1538462 L1.1,21.1538462 L1.1,4.8816568 Z" id="Rectangle" fill="#DCB047"></path>
+            <polygon id="Rectangle" fill="#E5E1E1" points="3.3 0.542406312 15.1830078 0.542406312 18.7 4.07493335 18.7 20.0690335 3.3 20.0690335"></polygon>
+            <polygon id="Rectangle" fill="#FFD164" points="22 8.13609467 20.9 21.1538462 1.1 21.1538462 0 8.13609467"></polygon>
+            <polygon id="Path-6" fill="#CBC8C8" points="15.1614899 0.516087158 15.1614899 4.0746354 18.7074188 4.0746354"></polygon>
+        </g>
+    </g>
+</svg>

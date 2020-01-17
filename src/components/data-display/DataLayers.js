@@ -11,11 +11,18 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Header data in the headers shape */
   headers: _headers,
+  /** Controls if the DataLayers tab is open or not */
   active: PropTypes.bool,
+  /** The height of the tab */
   height: PropTypes.number,
+  /** An optional function for programmatically determining the height of the view. If you do not set this, it defaults to returning the manually set height */
   getHeight: PropTypes.func,
+  /** onSave event */
   onSave: PropTypes.func,
+  /** onClose event for the CLOSE button in the tab, manipulates the ACTIVE state internally if not set. */
+  onClose: PropTypes.func,
 };
 
 // set the defaults
@@ -85,6 +92,17 @@ class DataLayers extends Component {
 
     this.setState({
       headers: nextHeaders,
+    });
+  }
+
+  // close
+  handleClose = () => {
+    if (this.props.onClose) {
+      this.props.onClose();
+      return;
+    }
+    this.setState({
+      active: false,
     });
   }
 
@@ -186,6 +204,7 @@ class DataLayers extends Component {
         <div className="layers-headers fx-grd">
           <div className="col col-3 col-label">Label</div>
           <div className="col col-3 col-key-name">Key Name</div>
+          <Button onClick={this.handleClose} className="col col-1 col-display close">Close</Button>
           <Button onClick={this.handleSaveClick} className="col col-1 col-display save">Apply</Button>
         </div>
         <div className="layers-rows">

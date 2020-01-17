@@ -4,6 +4,7 @@ import { Button } from '@material-ui/core';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The text contained in the button */
   label: PropTypes.string,
   btnStyle: PropTypes.oneOf([
     'default',
@@ -18,18 +19,19 @@ const propTypes = {
     'teal-on-teal',
     'teal-on-teal-inverse',
   ]),
-  className: PropTypes.string,
-  icon: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ]),
+  /** An optional custom image string */
+  icon: PropTypes.string,
+  /** Accessibility alt name for the custom image string */
   iconAlt: PropTypes.string,
+  /** onClick event, default does nothing */
   onClick: PropTypes.func,
 };
 
 // set the defaults
 const defaultProps = {
   label: 'Super Button',
+  btnStyle: 'default',
+  iconAlt: 'custom image icon',
   onClick() {},
 };
 
@@ -37,14 +39,14 @@ const defaultProps = {
 class SuperButton extends Component {
   // main render method
   render() {
-    const { label, btnStyle, className, icon, iconAlt, onClick } = this.props;
+    const { label, btnStyle, icon, iconAlt, onClick } = this.props;
     let imgIcon;
 
     // icon image if it's set
     if (icon !== undefined) imgIcon = <img src={icon} alt={iconAlt} />;
 
     return (
-      <div id="super button" className={`super-button ${btnStyle} ${className}`}>
+      <div id="super button" className={`super-button ${btnStyle}`}>
         <Button role="button" aria-label="super button" onClick={onClick}>
           {imgIcon}
           {label}

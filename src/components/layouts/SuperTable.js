@@ -15,9 +15,13 @@ import TablePaginationActions from './TablePaginationActions';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** The rows of the table */
   rows: PropTypes.array,
+  /** An array of Headers shapes to be used as the headers for the table */
   headers: PropTypes.array,
+  /** Display pagination */
   pagination: PropTypes.bool,
+  /** An array containing the options for the rows per page. It is not recommended you overwrite this value.  */
   rowsPerPageOptions: PropTypes.arrayOf(PropTypes.number),
 };
 

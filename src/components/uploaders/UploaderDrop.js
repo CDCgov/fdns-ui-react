@@ -6,8 +6,11 @@ import IconButton from '../buttons/IconButton';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** String type of files this can accept */
   accept: PropTypes.string,
+  /** Type of layout */
   layout: PropTypes.string,
+  /** onDrop event if you want to do anything after the files are dropped into the list. AcceptedFiles, RejectedFiles are the arguments accepted. */
   onDrop: PropTypes.func,
 };
 
@@ -63,7 +66,7 @@ class UploaderDrop extends Component {
     return (
       <div className="instructions">
         <figure className="files"></figure>
-        <Typography variant="h3" color="inherit" gutterBottom>Drag and Drop or <a href="javascript:;">Browse</a> your files</Typography>
+        <Typography variant="h3" color="inherit" gutterBottom>Drag and Drop or <span className="browse">Browse</span> your files</Typography>
         <Typography color="inherit" gutterBottom>Select one or more file at a time or simply drag and drop files anywhere on this page to start uploading.</Typography>
         {btnPrimary}
       </div>

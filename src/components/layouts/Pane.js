@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Button, Typography } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import IcoFolderClosedEmpty from '../icons/IcoFolderClosedEmpty';
+import IcoFolderOpenEmpty from '../icons/IcoFolderOpenEmpty';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Controls the expansion of the pane */
   collapsed: PropTypes.bool,
+  /** onCollapse event */
   onCollapse: PropTypes.func,
+  /** Title of the pane */
   title: PropTypes.string,
+  /** Subtitle of the pane */
   subtitle: PropTypes.string
 };
 
@@ -16,7 +21,7 @@ const propTypes = {
 const defaultProps = {
   collapsed: true,
   title: 'Title',
-  subtitle: 'Subtitle'
+  subtitle: 'Subtitle',
 };
 
 // define the class
@@ -50,6 +55,7 @@ class Pane extends Component {
   }
 
   // force a collapse event
+  // TODO: Update this to componentDidMount
   componentWillReceiveProps(nextProps) {
     if (nextProps.collapsed) {
       this.collapse();
@@ -79,14 +85,14 @@ class Pane extends Component {
     var iconClassName;
 
     if (this.state.collapsed) {
-      iconClassName = ['far','folder'];
+      iconClassName = <IcoFolderClosedEmpty />;
     } else {
-      iconClassName = 'times';
+      iconClassName = <IcoFolderOpenEmpty />;
     }
 
     return (
       <Button className="collapse" aria-label="Collapse Pane">
-        <FontAwesomeIcon icon={iconClassName} />
+        {iconClassName}
       </Button>
     );
   }

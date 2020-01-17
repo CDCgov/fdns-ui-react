@@ -4,7 +4,9 @@ import SearchIcon from '@material-ui/icons/Search';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** String query of the search */
   query: PropTypes.string,
+  /** onSearch event, accepts the query as an argument */
   onSearch: PropTypes.func
 };
 

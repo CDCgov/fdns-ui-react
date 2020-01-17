@@ -7,10 +7,12 @@ import WarningIcon from '@material-ui/icons/Warning';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** Analysis Shape Object */
   analysis: _analysis,
+  /** onDetail click event */
   onDetail: PropTypes.func,
+  /** Function to update the Analysis */
   updateErrorsWarnings: PropTypes.func,
-  size: PropTypes.string,
 };
 
 // set the defaults
@@ -22,7 +24,6 @@ const defaultProps = {
     errors: 0,
   },
   onDetail() {},
-  size: 'medium',
 };
 
 // define the class
@@ -46,7 +47,7 @@ class OptionErrorsWarnings extends Component {
     const warnings = [];
 
     // search through the explanation and put all errors in an array
-    this.props.analysis.explanation.forEach((explanation, index) => {
+    this.props.analysis.explanation.forEach((explanation) => {
       if (explanation.type !== 'ERROR') return;
 
       errors.push({
@@ -57,7 +58,7 @@ class OptionErrorsWarnings extends Component {
     });
 
     // search through the explanation and put all warnings in an array
-    this.props.analysis.explanation.map((explanation, index) => {
+    this.props.analysis.explanation.map((explanation) => {
       if (explanation.type !== 'WARNING') return;
 
       warnings.push({
@@ -93,7 +94,7 @@ class OptionErrorsWarnings extends Component {
             alt="Errors"
             className="option-error"
             onClick={this.handleDetailClick}
-            size={this.props.size}
+            size="medium"
           >
             <BlockIcon />
           </IconButton>
@@ -118,7 +119,7 @@ class OptionErrorsWarnings extends Component {
             alt="Warnings"
             className="option-warning"
             onClick={this.handleDetailClick}
-            size={this.props.size}
+            size="medium"
           >
             <WarningIcon />
           </IconButton>

@@ -7,9 +7,15 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 // set the prop types from predefined shapes or standard types
 const propTypes = {
+  /** User Shape */
   user: _user,
+  /** onSignOut event */
   onSignOut: PropTypes.func,
-  placement: PropTypes.string,
+  /** Placement of the Dropdown relative to the button */
+  placement: PropTypes.oneOf([
+    'bottom-start',
+    'bottom-end',
+  ]),
 };
 
 // set the defaults

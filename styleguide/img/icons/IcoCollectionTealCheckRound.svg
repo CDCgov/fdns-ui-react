@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icons/icons/IcoCollectionTealCheckRound</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/icons/IcoCollectionTealCheckRound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" fill="#69C8C2" fill-rule="nonzero" x="2.44444444" y="0" width="17.1111111" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#3AA8A2" fill-rule="nonzero" x="1.22222222" y="2.44444444" width="19.5555556" height="1.22222222" rx="0.611111111"></rect>
+            <rect id="Rectangle" fill="#20958E" fill-rule="nonzero" x="0" y="4.88888889" width="22" height="17.1111111" rx="1.22222222"></rect>
+            <path d="M10.3472286,17.0232961 C10.2262391,17.1403828 10.0272926,17.1403828 9.90630309,17.0232961 L6.81296432,14.0327582 C6.69197486,13.9162751 6.69197486,13.7231425 6.81296432,13.6060558 L7.68920242,12.7568759 C7.81019188,12.6391857 8.00851481,12.6391857 8.13012793,12.7568759 L9.90692675,14.4757562 C10.0279162,14.5922393 10.2268628,14.5922393 10.3478523,14.4757562 L14.4820746,10.4767039 C14.6036877,10.3596172 14.8026343,10.3596172 14.9230001,10.4767039 L15.7986145,11.3240732 C15.9189803,11.4411599 15.9189803,11.633689 15.7986145,11.7507756 L10.3472286,17.0232961 L10.3472286,17.0232961 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
