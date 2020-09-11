@@ -56,11 +56,13 @@ class Pane extends Component {
 
   // force a collapse event
   // TODO: Update this to componentDidMount
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.collapsed) {
-      this.collapse();
-    } else {
-      this.uncollapse();
+  componentDidUpdate(nextProps) {
+    if (nextProps.collapsed !== this.props.collapsed) {
+      if (nextProps.collapsed) {
+        this.collapse();
+      } else {
+        this.uncollapse();
+      }
     }
   }
 

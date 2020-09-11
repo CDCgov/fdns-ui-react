@@ -262,21 +262,21 @@ module.exports = {
 	},
   updateExample(props, exampleFilePath) {
     // props.settings are passed by any fenced code block, in this case
-    const { settings, lang } = props
+		const { settings, lang } = props;
     // "../mySourceCode.js"
-    if (typeof settings.file === 'string') {
+    if (settings && settings.file && typeof settings.file === 'string') {
       // "absolute path to mySourceCode.js"
-      const filepath = path.resolve(exampleFilePath, settings.file)
+      const filepath = path.resolve(exampleFilePath, settings.file);
       // displays the block as static code
-      settings.static = true
+      settings.static = true;
       // no longer needed
-      delete settings.file
+      delete settings.file;
       return {
         content: fs.readFileSync(filepath, 'utf8'),
         settings,
-        lang
+        lang,
       }
     }
-    return props
+    return props;
   }
 };
